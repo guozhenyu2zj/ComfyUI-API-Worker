@@ -1,0 +1,857 @@
+{
+  "120": {
+    "inputs": {
+      "model_name": "sam_vit_b_01ec64.pth",
+      "device_mode": "AUTO"
+    },
+    "class_type": "SAMLoader",
+    "_meta": {
+      "title": "SAM加载器"
+    }
+  },
+  "121": {
+    "inputs": {
+      "model_name": "bbox/face_yolov8m.pt"
+    },
+    "class_type": "UltralyticsDetectorProvider",
+    "_meta": {
+      "title": "检测加载器"
+    }
+  },
+  "122": {
+    "inputs": {
+      "bbox_threshold": 0.5,
+      "bbox_dilation": 0,
+      "crop_factor": 3,
+      "drop_size": 10,
+      "sub_threshold": 0.5,
+      "sub_dilation": 0,
+      "sub_bbox_expansion": 0,
+      "sam_mask_hint_threshold": 0.7,
+      "post_dilation": 0,
+      "bbox_detector": [
+        "121",
+        0
+      ],
+      "image": [
+        "468",
+        0
+      ],
+      "sam_model_opt": [
+        "120",
+        0
+      ]
+    },
+    "class_type": "ImpactSimpleDetectorSEGS",
+    "_meta": {
+      "title": "简易Seg检测"
+    }
+  },
+  "123": {
+    "inputs": {
+      "segs": [
+        "122",
+        0
+      ]
+    },
+    "class_type": "ImpactSEGSToMaskBatch",
+    "_meta": {
+      "title": "Seg到遮罩组"
+    }
+  },
+  "124": {
+    "inputs": {
+      "mask": [
+        "123",
+        0
+      ]
+    },
+    "class_type": "MaskToImage",
+    "_meta": {
+      "title": "遮罩到图像"
+    }
+  },
+  "125": {
+    "inputs": {
+      "images": [
+        "124",
+        0
+      ]
+    },
+    "class_type": "easy imageCount",
+    "_meta": {
+      "title": "图像计数"
+    }
+  },
+  "126": {
+    "inputs": {
+      "start": [
+        "162",
+        1
+      ],
+      "length": 1,
+      "mask": [
+        "123",
+        0
+      ]
+    },
+    "class_type": "MaskFromBatch+",
+    "_meta": {
+      "title": "获取遮罩批次"
+    }
+  },
+  "127": {
+    "inputs": {
+      "mask": [
+        "126",
+        0
+      ]
+    },
+    "class_type": "MaskPreview+",
+    "_meta": {
+      "title": "遮罩预览"
+    }
+  },
+  "131": {
+    "inputs": {
+      "images": [
+        "124",
+        0
+      ]
+    },
+    "class_type": "PreviewImage",
+    "_meta": {
+      "title": "预览图像"
+    }
+  },
+  "132": {
+    "inputs": {
+      "alpha_mode": true,
+      "min_alpha": 0.38,
+      "segs": [
+        "122",
+        0
+      ]
+    },
+    "class_type": "SEGSPreview",
+    "_meta": {
+      "title": "Seg预览"
+    }
+  },
+  "133": {
+    "inputs": {
+      "images": [
+        "132",
+        0
+      ]
+    },
+    "class_type": "PreviewImage",
+    "_meta": {
+      "title": "预览图像"
+    }
+  },
+  "162": {
+    "inputs": {
+      "total": [
+        "125",
+        0
+      ],
+      "initial_value1": [
+        "468",
+        0
+      ]
+    },
+    "class_type": "easy forLoopStart",
+    "_meta": {
+      "title": "For循环-起始"
+    }
+  },
+  "164": {
+    "inputs": {
+      "flow": [
+        "162",
+        0
+      ],
+      "initial_value1": [
+        "210",
+        0
+      ]
+    },
+    "class_type": "easy forLoopEnd",
+    "_meta": {
+      "title": "For循环-结束"
+    }
+  },
+  "205": {
+    "inputs": {
+      "enabled": true,
+      "swap_model": "inswapper_128.onnx",
+      "facedetection": "retinaface_resnet50",
+      "face_restore_model": "GFPGANv1.4.pth",
+      "face_restore_visibility": 1,
+      "codeformer_weight": 0.5,
+      "detect_gender_input": "no",
+      "detect_gender_source": "no",
+      "input_faces_index": "0",
+      "source_faces_index": "0",
+      "console_log_level": 1,
+      "input_image": [
+        "442",
+        0
+      ],
+      "source_image": [
+        "479",
+        0
+      ],
+      "face_boost": [
+        "206",
+        0
+      ]
+    },
+    "class_type": "ReActorFaceSwap",
+    "_meta": {
+      "title": "ReActor换脸"
+    }
+  },
+  "206": {
+    "inputs": {
+      "enabled": true,
+      "boost_model": "codeformer-v0.1.0.pth",
+      "interpolation": "Bicubic",
+      "visibility": 1,
+      "codeformer_weight": 0.5,
+      "restore_with_main_after": true
+    },
+    "class_type": "ReActorFaceBoost",
+    "_meta": {
+      "title": "ReActor面部增强"
+    }
+  },
+  "210": {
+    "inputs": {
+      "blend_factor": 1,
+      "feathering": 4,
+      "target": [
+        "162",
+        2
+      ],
+      "target_bounds": [
+        "442",
+        1
+      ],
+      "source": [
+        "205",
+        0
+      ]
+    },
+    "class_type": "Bounded Image Blend",
+    "_meta": {
+      "title": "图像边界复合"
+    }
+  },
+  "213": {
+    "inputs": {
+      "images": [
+        "210",
+        0
+      ]
+    },
+    "class_type": "PreviewImage",
+    "_meta": {
+      "title": "预览图像"
+    }
+  },
+  "226": {
+    "inputs": {
+      "text": "1",
+      "anything": [
+        "125",
+        0
+      ]
+    },
+    "class_type": "easy showAnything",
+    "_meta": {
+      "title": "展示任何"
+    }
+  },
+  "309": {
+    "inputs": {
+      "text": "0",
+      "anything": [
+        "162",
+        1
+      ]
+    },
+    "class_type": "easy showAnything",
+    "_meta": {
+      "title": "展示任何"
+    }
+  },
+  "310": {
+    "inputs": {
+      "images": [
+        "164",
+        0
+      ]
+    },
+    "class_type": "PreviewImage",
+    "_meta": {
+      "title": "预览图像"
+    }
+  },
+  "442": {
+    "inputs": {
+      "padding_left": [
+        "497",
+        0
+      ],
+      "padding_right": [
+        "497",
+        0
+      ],
+      "padding_top": [
+        "497",
+        0
+      ],
+      "padding_bottom": [
+        "497",
+        0
+      ],
+      "image": [
+        "162",
+        2
+      ],
+      "mask": [
+        "126",
+        0
+      ]
+    },
+    "class_type": "Bounded Image Crop with Mask",
+    "_meta": {
+      "title": "图像遮罩边界"
+    }
+  },
+  "443": {
+    "inputs": {
+      "method": "VITMatte",
+      "mask_grow": 5,
+      "fix_gap": 32,
+      "fix_threshold": 0.98,
+      "edge_erode": 9,
+      "edte_dilate": 9,
+      "black_point": 0.11,
+      "white_point": 0.99,
+      "device": "cuda",
+      "max_megapixels": 2,
+      "image": [
+        "442",
+        0
+      ],
+      "mask": [
+        "455",
+        0
+      ]
+    },
+    "class_type": "LayerMask: MaskEdgeUltraDetail V2",
+    "_meta": {
+      "title": "遮罩细化 V2"
+    }
+  },
+  "444": {
+    "inputs": {
+      "mask": [
+        "126",
+        0
+      ]
+    },
+    "class_type": "MaskPreview+",
+    "_meta": {
+      "title": "遮罩预览"
+    }
+  },
+  "447": {
+    "inputs": {
+      "height": [
+        "448",
+        1
+      ],
+      "width": [
+        "448",
+        0
+      ],
+      "interpolation_mode": "bicubic",
+      "mask": [
+        "456",
+        0
+      ]
+    },
+    "class_type": "JWMaskResize",
+    "_meta": {
+      "title": "Mask Resize"
+    }
+  },
+  "448": {
+    "inputs": {
+      "image": [
+        "442",
+        0
+      ]
+    },
+    "class_type": "easy imageSize",
+    "_meta": {
+      "title": "图像尺寸"
+    }
+  },
+  "450": {
+    "inputs": {
+      "masks": [
+        "443",
+        1
+      ]
+    },
+    "class_type": "Mask Fill Holes",
+    "_meta": {
+      "title": "遮罩填充漏洞"
+    }
+  },
+  "451": {
+    "inputs": {
+      "mask": [
+        "450",
+        0
+      ]
+    },
+    "class_type": "MaskPreview+",
+    "_meta": {
+      "title": "遮罩预览"
+    }
+  },
+  "452": {
+    "inputs": {
+      "mask": [
+        "465",
+        0
+      ]
+    },
+    "class_type": "MaskPreview+",
+    "_meta": {
+      "title": "遮罩预览"
+    }
+  },
+  "453": {
+    "inputs": {
+      "mask": [
+        "126",
+        0
+      ]
+    },
+    "class_type": "MaskToImage",
+    "_meta": {
+      "title": "遮罩到图像"
+    }
+  },
+  "454": {
+    "inputs": {
+      "padding_left": [
+        "497",
+        0
+      ],
+      "padding_right": [
+        "497",
+        0
+      ],
+      "padding_top": [
+        "497",
+        0
+      ],
+      "padding_bottom": [
+        "497",
+        0
+      ],
+      "image": [
+        "453",
+        0
+      ],
+      "mask": [
+        "126",
+        0
+      ]
+    },
+    "class_type": "Bounded Image Crop with Mask",
+    "_meta": {
+      "title": "图像遮罩边界"
+    }
+  },
+  "455": {
+    "inputs": {
+      "channel": "red",
+      "image": [
+        "454",
+        0
+      ]
+    },
+    "class_type": "ImageToMask",
+    "_meta": {
+      "title": "图像到遮罩"
+    }
+  },
+  "456": {
+    "inputs": {
+      "min": 0,
+      "max": 0.9,
+      "mask": [
+        "458",
+        0
+      ]
+    },
+    "class_type": "RemapMaskRange",
+    "_meta": {
+      "title": "重映射遮罩范围"
+    }
+  },
+  "457": {
+    "inputs": {
+      "mask": [
+        "450",
+        0
+      ]
+    },
+    "class_type": "MaskToImage",
+    "_meta": {
+      "title": "遮罩到图像"
+    }
+  },
+  "458": {
+    "inputs": {
+      "channel": "red",
+      "image": [
+        "457",
+        0
+      ]
+    },
+    "class_type": "ImageToMask",
+    "_meta": {
+      "title": "图像到遮罩"
+    }
+  },
+  "459": {
+    "inputs": {
+      "mask": [
+        "456",
+        0
+      ]
+    },
+    "class_type": "MaskPreview+",
+    "_meta": {
+      "title": "遮罩预览"
+    }
+  },
+  "465": {
+    "inputs": {
+      "invert_mask": false,
+      "grow": 20,
+      "blur": 15,
+      "mask": [
+        "447",
+        0
+      ]
+    },
+    "class_type": "LayerMask: MaskGrow",
+    "_meta": {
+      "title": "遮罩扩张"
+    }
+  },
+  "468": {
+    "inputs": {
+      "side_length": 2061,
+      "side": "Longest",
+      "upscale_method": "nearest-exact",
+      "crop": "disabled",
+      "image": [
+        "502",
+        0
+      ]
+    },
+    "class_type": "DF_Image_scale_to_side",
+    "_meta": {
+      "title": "Image scale to side"
+    }
+  },
+  "470": {
+    "inputs": {
+      "text1": [
+        "484",
+        0
+      ],
+      "separator": ", only Asian face, realistic photos"
+    },
+    "class_type": "CR Text Concatenate",
+    "_meta": {
+      "title": "文本联结"
+    }
+  },
+  "471": {
+    "inputs": {
+      "text": [
+        "470",
+        0
+      ]
+    },
+    "class_type": "ShowText|pysssss",
+    "_meta": {
+      "title": "展示文本"
+    }
+  },
+  "472": {
+    "inputs": {
+      "text": [
+        "471",
+        0
+      ],
+      "speak_and_recognation": true
+    },
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "CLIP文本编码器"
+    }
+  },
+  "475": {
+    "inputs": {
+      "seed": 441511235005551,
+      "steps": 10,
+      "cfg": 3.5,
+      "sampler_name": "dpmpp_sde",
+      "scheduler": "normal",
+      "denoise": 1,
+      "model": [
+        "476",
+        0
+      ],
+      "positive": [
+        "480",
+        0
+      ],
+      "negative": [
+        "478",
+        0
+      ],
+      "latent_image": [
+        "477",
+        0
+      ]
+    },
+    "class_type": "KSampler",
+    "_meta": {
+      "title": "K采样器"
+    }
+  },
+  "476": {
+    "inputs": {
+      "ckpt_name": "realisticVisionV660.safetensors"
+    },
+    "class_type": "CheckpointLoaderSimple",
+    "_meta": {
+      "title": "Checkpoint加载器(简易)"
+    }
+  },
+  "477": {
+    "inputs": {
+      "width": 360,
+      "height": 360,
+      "batch_size": 1
+    },
+    "class_type": "EmptyLatentImage",
+    "_meta": {
+      "title": "空Latent"
+    }
+  },
+  "478": {
+    "inputs": {
+      "text": "bad-picture-chill-75v, badhandv4, (worst quality:1.6), (low quality:1.6), (normal quality:1.6), lowres, watermark, monochrome, bad hands",
+      "speak_and_recognation": true,
+      "clip": [
+        "476",
+        1
+      ]
+    },
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "CLIP文本编码器"
+    }
+  },
+  "479": {
+    "inputs": {
+      "samples": [
+        "475",
+        0
+      ],
+      "vae": [
+        "476",
+        2
+      ]
+    },
+    "class_type": "VAEDecode",
+    "_meta": {
+      "title": "VAE解码"
+    }
+  },
+  "480": {
+    "inputs": {
+      "text": [
+        "471",
+        0
+      ],
+      "speak_and_recognation": true,
+      "clip": [
+        "476",
+        1
+      ]
+    },
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "CLIP文本编码器"
+    }
+  },
+  "481": {
+    "inputs": {
+      "images": [
+        "479",
+        0
+      ]
+    },
+    "class_type": "PreviewImage",
+    "_meta": {
+      "title": "预览图像"
+    }
+  },
+  "484": {
+    "inputs": {
+      "query": "Only use keywords to output the gender and age of the characters in the image. For example: \"boy, 2 years old\"",
+      "debug": "enable",
+      "url": "http://127.0.0.1:11434",
+      "model": "minicpm-v:latest",
+      "keep_alive": 60,
+      "format": "text",
+      "speak_and_recognation": true,
+      "images": [
+        "442",
+        0
+      ]
+    },
+    "class_type": "OllamaVision",
+    "_meta": {
+      "title": "Ollama Vision"
+    }
+  },
+  "493": {
+    "inputs": {
+      "facedetection": "retinaface_resnet50",
+      "image": [
+        "468",
+        0
+      ]
+    },
+    "class_type": "CropFace",
+    "_meta": {
+      "title": "裁剪面部"
+    }
+  },
+  "494": {
+    "inputs": {
+      "image": [
+        "493",
+        0
+      ]
+    },
+    "class_type": "GetImageSize+",
+    "_meta": {
+      "title": "获取图像尺寸"
+    }
+  },
+  "495": {
+    "inputs": {
+      "value": [
+        "494",
+        0
+      ]
+    },
+    "class_type": "Int-🔬",
+    "_meta": {
+      "title": "Int"
+    }
+  },
+  "496": {
+    "inputs": {
+      "text": "85",
+      "anything": [
+        "497",
+        0
+      ]
+    },
+    "class_type": "easy showAnything",
+    "_meta": {
+      "title": "展示任何"
+    }
+  },
+  "497": {
+    "inputs": {
+      "a": [
+        "495",
+        0
+      ],
+      "b": 6,
+      "operation": "divide"
+    },
+    "class_type": "easy mathInt",
+    "_meta": {
+      "title": "整数运算"
+    }
+  },
+  "499": {
+    "inputs": {
+      "images": [
+        "493",
+        0
+      ]
+    },
+    "class_type": "PreviewImage",
+    "_meta": {
+      "title": "预览图像"
+    }
+  },
+  "501": {
+    "inputs": {
+      "images": [
+        "442",
+        0
+      ]
+    },
+    "class_type": "PreviewImage",
+    "_meta": {
+      "title": "预览图像"
+    }
+  },
+  "502": {
+    "inputs": {
+      "url": "https://ts1.cn.mm.bing.net/th/id/R-C.eed97557f689df2382b6a9fc85ed172e?rik=d%2fBN9fsXJ2nz2w&riu=http%3a%2f%2fup.bizhizu.com%2fpic%2fd1%2fb7%2fc1%2fd1b7c1c9d4362b4ed5a433e69a19b383.jpg&ehk=OafBZEPbO07cQidzqmNBh0FzR5lM78gdhBOg7%2bjNdis%3d&risl=&pid=ImgRaw&r=0",
+      "speak_and_recognation": true
+    },
+    "class_type": "LoadImagesFromURL",
+    "_meta": {
+      "title": "加载图像(URL)"
+    }
+  },
+  "503": {
+    "inputs": {
+      "filename_prefix": "ComfyUI",
+      "images": [
+        "210",
+        0
+      ]
+    },
+    "class_type": "SaveImage",
+    "_meta": {
+      "title": "保存图像"
+    }
+  }
+}

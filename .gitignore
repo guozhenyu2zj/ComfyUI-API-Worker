@@ -1,0 +1,7 @@
+input/
+logs/
+models/
+output/
+tmp/
+
+*.log

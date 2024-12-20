@@ -1,0 +1,662 @@
+{
+  "41": {
+    "inputs": {
+      "detection_hint": "center-1",
+      "dilation": 0,
+      "threshold": 1,
+      "bbox_expansion": 0,
+      "mask_hint_threshold": 1,
+      "mask_hint_use_negative": "False",
+      "sam_model": [
+        "62",
+        0
+      ],
+      "segs": [
+        "42",
+        0
+      ],
+      "image": [
+        "637",
+        0
+      ]
+    },
+    "class_type": "SAMDetectorCombined",
+    "_meta": {
+      "title": "SAM检测合并"
+    }
+  },
+  "42": {
+    "inputs": {
+      "threshold": 0.5,
+      "dilation": 10,
+      "crop_factor": 1,
+      "drop_size": 10,
+      "labels": "all",
+      "speak_and_recognation": true,
+      "bbox_detector": [
+        "56",
+        0
+      ],
+      "image": [
+        "637",
+        0
+      ]
+    },
+    "class_type": "BboxDetectorSEGS",
+    "_meta": {
+      "title": "BBox检测到Seg"
+    }
+  },
+  "43": {
+    "inputs": {
+      "padding_left": [
+        "90",
+        0
+      ],
+      "padding_right": [
+        "90",
+        0
+      ],
+      "padding_top": [
+        "90",
+        0
+      ],
+      "padding_bottom": [
+        "90",
+        0
+      ],
+      "image": [
+        "637",
+        0
+      ],
+      "mask": [
+        "41",
+        0
+      ]
+    },
+    "class_type": "Bounded Image Crop with Mask",
+    "_meta": {
+      "title": "图像遮罩边界"
+    }
+  },
+  "47": {
+    "inputs": {
+      "method": "VITMatte",
+      "mask_grow": 5,
+      "fix_gap": 32,
+      "fix_threshold": 0.98,
+      "edge_erode": 9,
+      "edte_dilate": 9,
+      "black_point": 0.11,
+      "white_point": 0.99,
+      "device": "cuda",
+      "max_megapixels": 2,
+      "image": [
+        "43",
+        0
+      ],
+      "mask": [
+        "147",
+        0
+      ]
+    },
+    "class_type": "LayerMask: MaskEdgeUltraDetail V2",
+    "_meta": {
+      "title": "遮罩细化 V2"
+    }
+  },
+  "55": {
+    "inputs": {
+      "mask": [
+        "41",
+        0
+      ]
+    },
+    "class_type": "MaskPreview+",
+    "_meta": {
+      "title": "遮罩预览"
+    }
+  },
+  "56": {
+    "inputs": {
+      "model_name": "bbox/face_yolov8m.pt"
+    },
+    "class_type": "UltralyticsDetectorProvider",
+    "_meta": {
+      "title": "检测加载器"
+    }
+  },
+  "62": {
+    "inputs": {
+      "model_name": "sam_vit_b_01ec64.pth",
+      "device_mode": "Prefer GPU"
+    },
+    "class_type": "SAMLoader",
+    "_meta": {
+      "title": "SAM加载器"
+    }
+  },
+  "64": {
+    "inputs": {
+      "invert_mask": false,
+      "grow": 20,
+      "blur": 15,
+      "mask": [
+        "67",
+        0
+      ]
+    },
+    "class_type": "LayerMask: MaskGrow",
+    "_meta": {
+      "title": "遮罩扩张"
+    }
+  },
+  "67": {
+    "inputs": {
+      "height": [
+        "68",
+        1
+      ],
+      "width": [
+        "68",
+        0
+      ],
+      "interpolation_mode": "bicubic",
+      "mask": [
+        "166",
+        0
+      ]
+    },
+    "class_type": "JWMaskResize",
+    "_meta": {
+      "title": "Mask Resize"
+    }
+  },
+  "68": {
+    "inputs": {
+      "image": [
+        "43",
+        0
+      ]
+    },
+    "class_type": "easy imageSize",
+    "_meta": {
+      "title": "图像尺寸"
+    }
+  },
+  "90": {
+    "inputs": {
+      "value": 368
+    },
+    "class_type": "easy int",
+    "_meta": {
+      "title": "整数"
+    }
+  },
+  "92": {
+    "inputs": {
+      "masks": [
+        "47",
+        1
+      ]
+    },
+    "class_type": "Mask Fill Holes",
+    "_meta": {
+      "title": "遮罩填充漏洞"
+    }
+  },
+  "96": {
+    "inputs": {
+      "mask": [
+        "92",
+        0
+      ]
+    },
+    "class_type": "MaskPreview+",
+    "_meta": {
+      "title": "遮罩预览"
+    }
+  },
+  "98": {
+    "inputs": {
+      "mask": [
+        "64",
+        0
+      ]
+    },
+    "class_type": "MaskPreview+",
+    "_meta": {
+      "title": "遮罩预览"
+    }
+  },
+  "145": {
+    "inputs": {
+      "mask": [
+        "41",
+        0
+      ]
+    },
+    "class_type": "MaskToImage",
+    "_meta": {
+      "title": "遮罩到图像"
+    }
+  },
+  "146": {
+    "inputs": {
+      "padding_left": [
+        "90",
+        0
+      ],
+      "padding_right": [
+        "90",
+        0
+      ],
+      "padding_top": [
+        "90",
+        0
+      ],
+      "padding_bottom": [
+        "90",
+        0
+      ],
+      "image": [
+        "145",
+        0
+      ],
+      "mask": [
+        "41",
+        0
+      ]
+    },
+    "class_type": "Bounded Image Crop with Mask",
+    "_meta": {
+      "title": "图像遮罩边界"
+    }
+  },
+  "147": {
+    "inputs": {
+      "channel": "red",
+      "image": [
+        "146",
+        0
+      ]
+    },
+    "class_type": "ImageToMask",
+    "_meta": {
+      "title": "图像到遮罩"
+    }
+  },
+  "166": {
+    "inputs": {
+      "min": 0,
+      "max": 0.9,
+      "mask": [
+        "195",
+        0
+      ]
+    },
+    "class_type": "RemapMaskRange",
+    "_meta": {
+      "title": "重映射遮罩范围"
+    }
+  },
+  "170": {
+    "inputs": {
+      "seed": 352665211591127,
+      "repeat": 3,
+      "variation": 0.5,
+      "image": [
+        "639",
+        0
+      ]
+    },
+    "class_type": "ImageRandomTransform+",
+    "_meta": {
+      "title": "图像随机变换"
+    }
+  },
+  "175": {
+    "inputs": {
+      "image1": [
+        "170",
+        0
+      ]
+    },
+    "class_type": "ImpactMakeImageBatch",
+    "_meta": {
+      "title": "制作图像批次"
+    }
+  },
+  "176": {
+    "inputs": {
+      "images": [
+        "175",
+        0
+      ]
+    },
+    "class_type": "PreviewImage",
+    "_meta": {
+      "title": "预览图像"
+    }
+  },
+  "194": {
+    "inputs": {
+      "mask": [
+        "92",
+        0
+      ]
+    },
+    "class_type": "MaskToImage",
+    "_meta": {
+      "title": "遮罩到图像"
+    }
+  },
+  "195": {
+    "inputs": {
+      "channel": "red",
+      "image": [
+        "194",
+        0
+      ]
+    },
+    "class_type": "ImageToMask",
+    "_meta": {
+      "title": "图像到遮罩"
+    }
+  },
+  "196": {
+    "inputs": {
+      "mask": [
+        "166",
+        0
+      ]
+    },
+    "class_type": "MaskPreview+",
+    "_meta": {
+      "title": "遮罩预览"
+    }
+  },
+  "430": {
+    "inputs": {
+      "images": [
+        "637",
+        0
+      ]
+    },
+    "class_type": "PreviewImage",
+    "_meta": {
+      "title": "预览图像"
+    }
+  },
+  "637": {
+    "inputs": {
+      "url": "https://ts1.cn.mm.bing.net/th/id/R-C.eed97557f689df2382b6a9fc85ed172e?rik=d%2fBN9fsXJ2nz2w&riu=http%3a%2f%2fup.bizhizu.com%2fpic%2fd1%2fb7%2fc1%2fd1b7c1c9d4362b4ed5a433e69a19b383.jpg&ehk=OafBZEPbO07cQidzqmNBh0FzR5lM78gdhBOg7%2bjNdis%3d&risl=&pid=ImgRaw&r=0",
+      "speak_and_recognation": true
+    },
+    "class_type": "LoadImagesFromURL",
+    "_meta": {
+      "title": "加载图像(URL)"
+    }
+  },
+  "639": {
+    "inputs": {
+      "url": "https://k.sinaimg.cn/www/dy/slidenews/24_img/2016_19/74485_1363976_499220.jpg/w640slw.jpg",
+      "speak_and_recognation": true
+    },
+    "class_type": "LoadImagesFromURL",
+    "_meta": {
+      "title": "加载图像(URL)"
+    }
+  },
+  "704": {
+    "inputs": {
+      "images": [
+        "639",
+        0
+      ]
+    },
+    "class_type": "PreviewImage",
+    "_meta": {
+      "title": "预览图像"
+    }
+  },
+  "709": {
+    "inputs": {
+      "text": "",
+      "speak_and_recognation": true,
+      "clip": [
+        "752",
+        1
+      ]
+    },
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "CLIP文本编码器"
+    }
+  },
+  "710": {
+    "inputs": {
+      "text": "deformed,noisy",
+      "speak_and_recognation": true,
+      "clip": [
+        "752",
+        1
+      ]
+    },
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "CLIP文本编码器"
+    }
+  },
+  "711": {
+    "inputs": {
+      "pixels": [
+        "726",
+        0
+      ],
+      "vae": [
+        "752",
+        2
+      ]
+    },
+    "class_type": "VAEEncode",
+    "_meta": {
+      "title": "VAE编码"
+    }
+  },
+  "712": {
+    "inputs": {
+      "seed": 649568003797710,
+      "steps": 10,
+      "cfg": 1,
+      "sampler_name": "euler_ancestral",
+      "scheduler": "sgm_uniform",
+      "denoise": 0.5,
+      "mask_blur": 50,
+      "mask_type": "face",
+      "mask_control": "erode",
+      "dilate_mask_value": 0,
+      "erode_mask_value": 100,
+      "model": [
+        "720",
+        0
+      ],
+      "positive": [
+        "720",
+        1
+      ],
+      "negative": [
+        "720",
+        2
+      ],
+      "latent_image": [
+        "711",
+        0
+      ],
+      "vae": [
+        "752",
+        2
+      ]
+    },
+    "class_type": "DZ_Face_Detailer",
+    "_meta": {
+      "title": "DZ_Face_Detailer"
+    }
+  },
+  "717": {
+    "inputs": {
+      "instantid_file": "ip-adapter.bin"
+    },
+    "class_type": "InstantIDModelLoader",
+    "_meta": {
+      "title": "InstnatID模型加载器"
+    }
+  },
+  "718": {
+    "inputs": {
+      "control_net_name": "SDXL/instantid/diffusion_pytorch_model.safetensors"
+    },
+    "class_type": "ControlNetLoader",
+    "_meta": {
+      "title": "ControlNet加载器"
+    }
+  },
+  "719": {
+    "inputs": {
+      "provider": "CPU"
+    },
+    "class_type": "InstantIDFaceAnalysis",
+    "_meta": {
+      "title": "InstantID面部分析"
+    }
+  },
+  "720": {
+    "inputs": {
+      "weight": 1,
+      "start_at": 0,
+      "end_at": 1,
+      "instantid": [
+        "717",
+        0
+      ],
+      "insightface": [
+        "719",
+        0
+      ],
+      "control_net": [
+        "718",
+        0
+      ],
+      "image": [
+        "175",
+        0
+      ],
+      "model": [
+        "752",
+        0
+      ],
+      "positive": [
+        "709",
+        0
+      ],
+      "negative": [
+        "710",
+        0
+      ],
+      "image_kps": [
+        "726",
+        0
+      ]
+    },
+    "class_type": "ApplyInstantID",
+    "_meta": {
+      "title": "应用InstantID"
+    }
+  },
+  "721": {
+    "inputs": {
+      "samples": [
+        "712",
+        0
+      ],
+      "vae": [
+        "752",
+        2
+      ]
+    },
+    "class_type": "VAEDecode",
+    "_meta": {
+      "title": "VAE解码"
+    }
+  },
+  "726": {
+    "inputs": {
+      "upscale_method": "nearest-exact",
+      "scale_by": 1,
+      "image": [
+        "43",
+        0
+      ]
+    },
+    "class_type": "ImageScaleBy",
+    "_meta": {
+      "title": "图像按系数缩放"
+    }
+  },
+  "747": {
+    "inputs": {
+      "blend_factor": 1,
+      "feathering": 4,
+      "target": [
+        "637",
+        0
+      ],
+      "target_bounds": [
+        "43",
+        1
+      ],
+      "source": [
+        "721",
+        0
+      ]
+    },
+    "class_type": "Bounded Image Blend",
+    "_meta": {
+      "title": "图像边界复合"
+    }
+  },
+  "750": {
+    "inputs": {
+      "images": [
+        "747",
+        0
+      ]
+    },
+    "class_type": "PreviewImage",
+    "_meta": {
+      "title": "预览图像"
+    }
+  },
+  "752": {
+    "inputs": {
+      "ckpt_name": "dreamshaperXL_lightningDPMSDE.safetensors"
+    },
+    "class_type": "CheckpointLoaderSimple",
+    "_meta": {
+      "title": "Checkpoint加载器(简易)"
+    }
+  },
+  "806": {
+    "inputs": {
+      "filename_prefix": "Face/样片客照换脸/样片客照换脸",
+      "images": [
+        "747",
+        0
+      ]
+    },
+    "class_type": "SaveImage",
+    "_meta": {
+      "title": "保存图像"
+    }
+  }
+}

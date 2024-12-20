@@ -1,0 +1,92 @@
+{
+  "104": {
+    "inputs": {
+      "enabled": true,
+      "swap_model": "inswapper_128.onnx",
+      "facedetection": "retinaface_resnet50",
+      "face_restore_model": "GFPGANv1.4.pth",
+      "face_restore_visibility": 1,
+      "codeformer_weight": 0.5,
+      "detect_gender_input": "no",
+      "detect_gender_source": "no",
+      "input_faces_index": "0",
+      "source_faces_index": "0",
+      "console_log_level": 1,
+      "input_image": [
+        "111",
+        0
+      ],
+      "source_image": [
+        "112",
+        0
+      ],
+      "face_boost": [
+        "105",
+        0
+      ]
+    },
+    "class_type": "ReActorFaceSwap",
+    "_meta": {
+      "title": "ReActor换脸"
+    }
+  },
+  "105": {
+    "inputs": {
+      "enabled": true,
+      "boost_model": "codeformer-v0.1.0.pth",
+      "interpolation": "Bicubic",
+      "visibility": 1,
+      "codeformer_weight": 0.5,
+      "restore_with_main_after": true
+    },
+    "class_type": "ReActorFaceBoost",
+    "_meta": {
+      "title": "ReActor面部增强"
+    }
+  },
+  "107": {
+    "inputs": {
+      "images": [
+        "104",
+        0
+      ]
+    },
+    "class_type": "PreviewImage",
+    "_meta": {
+      "title": "预览图像"
+    }
+  },
+  "108": {
+    "inputs": {
+      "filename_prefix": "ComfyUI",
+      "images": [
+        "104",
+        0
+      ]
+    },
+    "class_type": "SaveImage",
+    "_meta": {
+      "title": "保存图像"
+    }
+  },
+  "111": {
+    "inputs": {
+      "url": "https://",
+      "speak_and_recognation": true
+    },
+    "class_type": "LoadImagesFromURL",
+    "_meta": {
+      "title": "加载图像(URL)"
+    }
+  },
+  "112": {
+    "inputs": {
+      "url": "https://",
+      "speak_and_recognation": true
+    },
+    "class_type": "LoadImagesFromURL",
+    "_meta": {
+      "title": "加载图像(URL)"
+    }
+  }
+}

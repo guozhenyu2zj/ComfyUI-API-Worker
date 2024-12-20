@@ -1,0 +1,7 @@
+requests
+chardet
+Pillow
+pydantic-settings
+minio
+Flask
+ultralytics

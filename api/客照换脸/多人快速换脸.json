@@ -1,0 +1,853 @@
+{
+  "120": {
+    "inputs": {
+      "model_name": "sam_vit_b_01ec64.pth",
+      "device_mode": "AUTO"
+    },
+    "class_type": "SAMLoader",
+    "_meta": {
+      "title": "SAM加载器"
+    }
+  },
+  "121": {
+    "inputs": {
+      "model_name": "bbox/face_yolov8m.pt"
+    },
+    "class_type": "UltralyticsDetectorProvider",
+    "_meta": {
+      "title": "检测加载器"
+    }
+  },
+  "122": {
+    "inputs": {
+      "bbox_threshold": 0.5,
+      "bbox_dilation": 0,
+      "crop_factor": 3,
+      "drop_size": 10,
+      "sub_threshold": 0.5,
+      "sub_dilation": 0,
+      "sub_bbox_expansion": 0,
+      "sam_mask_hint_threshold": 0.7,
+      "post_dilation": 0,
+      "bbox_detector": [
+        "121",
+        0
+      ],
+      "image": [
+        "468",
+        0
+      ],
+      "sam_model_opt": [
+        "120",
+        0
+      ]
+    },
+    "class_type": "ImpactSimpleDetectorSEGS",
+    "_meta": {
+      "title": "简易Seg检测"
+    }
+  },
+  "123": {
+    "inputs": {
+      "segs": [
+        "122",
+        0
+      ]
+    },
+    "class_type": "ImpactSEGSToMaskBatch",
+    "_meta": {
+      "title": "Seg到遮罩组"
+    }
+  },
+  "124": {
+    "inputs": {
+      "mask": [
+        "123",
+        0
+      ]
+    },
+    "class_type": "MaskToImage",
+    "_meta": {
+      "title": "遮罩到图像"
+    }
+  },
+  "125": {
+    "inputs": {
+      "images": [
+        "124",
+        0
+      ]
+    },
+    "class_type": "easy imageCount",
+    "_meta": {
+      "title": "图像计数"
+    }
+  },
+  "126": {
+    "inputs": {
+      "start": [
+        "162",
+        1
+      ],
+      "length": 1,
+      "mask": [
+        "123",
+        0
+      ]
+    },
+    "class_type": "MaskFromBatch+",
+    "_meta": {
+      "title": "获取遮罩批次"
+    }
+  },
+  "127": {
+    "inputs": {
+      "mask": [
+        "126",
+        0
+      ]
+    },
+    "class_type": "MaskPreview+",
+    "_meta": {
+      "title": "遮罩预览"
+    }
+  },
+  "131": {
+    "inputs": {
+      "images": [
+        "124",
+        0
+      ]
+    },
+    "class_type": "PreviewImage",
+    "_meta": {
+      "title": "预览图像"
+    }
+  },
+  "132": {
+    "inputs": {
+      "alpha_mode": true,
+      "min_alpha": 0.38,
+      "segs": [
+        "122",
+        0
+      ]
+    },
+    "class_type": "SEGSPreview",
+    "_meta": {
+      "title": "Seg预览"
+    }
+  },
+  "133": {
+    "inputs": {
+      "images": [
+        "132",
+        0
+      ]
+    },
+    "class_type": "PreviewImage",
+    "_meta": {
+      "title": "预览图像"
+    }
+  },
+  "142": {
+    "inputs": {
+      "model_name": "sam_vit_b_01ec64.pth",
+      "device_mode": "AUTO"
+    },
+    "class_type": "SAMLoader",
+    "_meta": {
+      "title": "SAM加载器"
+    }
+  },
+  "143": {
+    "inputs": {
+      "model_name": "bbox/face_yolov8m.pt"
+    },
+    "class_type": "UltralyticsDetectorProvider",
+    "_meta": {
+      "title": "检测加载器"
+    }
+  },
+  "144": {
+    "inputs": {
+      "bbox_threshold": 0.5,
+      "bbox_dilation": 0,
+      "crop_factor": 3,
+      "drop_size": 10,
+      "sub_threshold": 0.5,
+      "sub_dilation": 0,
+      "sub_bbox_expansion": 0,
+      "sam_mask_hint_threshold": 0.7,
+      "post_dilation": 0,
+      "bbox_detector": [
+        "143",
+        0
+      ],
+      "image": [
+        "467",
+        0
+      ],
+      "sam_model_opt": [
+        "142",
+        0
+      ]
+    },
+    "class_type": "ImpactSimpleDetectorSEGS",
+    "_meta": {
+      "title": "简易Seg检测"
+    }
+  },
+  "153": {
+    "inputs": {
+      "alpha_mode": false,
+      "min_alpha": 1,
+      "segs": [
+        "144",
+        0
+      ]
+    },
+    "class_type": "SEGSPreview",
+    "_meta": {
+      "title": "Seg预览"
+    }
+  },
+  "162": {
+    "inputs": {
+      "total": [
+        "125",
+        0
+      ],
+      "initial_value1": [
+        "468",
+        0
+      ]
+    },
+    "class_type": "easy forLoopStart",
+    "_meta": {
+      "title": "For循环-起始"
+    }
+  },
+  "164": {
+    "inputs": {
+      "flow": [
+        "162",
+        0
+      ],
+      "initial_value1": [
+        "210",
+        0
+      ]
+    },
+    "class_type": "easy forLoopEnd",
+    "_meta": {
+      "title": "For循环-结束"
+    }
+  },
+  "196": {
+    "inputs": {
+      "segs": [
+        "144",
+        0
+      ]
+    },
+    "class_type": "ImpactSEGSToMaskBatch",
+    "_meta": {
+      "title": "Seg到遮罩组"
+    }
+  },
+  "197": {
+    "inputs": {
+      "start": [
+        "162",
+        1
+      ],
+      "length": 1,
+      "mask": [
+        "196",
+        0
+      ]
+    },
+    "class_type": "MaskFromBatch+",
+    "_meta": {
+      "title": "获取遮罩批次"
+    }
+  },
+  "198": {
+    "inputs": {
+      "padding_left": 64,
+      "padding_right": 64,
+      "padding_top": 64,
+      "padding_bottom": 64,
+      "image": [
+        "467",
+        0
+      ],
+      "mask": [
+        "197",
+        0
+      ]
+    },
+    "class_type": "Bounded Image Crop with Mask",
+    "_meta": {
+      "title": "图像遮罩边界"
+    }
+  },
+  "199": {
+    "inputs": {
+      "images": [
+        "200",
+        0
+      ]
+    },
+    "class_type": "PreviewImage",
+    "_meta": {
+      "title": "预览图像"
+    }
+  },
+  "200": {
+    "inputs": {
+      "facedetection": "retinaface_resnet50",
+      "image": [
+        "198",
+        0
+      ]
+    },
+    "class_type": "CropFace",
+    "_meta": {
+      "title": "裁剪面部"
+    }
+  },
+  "205": {
+    "inputs": {
+      "enabled": true,
+      "swap_model": "inswapper_128.onnx",
+      "facedetection": "retinaface_resnet50",
+      "face_restore_model": "GFPGANv1.4.pth",
+      "face_restore_visibility": 1,
+      "codeformer_weight": 0.5,
+      "detect_gender_input": "no",
+      "detect_gender_source": "no",
+      "input_faces_index": "0",
+      "source_faces_index": "0",
+      "console_log_level": 1,
+      "input_image": [
+        "442",
+        0
+      ],
+      "source_image": [
+        "200",
+        0
+      ],
+      "face_boost": [
+        "206",
+        0
+      ]
+    },
+    "class_type": "ReActorFaceSwap",
+    "_meta": {
+      "title": "ReActor换脸"
+    }
+  },
+  "206": {
+    "inputs": {
+      "enabled": true,
+      "boost_model": "codeformer-v0.1.0.pth",
+      "interpolation": "Bicubic",
+      "visibility": 1,
+      "codeformer_weight": 0.5,
+      "restore_with_main_after": true
+    },
+    "class_type": "ReActorFaceBoost",
+    "_meta": {
+      "title": "ReActor面部增强"
+    }
+  },
+  "210": {
+    "inputs": {
+      "blend_factor": 1,
+      "feathering": 4,
+      "target": [
+        "162",
+        2
+      ],
+      "target_bounds": [
+        "442",
+        1
+      ],
+      "source": [
+        "205",
+        0
+      ]
+    },
+    "class_type": "Bounded Image Blend",
+    "_meta": {
+      "title": "图像边界复合"
+    }
+  },
+  "213": {
+    "inputs": {
+      "images": [
+        "210",
+        0
+      ]
+    },
+    "class_type": "PreviewImage",
+    "_meta": {
+      "title": "预览图像"
+    }
+  },
+  "226": {
+    "inputs": {
+      "text": "4",
+      "anything": [
+        "125",
+        0
+      ]
+    },
+    "class_type": "easy showAnything",
+    "_meta": {
+      "title": "展示任何"
+    }
+  },
+  "309": {
+    "inputs": {
+      "text": "0",
+      "anything": [
+        "162",
+        1
+      ]
+    },
+    "class_type": "easy showAnything",
+    "_meta": {
+      "title": "展示任何"
+    }
+  },
+  "310": {
+    "inputs": {
+      "images": [
+        "164",
+        0
+      ]
+    },
+    "class_type": "PreviewImage",
+    "_meta": {
+      "title": "预览图像"
+    }
+  },
+  "442": {
+    "inputs": {
+      "padding_left": [
+        "476",
+        0
+      ],
+      "padding_right": [
+        "476",
+        0
+      ],
+      "padding_top": [
+        "476",
+        0
+      ],
+      "padding_bottom": [
+        "476",
+        0
+      ],
+      "image": [
+        "162",
+        2
+      ],
+      "mask": [
+        "126",
+        0
+      ]
+    },
+    "class_type": "Bounded Image Crop with Mask",
+    "_meta": {
+      "title": "图像遮罩边界"
+    }
+  },
+  "443": {
+    "inputs": {
+      "method": "VITMatte",
+      "mask_grow": 5,
+      "fix_gap": 32,
+      "fix_threshold": 0.98,
+      "edge_erode": 9,
+      "edte_dilate": 9,
+      "black_point": 0.11,
+      "white_point": 0.99,
+      "device": "cuda",
+      "max_megapixels": 2,
+      "image": [
+        "442",
+        0
+      ],
+      "mask": [
+        "455",
+        0
+      ]
+    },
+    "class_type": "LayerMask: MaskEdgeUltraDetail V2",
+    "_meta": {
+      "title": "遮罩细化 V2"
+    }
+  },
+  "444": {
+    "inputs": {
+      "mask": [
+        "126",
+        0
+      ]
+    },
+    "class_type": "MaskPreview+",
+    "_meta": {
+      "title": "遮罩预览"
+    }
+  },
+  "447": {
+    "inputs": {
+      "height": [
+        "448",
+        1
+      ],
+      "width": [
+        "448",
+        0
+      ],
+      "interpolation_mode": "bicubic",
+      "mask": [
+        "456",
+        0
+      ]
+    },
+    "class_type": "JWMaskResize",
+    "_meta": {
+      "title": "Mask Resize"
+    }
+  },
+  "448": {
+    "inputs": {
+      "image": [
+        "442",
+        0
+      ]
+    },
+    "class_type": "easy imageSize",
+    "_meta": {
+      "title": "图像尺寸"
+    }
+  },
+  "450": {
+    "inputs": {
+      "masks": [
+        "443",
+        1
+      ]
+    },
+    "class_type": "Mask Fill Holes",
+    "_meta": {
+      "title": "遮罩填充漏洞"
+    }
+  },
+  "451": {
+    "inputs": {
+      "mask": [
+        "450",
+        0
+      ]
+    },
+    "class_type": "MaskPreview+",
+    "_meta": {
+      "title": "遮罩预览"
+    }
+  },
+  "452": {
+    "inputs": {
+      "mask": [
+        "465",
+        0
+      ]
+    },
+    "class_type": "MaskPreview+",
+    "_meta": {
+      "title": "遮罩预览"
+    }
+  },
+  "453": {
+    "inputs": {
+      "mask": [
+        "126",
+        0
+      ]
+    },
+    "class_type": "MaskToImage",
+    "_meta": {
+      "title": "遮罩到图像"
+    }
+  },
+  "454": {
+    "inputs": {
+      "padding_left": [
+        "476",
+        0
+      ],
+      "padding_right": [
+        "476",
+        0
+      ],
+      "padding_top": [
+        "476",
+        0
+      ],
+      "padding_bottom": [
+        "476",
+        0
+      ],
+      "image": [
+        "453",
+        0
+      ],
+      "mask": [
+        "126",
+        0
+      ]
+    },
+    "class_type": "Bounded Image Crop with Mask",
+    "_meta": {
+      "title": "图像遮罩边界"
+    }
+  },
+  "455": {
+    "inputs": {
+      "channel": "red",
+      "image": [
+        "454",
+        0
+      ]
+    },
+    "class_type": "ImageToMask",
+    "_meta": {
+      "title": "图像到遮罩"
+    }
+  },
+  "456": {
+    "inputs": {
+      "min": 0,
+      "max": 0.9,
+      "mask": [
+        "458",
+        0
+      ]
+    },
+    "class_type": "RemapMaskRange",
+    "_meta": {
+      "title": "重映射遮罩范围"
+    }
+  },
+  "457": {
+    "inputs": {
+      "mask": [
+        "450",
+        0
+      ]
+    },
+    "class_type": "MaskToImage",
+    "_meta": {
+      "title": "遮罩到图像"
+    }
+  },
+  "458": {
+    "inputs": {
+      "channel": "red",
+      "image": [
+        "457",
+        0
+      ]
+    },
+    "class_type": "ImageToMask",
+    "_meta": {
+      "title": "图像到遮罩"
+    }
+  },
+  "459": {
+    "inputs": {
+      "mask": [
+        "456",
+        0
+      ]
+    },
+    "class_type": "MaskPreview+",
+    "_meta": {
+      "title": "遮罩预览"
+    }
+  },
+  "465": {
+    "inputs": {
+      "invert_mask": false,
+      "grow": 20,
+      "blur": 15,
+      "mask": [
+        "447",
+        0
+      ]
+    },
+    "class_type": "LayerMask: MaskGrow",
+    "_meta": {
+      "title": "遮罩扩张"
+    }
+  },
+  "467": {
+    "inputs": {
+      "side_length": 2048,
+      "side": "Longest",
+      "upscale_method": "nearest-exact",
+      "crop": "disabled",
+      "image": [
+        "485",
+        0
+      ]
+    },
+    "class_type": "DF_Image_scale_to_side",
+    "_meta": {
+      "title": "Image scale to side"
+    }
+  },
+  "468": {
+    "inputs": {
+      "side_length": 2045,
+      "side": "Longest",
+      "upscale_method": "nearest-exact",
+      "crop": "disabled",
+      "image": [
+        "484",
+        0
+      ]
+    },
+    "class_type": "DF_Image_scale_to_side",
+    "_meta": {
+      "title": "Image scale to side"
+    }
+  },
+  "469": {
+    "inputs": {
+      "facedetection": "retinaface_resnet50",
+      "image": [
+        "468",
+        0
+      ]
+    },
+    "class_type": "CropFace",
+    "_meta": {
+      "title": "裁剪面部"
+    }
+  },
+  "470": {
+    "inputs": {
+      "image": [
+        "469",
+        0
+      ]
+    },
+    "class_type": "GetImageSize+",
+    "_meta": {
+      "title": "获取图像尺寸"
+    }
+  },
+  "471": {
+    "inputs": {
+      "value": [
+        "470",
+        0
+      ]
+    },
+    "class_type": "Int-🔬",
+    "_meta": {
+      "title": "Int"
+    }
+  },
+  "474": {
+    "inputs": {
+      "text": "85",
+      "anything": [
+        "476",
+        0
+      ]
+    },
+    "class_type": "easy showAnything",
+    "_meta": {
+      "title": "展示任何"
+    }
+  },
+  "476": {
+    "inputs": {
+      "a": [
+        "471",
+        0
+      ],
+      "b": 6,
+      "operation": "divide"
+    },
+    "class_type": "easy mathInt",
+    "_meta": {
+      "title": "整数运算"
+    }
+  },
+  "481": {
+    "inputs": {
+      "images": [
+        "442",
+        0
+      ]
+    },
+    "class_type": "PreviewImage",
+    "_meta": {
+      "title": "预览图像"
+    }
+  },
+  "482": {
+    "inputs": {
+      "images": [
+        "469",
+        0
+      ]
+    },
+    "class_type": "PreviewImage",
+    "_meta": {
+      "title": "预览图像"
+    }
+  },
+  "483": {
+    "inputs": {
+      "filename_prefix": "ComfyUI",
+      "images": [
+        "164",
+        0
+      ]
+    },
+    "class_type": "SaveImage",
+    "_meta": {
+      "title": "保存图像"
+    }
+  },
+  "484": {
+    "inputs": {
+      "url": "https://",
+      "speak_and_recognation": true
+    },
+    "class_type": "LoadImagesFromURL",
+    "_meta": {
+      "title": "加载图像(URL)"
+    }
+  },
+  "485": {
+    "inputs": {
+      "url": "https://",
+      "speak_and_recognation": true
+    },
+    "class_type": "LoadImagesFromURL",
+    "_meta": {
+      "title": "加载图像(URL)"
+    }
+  }
+}

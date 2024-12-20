@@ -1,0 +1,10 @@
+# for RabbitMQ
+broker_hostname = "39.107.101.110"
+broker_user = "swgz"
+broker_pwd = "Siweigongzhen.mq"
+broker_vhost = "photo"
+broker_port = 5673
+# for Redis
+backend_hostname = "10.0.0.1"
+backend_db_num = 6
+backend_port = 6380

@@ -1,0 +1,634 @@
+{
+  "41": {
+    "inputs": {
+      "detection_hint": "center-1",
+      "dilation": 0,
+      "threshold": 1,
+      "bbox_expansion": 0,
+      "mask_hint_threshold": 1,
+      "mask_hint_use_negative": "False",
+      "sam_model": [
+        "62",
+        0
+      ],
+      "segs": [
+        "42",
+        0
+      ],
+      "image": [
+        "639",
+        0
+      ]
+    },
+    "class_type": "SAMDetectorCombined",
+    "_meta": {
+      "title": "SAMDetector (combined)"
+    }
+  },
+  "42": {
+    "inputs": {
+      "threshold": 0.5,
+      "dilation": 10,
+      "crop_factor": 1,
+      "drop_size": 10,
+      "labels": "all",
+      "bbox_detector": [
+        "56",
+        0
+      ],
+      "image": [
+        "639",
+        0
+      ]
+    },
+    "class_type": "BboxDetectorSEGS",
+    "_meta": {
+      "title": "BBOX Detector (SEGS)"
+    }
+  },
+  "43": {
+    "inputs": {
+      "padding_left": [
+        "90",
+        0
+      ],
+      "padding_right": [
+        "90",
+        0
+      ],
+      "padding_top": [
+        "90",
+        0
+      ],
+      "padding_bottom": [
+        "90",
+        0
+      ],
+      "return_list": false,
+      "image": [
+        "639",
+        0
+      ],
+      "mask": [
+        "41",
+        0
+      ]
+    },
+    "class_type": "Bounded Image Crop with Mask",
+    "_meta": {
+      "title": "Bounded Image Crop with Mask"
+    }
+  },
+  "47": {
+    "inputs": {
+      "method": "VITMatte",
+      "mask_grow": 5,
+      "fix_gap": 32,
+      "fix_threshold": 0.98,
+      "edge_erode": 9,
+      "edte_dilate": 9,
+      "black_point": 0.11,
+      "white_point": 0.99,
+      "device": "cuda",
+      "max_megapixels": 2,
+      "image": [
+        "43",
+        0
+      ],
+      "mask": [
+        "147",
+        0
+      ]
+    },
+    "class_type": "LayerMask: MaskEdgeUltraDetail V2",
+    "_meta": {
+      "title": "LayerMask: MaskEdgeUltraDetail V2"
+    }
+  },
+  "55": {
+    "inputs": {
+      "mask": [
+        "41",
+        0
+      ]
+    },
+    "class_type": "MaskPreview+",
+    "_meta": {
+      "title": "🔧 Mask Preview"
+    }
+  },
+  "56": {
+    "inputs": {
+      "model_name": "bbox/face_yolov8m.pt"
+    },
+    "class_type": "UltralyticsDetectorProvider",
+    "_meta": {
+      "title": "UltralyticsDetectorProvider"
+    }
+  },
+  "62": {
+    "inputs": {
+      "model_name": "sam_vit_b_01ec64.pth",
+      "device_mode": "Prefer GPU"
+    },
+    "class_type": "SAMLoader",
+    "_meta": {
+      "title": "SAMLoader (Impact)"
+    }
+  },
+  "64": {
+    "inputs": {
+      "invert_mask": false,
+      "grow": 20,
+      "blur": 15,
+      "mask": [
+        "67",
+        0
+      ]
+    },
+    "class_type": "LayerMask: MaskGrow",
+    "_meta": {
+      "title": "LayerMask: MaskGrow"
+    }
+  },
+  "67": {
+    "inputs": {
+      "height": [
+        "68",
+        1
+      ],
+      "width": [
+        "68",
+        0
+      ],
+      "interpolation_mode": "bicubic",
+      "mask": [
+        "166",
+        0
+      ]
+    },
+    "class_type": "JWMaskResize",
+    "_meta": {
+      "title": "Mask Resize"
+    }
+  },
+  "68": {
+    "inputs": {
+      "image": [
+        "43",
+        0
+      ]
+    },
+    "class_type": "easy imageSize",
+    "_meta": {
+      "title": "ImageSize"
+    }
+  },
+  "90": {
+    "inputs": {
+      "value": 368
+    },
+    "class_type": "easy int",
+    "_meta": {
+      "title": "Int"
+    }
+  },
+  "92": {
+    "inputs": {
+      "masks": [
+        "47",
+        1
+      ]
+    },
+    "class_type": "Mask Fill Holes",
+    "_meta": {
+      "title": "Mask Fill Holes"
+    }
+  },
+  "96": {
+    "inputs": {
+      "mask": [
+        "92",
+        0
+      ]
+    },
+    "class_type": "MaskPreview+",
+    "_meta": {
+      "title": "🔧 Mask Preview"
+    }
+  },
+  "98": {
+    "inputs": {
+      "mask": [
+        "64",
+        0
+      ]
+    },
+    "class_type": "MaskPreview+",
+    "_meta": {
+      "title": "🔧 Mask Preview"
+    }
+  },
+  "145": {
+    "inputs": {
+      "mask": [
+        "41",
+        0
+      ]
+    },
+    "class_type": "MaskToImage",
+    "_meta": {
+      "title": "Convert Mask to Image"
+    }
+  },
+  "146": {
+    "inputs": {
+      "padding_left": [
+        "90",
+        0
+      ],
+      "padding_right": [
+        "90",
+        0
+      ],
+      "padding_top": [
+        "90",
+        0
+      ],
+      "padding_bottom": [
+        "90",
+        0
+      ],
+      "return_list": false,
+      "image": [
+        "145",
+        0
+      ],
+      "mask": [
+        "41",
+        0
+      ]
+    },
+    "class_type": "Bounded Image Crop with Mask",
+    "_meta": {
+      "title": "Bounded Image Crop with Mask"
+    }
+  },
+  "147": {
+    "inputs": {
+      "channel": "red",
+      "image": [
+        "146",
+        0
+      ]
+    },
+    "class_type": "ImageToMask",
+    "_meta": {
+      "title": "Convert Image to Mask"
+    }
+  },
+  "166": {
+    "inputs": {
+      "min": 0,
+      "max": 0.9,
+      "mask": [
+        "195",
+        0
+      ]
+    },
+    "class_type": "RemapMaskRange",
+    "_meta": {
+      "title": "Remap Mask Range"
+    }
+  },
+  "194": {
+    "inputs": {
+      "mask": [
+        "92",
+        0
+      ]
+    },
+    "class_type": "MaskToImage",
+    "_meta": {
+      "title": "Convert Mask to Image"
+    }
+  },
+  "195": {
+    "inputs": {
+      "channel": "red",
+      "image": [
+        "194",
+        0
+      ]
+    },
+    "class_type": "ImageToMask",
+    "_meta": {
+      "title": "Convert Image to Mask"
+    }
+  },
+  "196": {
+    "inputs": {
+      "mask": [
+        "166",
+        0
+      ]
+    },
+    "class_type": "MaskPreview+",
+    "_meta": {
+      "title": "🔧 Mask Preview"
+    }
+  },
+  "317": {
+    "inputs": {
+      "enabled": true,
+      "swap_model": "inswapper_128.onnx",
+      "facedetection": "retinaface_resnet50",
+      "face_restore_model": "GFPGANv1.4.pth",
+      "face_restore_visibility": 1,
+      "codeformer_weight": 0.5,
+      "detect_gender_input": "no",
+      "detect_gender_source": "no",
+      "input_faces_index": "0",
+      "source_faces_index": "0",
+      "console_log_level": 1,
+      "input_image": [
+        "43",
+        0
+      ],
+      "source_image": [
+        "532",
+        0
+      ],
+      "face_boost": [
+        "318",
+        0
+      ]
+    },
+    "class_type": "ReActorFaceSwap",
+    "_meta": {
+      "title": "ReActor 🌌 Fast Face Swap"
+    }
+  },
+  "318": {
+    "inputs": {
+      "enabled": true,
+      "boost_model": "codeformer-v0.1.0.pth",
+      "interpolation": "Bicubic",
+      "visibility": 1,
+      "codeformer_weight": 0.5,
+      "restore_with_main_after": true
+    },
+    "class_type": "ReActorFaceBoost",
+    "_meta": {
+      "title": "ReActor 🌌 Face Booster"
+    }
+  },
+  "413": {
+    "inputs": {
+      "text1": [
+        "636",
+        0
+      ],
+      "separator": ", only Asian face, realistic photos"
+    },
+    "class_type": "CR Text Concatenate",
+    "_meta": {
+      "title": "🔤 CR Text Concatenate"
+    }
+  },
+  "415": {
+    "inputs": {
+      "text": [
+        "413",
+        0
+      ],
+      "text2": "girl, around 10 years old, face, realistic photos"
+    },
+    "class_type": "ShowText|pysssss",
+    "_meta": {
+      "title": "Show Text 🐍"
+    }
+  },
+  "426": {
+    "inputs": {
+      "text": [
+        "415",
+        0
+      ]
+    },
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "CLIP Text Encode (Prompt)"
+    }
+  },
+  "430": {
+    "inputs": {
+      "images": [
+        "639",
+        0
+      ]
+    },
+    "class_type": "PreviewImage",
+    "_meta": {
+      "title": "Preview Image"
+    }
+  },
+  "528": {
+    "inputs": {
+      "seed": 350978690209473,
+      "steps": 15,
+      "cfg": 3.5,
+      "sampler_name": "dpmpp_sde",
+      "scheduler": "normal",
+      "denoise": 1,
+      "model": [
+        "609",
+        0
+      ],
+      "positive": [
+        "533",
+        0
+      ],
+      "negative": [
+        "531",
+        0
+      ],
+      "latent_image": [
+        "530",
+        0
+      ]
+    },
+    "class_type": "KSampler",
+    "_meta": {
+      "title": "KSampler"
+    }
+  },
+  "530": {
+    "inputs": {
+      "width": 400,
+      "height": 600,
+      "batch_size": 1
+    },
+    "class_type": "EmptyLatentImage",
+    "_meta": {
+      "title": "Empty Latent Image"
+    }
+  },
+  "531": {
+    "inputs": {
+      "text": "bad-picture-chill-75v, badhandv4, (worst quality:1.6), (low quality:1.6), (normal quality:1.6), lowres, watermark, monochrome, bad hands",
+      "clip": [
+        "609",
+        1
+      ]
+    },
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "CLIP Text Encode (Prompt)"
+    }
+  },
+  "532": {
+    "inputs": {
+      "samples": [
+        "528",
+        0
+      ],
+      "vae": [
+        "609",
+        2
+      ]
+    },
+    "class_type": "VAEDecode",
+    "_meta": {
+      "title": "VAE Decode"
+    }
+  },
+  "533": {
+    "inputs": {
+      "text": [
+        "415",
+        0
+      ],
+      "clip": [
+        "609",
+        1
+      ]
+    },
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "CLIP Text Encode (Prompt)"
+    }
+  },
+  "534": {
+    "inputs": {
+      "images": [
+        "532",
+        0
+      ]
+    },
+    "class_type": "PreviewImage",
+    "_meta": {
+      "title": "Preview Image"
+    }
+  },
+  "592": {
+    "inputs": {
+      "blend_factor": 1,
+      "feathering": 4,
+      "target": [
+        "639",
+        0
+      ],
+      "target_bounds": [
+        "43",
+        1
+      ],
+      "source": [
+        "317",
+        0
+      ]
+    },
+    "class_type": "Bounded Image Blend",
+    "_meta": {
+      "title": "Bounded Image Blend"
+    }
+  },
+  "596": {
+    "inputs": {
+      "images": [
+        "592",
+        0
+      ]
+    },
+    "class_type": "PreviewImage",
+    "_meta": {
+      "title": "Preview Image"
+    }
+  },
+  "609": {
+    "inputs": {
+      "ckpt_name": "dreamshaperXL_lightningDPMSDE.safetensors"
+    },
+    "class_type": "CheckpointLoaderSimple",
+    "_meta": {
+      "title": "Load Checkpoint"
+    }
+  },
+  "630": {
+    "inputs": {
+      "side_length": 512,
+      "side": "Longest",
+      "upscale_method": "nearest-exact",
+      "crop": "disabled",
+      "image": [
+        "639",
+        0
+      ]
+    },
+    "class_type": "DF_Image_scale_to_side",
+    "_meta": {
+      "title": "Image scale to side"
+    }
+  },
+  "636": {
+    "inputs": {
+      "query": "Only use keywords to output the gender and age of the characters in the image. For example: \"boy, 2 years old\"",
+      "debug": "enable",
+      "url": "http://127.0.0.1:11434",
+      "model": "minicpm-v:latest",
+      "keep_alive": 60,
+      "format": "text",
+      "seed": 81728792,
+      "images": [
+        "630",
+        0
+      ]
+    },
+    "class_type": "OllamaVision",
+    "_meta": {
+      "title": "Ollama Vision"
+    }
+  },
+  "637": {
+    "inputs": {
+      "filename_prefix": "Face/人脸脱敏/人脸脱敏task_1",
+      "images": [
+        "592",
+        0
+      ]
+    },
+    "class_type": "SaveImage",
+    "_meta": {
+      "title": "Save Image"
+    }
+  },
+  "639": {
+    "inputs": {
+      "url": "https://ts1.cn.mm.bing.net/th/id/R-C.eed97557f689df2382b6a9fc85ed172e?rik=d%2fBN9fsXJ2nz2w&riu=http%3a%2f%2fup.bizhizu.com%2fpic%2fd1%2fb7%2fc1%2fd1b7c1c9d4362b4ed5a433e69a19b383.jpg&ehk=OafBZEPbO07cQidzqmNBh0FzR5lM78gdhBOg7%2bjNdis%3d&risl=&pid=ImgRaw&r=0"
+    },
+    "class_type": "LoadImagesFromURL",
+    "_meta": {
+      "title": "Load Images From URL ♾️Mixlab"
+    }
+  }
+}

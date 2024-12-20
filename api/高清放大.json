@@ -1,0 +1,49 @@
+{
+  "1": {
+    "inputs": {
+      "model_name": "4x-UltraSharp.pth"
+    },
+    "class_type": "UpscaleModelLoader",
+    "_meta": {
+      "title": "Load Upscale Model"
+    }
+  },
+  "2": {
+    "inputs": {
+      "upscale_model": [
+        "1",
+        0
+      ],
+      "image": [
+        "4",
+        0
+      ]
+    },
+    "class_type": "ImageUpscaleWithModel",
+    "_meta": {
+      "title": "Upscale Image (using Model)"
+    }
+  },
+  "3": {
+    "inputs": {
+      "filename_prefix": "高清放大/高清放大图",
+      "images": [
+        "2",
+        0
+      ]
+    },
+    "class_type": "SaveImage",
+    "_meta": {
+      "title": "Save Image"
+    }
+  },
+  "4": {
+    "inputs": {
+      "url": "https://"
+    },
+    "class_type": "LoadImagesFromURL",
+    "_meta": {
+      "title": "Load Images From URL ♾️Mixlab"
+    }
+  }
+}
