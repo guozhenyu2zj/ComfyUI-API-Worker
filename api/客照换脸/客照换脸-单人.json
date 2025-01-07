@@ -43,7 +43,7 @@
     },
     "class_type": "CLIPTextEncode",
     "_meta": {
-      "title": "CLIP文本编码器"
+      "title": "CLIP文本编码（提示）"
     }
   },
   "7": {
@@ -57,7 +57,7 @@
     },
     "class_type": "CLIPTextEncode",
     "_meta": {
-      "title": "CLIP文本编码器"
+      "title": "CLIP文本编码（提示）"
     }
   },
   "8": {
@@ -119,7 +119,7 @@
     },
     "class_type": "ApplyInstantIDAdvanced",
     "_meta": {
-      "title": "应用InstantID(高级)"
+      "title": "Apply InstantID Advanced"
     }
   },
   "13": {
@@ -128,7 +128,7 @@
     },
     "class_type": "InstantIDModelLoader",
     "_meta": {
-      "title": "InstnatID模型加载器"
+      "title": "Load InstantID Model"
     }
   },
   "14": {
@@ -137,7 +137,7 @@
     },
     "class_type": "ControlNetLoader",
     "_meta": {
-      "title": "ControlNet加载器"
+      "title": "加载控制网模型"
     }
   },
   "38": {
@@ -173,13 +173,13 @@
         0
       ],
       "image": [
-        "637",
+        "607",
         0
       ]
     },
     "class_type": "SAMDetectorCombined",
     "_meta": {
-      "title": "SAM检测合并"
+      "title": "SAMDetector (combined)"
     }
   },
   "42": {
@@ -195,13 +195,13 @@
         0
       ],
       "image": [
-        "637",
+        "607",
         0
       ]
     },
     "class_type": "BboxDetectorSEGS",
     "_meta": {
-      "title": "BBox检测到Seg"
+      "title": "BBOX Detector (SEGS)"
     }
   },
   "43": {
@@ -223,7 +223,7 @@
         0
       ],
       "image": [
-        "637",
+        "607",
         0
       ],
       "mask": [
@@ -233,12 +233,12 @@
     },
     "class_type": "Bounded Image Crop with Mask",
     "_meta": {
-      "title": "图像遮罩边界"
+      "title": "Bounded Image Crop with Mask"
     }
   },
   "47": {
     "inputs": {
-      "method": "VITMatte(local)",
+      "method": "VITMatte",
       "mask_grow": 5,
       "fix_gap": 32,
       "fix_threshold": 0.98,
@@ -259,7 +259,7 @@
     },
     "class_type": "LayerMask: MaskEdgeUltraDetail V2",
     "_meta": {
-      "title": "遮罩细化 V2"
+      "title": "LayerMask: MaskEdgeUltraDetail V2"
     }
   },
   "55": {
@@ -271,16 +271,16 @@
     },
     "class_type": "MaskPreview+",
     "_meta": {
-      "title": "遮罩预览"
+      "title": "🔧 Mask Preview"
     }
   },
   "56": {
     "inputs": {
-      "model_name": "bbox/yolov8n-face-lindevs.pt"
+      "model_name": "bbox/face_yolov8m.pt"
     },
     "class_type": "UltralyticsDetectorProvider",
     "_meta": {
-      "title": "检测加载器"
+      "title": "UltralyticsDetectorProvider"
     }
   },
   "58": {
@@ -289,7 +289,7 @@
     },
     "class_type": "InstantIDFaceAnalysis",
     "_meta": {
-      "title": "InstantID面部分析"
+      "title": "InstantID Face Analysis"
     }
   },
   "60": {
@@ -305,7 +305,7 @@
     },
     "class_type": "SetLatentNoiseMask",
     "_meta": {
-      "title": "设置Latent噪波遮罩"
+      "title": "设置潜空间噪声遮罩"
     }
   },
   "62": {
@@ -315,7 +315,7 @@
     },
     "class_type": "SAMLoader",
     "_meta": {
-      "title": "SAM加载器"
+      "title": "SAMLoader (Impact)"
     }
   },
   "64": {
@@ -330,7 +330,7 @@
     },
     "class_type": "LayerMask: MaskGrow",
     "_meta": {
-      "title": "遮罩扩张"
+      "title": "LayerMask: MaskGrow"
     }
   },
   "65": {
@@ -342,7 +342,7 @@
     },
     "class_type": "DifferentialDiffusion",
     "_meta": {
-      "title": "差异扩散"
+      "title": "差分扩散"
     }
   },
   "67": {
@@ -375,16 +375,16 @@
     },
     "class_type": "easy imageSize",
     "_meta": {
-      "title": "图像尺寸"
+      "title": "ImageSize"
     }
   },
   "90": {
     "inputs": {
-      "value": 368
+      "value": 63
     },
     "class_type": "easy int",
     "_meta": {
-      "title": "整数"
+      "title": "Int"
     }
   },
   "92": {
@@ -396,7 +396,7 @@
     },
     "class_type": "Mask Fill Holes",
     "_meta": {
-      "title": "遮罩填充漏洞"
+      "title": "Mask Fill Holes"
     }
   },
   "96": {
@@ -408,7 +408,7 @@
     },
     "class_type": "MaskPreview+",
     "_meta": {
-      "title": "遮罩预览"
+      "title": "🔧 Mask Preview"
     }
   },
   "98": {
@@ -420,7 +420,7 @@
     },
     "class_type": "MaskPreview+",
     "_meta": {
-      "title": "遮罩预览"
+      "title": "🔧 Mask Preview"
     }
   },
   "104": {
@@ -482,7 +482,7 @@
     },
     "class_type": "SetLatentNoiseMask",
     "_meta": {
-      "title": "设置Latent噪波遮罩"
+      "title": "设置潜空间噪声遮罩"
     }
   },
   "108": {
@@ -530,7 +530,7 @@
     },
     "class_type": "ApplyPulid",
     "_meta": {
-      "title": "应用PuLID"
+      "title": "Apply PuLID"
     }
   },
   "125": {
@@ -539,14 +539,14 @@
     },
     "class_type": "PulidModelLoader",
     "_meta": {
-      "title": "PuLID模型加载器"
+      "title": "Load PuLID Model"
     }
   },
   "126": {
     "inputs": {},
     "class_type": "PulidEvaClipLoader",
     "_meta": {
-      "title": "PuLIDEVAClip加载器"
+      "title": "Load Eva Clip (PuLID)"
     }
   },
   "127": {
@@ -555,7 +555,7 @@
     },
     "class_type": "PulidInsightFaceLoader",
     "_meta": {
-      "title": "PuLIDInsightFace加载器"
+      "title": "Load InsightFace (PuLID)"
     }
   },
   "129": {
@@ -564,7 +564,7 @@
     },
     "class_type": "easy seed",
     "_meta": {
-      "title": "随机种"
+      "title": "EasySeed"
     }
   },
   "136": {
@@ -572,7 +572,7 @@
       "blend_factor": 1,
       "feathering": 4,
       "target": [
-        "637",
+        "607",
         0
       ],
       "target_bounds": [
@@ -586,7 +586,7 @@
     },
     "class_type": "Bounded Image Blend",
     "_meta": {
-      "title": "图像边界复合"
+      "title": "Bounded Image Blend"
     }
   },
   "145": {
@@ -598,7 +598,7 @@
     },
     "class_type": "MaskToImage",
     "_meta": {
-      "title": "遮罩到图像"
+      "title": "将遮罩转换为图像"
     }
   },
   "146": {
@@ -630,7 +630,7 @@
     },
     "class_type": "Bounded Image Crop with Mask",
     "_meta": {
-      "title": "图像遮罩边界"
+      "title": "Bounded Image Crop with Mask"
     }
   },
   "147": {
@@ -643,7 +643,7 @@
     },
     "class_type": "ImageToMask",
     "_meta": {
-      "title": "图像到遮罩"
+      "title": "将图像转换为遮罩"
     }
   },
   "166": {
@@ -657,7 +657,7 @@
     },
     "class_type": "RemapMaskRange",
     "_meta": {
-      "title": "重映射遮罩范围"
+      "title": "Remap Mask Range"
     }
   },
   "170": {
@@ -666,13 +666,13 @@
       "repeat": 3,
       "variation": 0.5,
       "image": [
-        "639",
+        "807",
         0
       ]
     },
     "class_type": "ImageRandomTransform+",
     "_meta": {
-      "title": "图像随机变换"
+      "title": "🔧 Image Random Transform"
     }
   },
   "175": {
@@ -684,7 +684,7 @@
     },
     "class_type": "ImpactMakeImageBatch",
     "_meta": {
-      "title": "制作图像批次"
+      "title": "Make Image Batch"
     }
   },
   "176": {
@@ -714,7 +714,7 @@
     },
     "class_type": "ColorMatch",
     "_meta": {
-      "title": "图像调色"
+      "title": "Color Match"
     }
   },
   "194": {
@@ -726,7 +726,7 @@
     },
     "class_type": "MaskToImage",
     "_meta": {
-      "title": "遮罩到图像"
+      "title": "将遮罩转换为图像"
     }
   },
   "195": {
@@ -739,7 +739,7 @@
     },
     "class_type": "ImageToMask",
     "_meta": {
-      "title": "图像到遮罩"
+      "title": "将图像转换为遮罩"
     }
   },
   "196": {
@@ -751,7 +751,7 @@
     },
     "class_type": "MaskPreview+",
     "_meta": {
-      "title": "遮罩预览"
+      "title": "🔧 Mask Preview"
     }
   },
   "261": {
@@ -764,7 +764,7 @@
     },
     "class_type": "RepeatLatentBatch",
     "_meta": {
-      "title": "复制Latent批次"
+      "title": "重复潜空间批处理"
     }
   },
   "337": {
@@ -782,13 +782,29 @@
   "430": {
     "inputs": {
       "images": [
-        "637",
+        "607",
         0
       ]
     },
     "class_type": "PreviewImage",
     "_meta": {
       "title": "预览图像"
+    }
+  },
+  "607": {
+    "inputs": {
+      "side_length": 2048,
+      "side": "Longest",
+      "upscale_method": "nearest-exact",
+      "crop": "disabled",
+      "image": [
+        "637",
+        0
+      ]
+    },
+    "class_type": "DF_Image_scale_to_side",
+    "_meta": {
+      "title": "Image scale to side"
     }
   },
   "637": {
@@ -798,7 +814,7 @@
     },
     "class_type": "LoadImagesFromURL",
     "_meta": {
-      "title": "加载图像(URL)"
+      "title": "Load Images From URL ♾️Mixlab"
     }
   },
   "639": {
@@ -808,13 +824,13 @@
     },
     "class_type": "LoadImagesFromURL",
     "_meta": {
-      "title": "加载图像(URL)"
+      "title": "Load Images From URL ♾️Mixlab"
     }
   },
   "704": {
     "inputs": {
       "images": [
-        "639",
+        "807",
         0
       ]
     },
@@ -829,7 +845,7 @@
     },
     "class_type": "CheckpointLoaderSimple",
     "_meta": {
-      "title": "Checkpoint加载器(简易)"
+      "title": "加载检查点"
     }
   },
   "806": {
@@ -843,6 +859,22 @@
     "class_type": "SaveImage",
     "_meta": {
       "title": "保存图像"
+    }
+  },
+  "807": {
+    "inputs": {
+      "side_length": 1024,
+      "side": "Longest",
+      "upscale_method": "nearest-exact",
+      "crop": "disabled",
+      "image": [
+        "639",
+        0
+      ]
+    },
+    "class_type": "DF_Image_scale_to_side",
+    "_meta": {
+      "title": "Image scale to side"
     }
   }
 }

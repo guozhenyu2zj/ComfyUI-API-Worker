@@ -1,0 +1,32 @@
+[Unit]
+Description=ComfyUI and Clash Auto-start Service
+After=network.target
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=simple
+User=swgz
+Group=swgz
+WorkingDirectory=/home/swgz
+Environment="HOME=/home/swgz"
+Environment="PATH=/home/swgz/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+Environment="CONDA_EXE=/home/swgz/miniconda3/bin/conda"
+Environment="SCREENDIR=/var/run/screen/S-swgz"
+Environment="CONDA_PREFIX=/home/swgz/miniconda3"
+Environment="CONDA_DEFAULT_ENV=ComfyUI"
+Environment="CONDA_PYTHON_EXE=/home/swgz/miniconda3/bin/python"
+
+ExecStartPre=/bin/mkdir -p /var/run/screen/S-swgz
+ExecStartPre=/bin/chmod 700 /var/run/screen/S-swgz
+ExecStartPre=/bin/chown swgz:swgz /var/run/screen/S-swgz
+
+ExecStart=/bin/bash /home/swgz/work/comfyui_api/start_comfyui.sh
+ExecStop=/usr/bin/screen -X -S Clash quit
+ExecStop=/usr/bin/screen -X -S ComfyUI quit
+
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target 

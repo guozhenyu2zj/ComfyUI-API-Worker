@@ -4,19 +4,13 @@
       "model_name": "sam_vit_b_01ec64.pth",
       "device_mode": "AUTO"
     },
-    "class_type": "SAMLoader",
-    "_meta": {
-      "title": "SAM加载器"
-    }
+    "class_type": "SAMLoader"
   },
   "121": {
     "inputs": {
-      "model_name": "bbox/face_yolov8m.pt"
+      "model_name": "bbox/yolov8n-face-lindevs.pt"
     },
-    "class_type": "UltralyticsDetectorProvider",
-    "_meta": {
-      "title": "检测加载器"
-    }
+    "class_type": "UltralyticsDetectorProvider"
   },
   "122": {
     "inputs": {
@@ -42,10 +36,7 @@
         0
       ]
     },
-    "class_type": "ImpactSimpleDetectorSEGS",
-    "_meta": {
-      "title": "简易Seg检测"
-    }
+    "class_type": "ImpactSimpleDetectorSEGS"
   },
   "123": {
     "inputs": {
@@ -54,10 +45,7 @@
         0
       ]
     },
-    "class_type": "ImpactSEGSToMaskBatch",
-    "_meta": {
-      "title": "Seg到遮罩组"
-    }
+    "class_type": "ImpactSEGSToMaskBatch"
   },
   "124": {
     "inputs": {
@@ -66,10 +54,7 @@
         0
       ]
     },
-    "class_type": "MaskToImage",
-    "_meta": {
-      "title": "遮罩到图像"
-    }
+    "class_type": "MaskToImage"
   },
   "125": {
     "inputs": {
@@ -78,10 +63,7 @@
         0
       ]
     },
-    "class_type": "easy imageCount",
-    "_meta": {
-      "title": "图像计数"
-    }
+    "class_type": "easy imageCount"
   },
   "126": {
     "inputs": {
@@ -95,10 +77,7 @@
         0
       ]
     },
-    "class_type": "MaskFromBatch+",
-    "_meta": {
-      "title": "获取遮罩批次"
-    }
+    "class_type": "MaskFromBatch+"
   },
   "127": {
     "inputs": {
@@ -107,10 +86,7 @@
         0
       ]
     },
-    "class_type": "MaskPreview+",
-    "_meta": {
-      "title": "遮罩预览"
-    }
+    "class_type": "MaskPreview+"
   },
   "131": {
     "inputs": {
@@ -119,10 +95,7 @@
         0
       ]
     },
-    "class_type": "PreviewImage",
-    "_meta": {
-      "title": "预览图像"
-    }
+    "class_type": "PreviewImage"
   },
   "132": {
     "inputs": {
@@ -133,10 +106,7 @@
         0
       ]
     },
-    "class_type": "SEGSPreview",
-    "_meta": {
-      "title": "Seg预览"
-    }
+    "class_type": "SEGSPreview"
   },
   "133": {
     "inputs": {
@@ -145,10 +115,7 @@
         0
       ]
     },
-    "class_type": "PreviewImage",
-    "_meta": {
-      "title": "预览图像"
-    }
+    "class_type": "PreviewImage"
   },
   "162": {
     "inputs": {
@@ -161,10 +128,7 @@
         0
       ]
     },
-    "class_type": "easy forLoopStart",
-    "_meta": {
-      "title": "For循环-起始"
-    }
+    "class_type": "easy forLoopStart"
   },
   "164": {
     "inputs": {
@@ -177,10 +141,7 @@
         0
       ]
     },
-    "class_type": "easy forLoopEnd",
-    "_meta": {
-      "title": "For循环-结束"
-    }
+    "class_type": "easy forLoopEnd"
   },
   "205": {
     "inputs": {
@@ -208,10 +169,7 @@
         0
       ]
     },
-    "class_type": "ReActorFaceSwap",
-    "_meta": {
-      "title": "ReActor换脸"
-    }
+    "class_type": "ReActorFaceSwap"
   },
   "206": {
     "inputs": {
@@ -222,10 +180,7 @@
       "codeformer_weight": 0.5,
       "restore_with_main_after": true
     },
-    "class_type": "ReActorFaceBoost",
-    "_meta": {
-      "title": "ReActor面部增强"
-    }
+    "class_type": "ReActorFaceBoost"
   },
   "210": {
     "inputs": {
@@ -244,10 +199,7 @@
         0
       ]
     },
-    "class_type": "Bounded Image Blend",
-    "_meta": {
-      "title": "图像边界复合"
-    }
+    "class_type": "Bounded Image Blend"
   },
   "213": {
     "inputs": {
@@ -256,36 +208,27 @@
         0
       ]
     },
-    "class_type": "PreviewImage",
-    "_meta": {
-      "title": "预览图像"
-    }
+    "class_type": "PreviewImage"
   },
   "226": {
     "inputs": {
-      "text": "1",
+      "text": "5",
       "anything": [
         "125",
         0
       ]
     },
-    "class_type": "easy showAnything",
-    "_meta": {
-      "title": "展示任何"
-    }
+    "class_type": "easy showAnything"
   },
   "309": {
     "inputs": {
-      "text": "0",
+      "text": "2",
       "anything": [
         "162",
         1
       ]
     },
-    "class_type": "easy showAnything",
-    "_meta": {
-      "title": "展示任何"
-    }
+    "class_type": "easy showAnything"
   },
   "310": {
     "inputs": {
@@ -294,10 +237,7 @@
         0
       ]
     },
-    "class_type": "PreviewImage",
-    "_meta": {
-      "title": "预览图像"
-    }
+    "class_type": "PreviewImage"
   },
   "442": {
     "inputs": {
@@ -317,6 +257,7 @@
         "497",
         0
       ],
+      "return_list": false,
       "image": [
         "162",
         2
@@ -326,14 +267,11 @@
         0
       ]
     },
-    "class_type": "Bounded Image Crop with Mask",
-    "_meta": {
-      "title": "图像遮罩边界"
-    }
+    "class_type": "Bounded Image Crop with Mask"
   },
   "443": {
     "inputs": {
-      "method": "VITMatte",
+      "method": "VITMatte(local)",
       "mask_grow": 5,
       "fix_gap": 32,
       "fix_threshold": 0.98,
@@ -352,10 +290,7 @@
         0
       ]
     },
-    "class_type": "LayerMask: MaskEdgeUltraDetail V2",
-    "_meta": {
-      "title": "遮罩细化 V2"
-    }
+    "class_type": "LayerMask: MaskEdgeUltraDetail V2"
   },
   "444": {
     "inputs": {
@@ -364,10 +299,7 @@
         0
       ]
     },
-    "class_type": "MaskPreview+",
-    "_meta": {
-      "title": "遮罩预览"
-    }
+    "class_type": "MaskPreview+"
   },
   "447": {
     "inputs": {
@@ -385,10 +317,7 @@
         0
       ]
     },
-    "class_type": "JWMaskResize",
-    "_meta": {
-      "title": "Mask Resize"
-    }
+    "class_type": "JWMaskResize"
   },
   "448": {
     "inputs": {
@@ -397,10 +326,7 @@
         0
       ]
     },
-    "class_type": "easy imageSize",
-    "_meta": {
-      "title": "图像尺寸"
-    }
+    "class_type": "easy imageSize"
   },
   "450": {
     "inputs": {
@@ -409,10 +335,7 @@
         1
       ]
     },
-    "class_type": "Mask Fill Holes",
-    "_meta": {
-      "title": "遮罩填充漏洞"
-    }
+    "class_type": "Mask Fill Holes"
   },
   "451": {
     "inputs": {
@@ -421,10 +344,7 @@
         0
       ]
     },
-    "class_type": "MaskPreview+",
-    "_meta": {
-      "title": "遮罩预览"
-    }
+    "class_type": "MaskPreview+"
   },
   "452": {
     "inputs": {
@@ -433,10 +353,7 @@
         0
       ]
     },
-    "class_type": "MaskPreview+",
-    "_meta": {
-      "title": "遮罩预览"
-    }
+    "class_type": "MaskPreview+"
   },
   "453": {
     "inputs": {
@@ -445,10 +362,7 @@
         0
       ]
     },
-    "class_type": "MaskToImage",
-    "_meta": {
-      "title": "遮罩到图像"
-    }
+    "class_type": "MaskToImage"
   },
   "454": {
     "inputs": {
@@ -468,6 +382,7 @@
         "497",
         0
       ],
+      "return_list": false,
       "image": [
         "453",
         0
@@ -477,10 +392,7 @@
         0
       ]
     },
-    "class_type": "Bounded Image Crop with Mask",
-    "_meta": {
-      "title": "图像遮罩边界"
-    }
+    "class_type": "Bounded Image Crop with Mask"
   },
   "455": {
     "inputs": {
@@ -490,10 +402,7 @@
         0
       ]
     },
-    "class_type": "ImageToMask",
-    "_meta": {
-      "title": "图像到遮罩"
-    }
+    "class_type": "ImageToMask"
   },
   "456": {
     "inputs": {
@@ -504,10 +413,7 @@
         0
       ]
     },
-    "class_type": "RemapMaskRange",
-    "_meta": {
-      "title": "重映射遮罩范围"
-    }
+    "class_type": "RemapMaskRange"
   },
   "457": {
     "inputs": {
@@ -516,10 +422,7 @@
         0
       ]
     },
-    "class_type": "MaskToImage",
-    "_meta": {
-      "title": "遮罩到图像"
-    }
+    "class_type": "MaskToImage"
   },
   "458": {
     "inputs": {
@@ -529,10 +432,7 @@
         0
       ]
     },
-    "class_type": "ImageToMask",
-    "_meta": {
-      "title": "图像到遮罩"
-    }
+    "class_type": "ImageToMask"
   },
   "459": {
     "inputs": {
@@ -541,10 +441,7 @@
         0
       ]
     },
-    "class_type": "MaskPreview+",
-    "_meta": {
-      "title": "遮罩预览"
-    }
+    "class_type": "MaskPreview+"
   },
   "465": {
     "inputs": {
@@ -556,10 +453,7 @@
         0
       ]
     },
-    "class_type": "LayerMask: MaskGrow",
-    "_meta": {
-      "title": "遮罩扩张"
-    }
+    "class_type": "LayerMask: MaskGrow"
   },
   "468": {
     "inputs": {
@@ -572,10 +466,7 @@
         0
       ]
     },
-    "class_type": "DF_Image_scale_to_side",
-    "_meta": {
-      "title": "Image scale to side"
-    }
+    "class_type": "DF_Image_scale_to_side"
   },
   "470": {
     "inputs": {
@@ -583,37 +474,28 @@
         "484",
         0
       ],
-      "separator": ", only Asian face, realistic photos"
+      "separator": ", only Chinese face, realistic photos"
     },
-    "class_type": "CR Text Concatenate",
-    "_meta": {
-      "title": "文本联结"
-    }
+    "class_type": "CR Text Concatenate"
   },
   "471": {
     "inputs": {
       "text": [
         "470",
         0
-      ]
+      ],
+      "text2": "boy, young, only Chinese face, realistic photos"
     },
-    "class_type": "ShowText|pysssss",
-    "_meta": {
-      "title": "展示文本"
-    }
+    "class_type": "ShowText|pysssss"
   },
   "472": {
     "inputs": {
       "text": [
         "471",
         0
-      ],
-      "speak_and_recognation": true
+      ]
     },
-    "class_type": "CLIPTextEncode",
-    "_meta": {
-      "title": "CLIP文本编码器"
-    }
+    "class_type": "CLIPTextEncode"
   },
   "475": {
     "inputs": {
@@ -640,19 +522,13 @@
         0
       ]
     },
-    "class_type": "KSampler",
-    "_meta": {
-      "title": "K采样器"
-    }
+    "class_type": "KSampler"
   },
   "476": {
     "inputs": {
       "ckpt_name": "realisticVisionV660.safetensors"
     },
-    "class_type": "CheckpointLoaderSimple",
-    "_meta": {
-      "title": "Checkpoint加载器(简易)"
-    }
+    "class_type": "CheckpointLoaderSimple"
   },
   "477": {
     "inputs": {
@@ -660,24 +536,17 @@
       "height": 360,
       "batch_size": 1
     },
-    "class_type": "EmptyLatentImage",
-    "_meta": {
-      "title": "空Latent"
-    }
+    "class_type": "EmptyLatentImage"
   },
   "478": {
     "inputs": {
       "text": "bad-picture-chill-75v, badhandv4, (worst quality:1.6), (low quality:1.6), (normal quality:1.6), lowres, watermark, monochrome, bad hands",
-      "speak_and_recognation": true,
       "clip": [
         "476",
         1
       ]
     },
-    "class_type": "CLIPTextEncode",
-    "_meta": {
-      "title": "CLIP文本编码器"
-    }
+    "class_type": "CLIPTextEncode"
   },
   "479": {
     "inputs": {
@@ -690,10 +559,7 @@
         2
       ]
     },
-    "class_type": "VAEDecode",
-    "_meta": {
-      "title": "VAE解码"
-    }
+    "class_type": "VAEDecode"
   },
   "480": {
     "inputs": {
@@ -701,16 +567,12 @@
         "471",
         0
       ],
-      "speak_and_recognation": true,
       "clip": [
         "476",
         1
       ]
     },
-    "class_type": "CLIPTextEncode",
-    "_meta": {
-      "title": "CLIP文本编码器"
-    }
+    "class_type": "CLIPTextEncode"
   },
   "481": {
     "inputs": {
@@ -719,10 +581,7 @@
         0
       ]
     },
-    "class_type": "PreviewImage",
-    "_meta": {
-      "title": "预览图像"
-    }
+    "class_type": "PreviewImage"
   },
   "484": {
     "inputs": {
@@ -732,16 +591,13 @@
       "model": "minicpm-v:latest",
       "keep_alive": 60,
       "format": "text",
-      "speak_and_recognation": true,
+      "seed": 838892462,
       "images": [
         "442",
         0
       ]
     },
-    "class_type": "OllamaVision",
-    "_meta": {
-      "title": "Ollama Vision"
-    }
+    "class_type": "OllamaVision"
   },
   "493": {
     "inputs": {
@@ -751,10 +607,7 @@
         0
       ]
     },
-    "class_type": "CropFace",
-    "_meta": {
-      "title": "裁剪面部"
-    }
+    "class_type": "CropFace"
   },
   "494": {
     "inputs": {
@@ -763,10 +616,7 @@
         0
       ]
     },
-    "class_type": "GetImageSize+",
-    "_meta": {
-      "title": "获取图像尺寸"
-    }
+    "class_type": "GetImageSize+"
   },
   "495": {
     "inputs": {
@@ -775,10 +625,7 @@
         0
       ]
     },
-    "class_type": "Int-🔬",
-    "_meta": {
-      "title": "Int"
-    }
+    "class_type": "Int-🔬"
   },
   "496": {
     "inputs": {
@@ -788,10 +635,7 @@
         0
       ]
     },
-    "class_type": "easy showAnything",
-    "_meta": {
-      "title": "展示任何"
-    }
+    "class_type": "easy showAnything"
   },
   "497": {
     "inputs": {
@@ -802,10 +646,7 @@
       "b": 6,
       "operation": "divide"
     },
-    "class_type": "easy mathInt",
-    "_meta": {
-      "title": "整数运算"
-    }
+    "class_type": "easy mathInt"
   },
   "499": {
     "inputs": {
@@ -814,10 +655,7 @@
         0
       ]
     },
-    "class_type": "PreviewImage",
-    "_meta": {
-      "title": "预览图像"
-    }
+    "class_type": "PreviewImage"
   },
   "501": {
     "inputs": {
@@ -826,32 +664,22 @@
         0
       ]
     },
-    "class_type": "PreviewImage",
-    "_meta": {
-      "title": "预览图像"
-    }
+    "class_type": "PreviewImage"
   },
   "502": {
     "inputs": {
-      "url": "https://ts1.cn.mm.bing.net/th/id/R-C.eed97557f689df2382b6a9fc85ed172e?rik=d%2fBN9fsXJ2nz2w&riu=http%3a%2f%2fup.bizhizu.com%2fpic%2fd1%2fb7%2fc1%2fd1b7c1c9d4362b4ed5a433e69a19b383.jpg&ehk=OafBZEPbO07cQidzqmNBh0FzR5lM78gdhBOg7%2bjNdis%3d&risl=&pid=ImgRaw&r=0",
-      "speak_and_recognation": true
+      "url": "https://www.jiaphoto.net/Public/upload/2019-06-18/5d085600a806e.jpg"
     },
-    "class_type": "LoadImagesFromURL",
-    "_meta": {
-      "title": "加载图像(URL)"
-    }
+    "class_type": "LoadImagesFromURL"
   },
   "503": {
     "inputs": {
-      "filename_prefix": "ComfyUI",
+      "filename_prefix": "Face/多重人脸快速脱敏/多重人脸快速脱敏",
       "images": [
         "210",
         0
       ]
     },
-    "class_type": "SaveImage",
-    "_meta": {
-      "title": "保存图像"
-    }
+    "class_type": "SaveImage"
   }
 }

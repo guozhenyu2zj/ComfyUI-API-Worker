@@ -171,12 +171,12 @@ class ImageTaskTester:
         }
 
         #人脸脱敏
-        # data = {
-        #     "task_type": "face_desensitization_thumbnail",
-        #     "content": {
-        #         "image_path": image_url
-        #     }
-        # }
+        data = {
+            "task_type": "face_desensitization_thumbnail",
+            "content": {
+                "image_path": image_url
+            }
+        }
 
         # data = {
         #     "task_type": "face_desensitization",
@@ -193,11 +193,12 @@ class ImageTaskTester:
         #         "work_id": "2"
         #     }
         # }
+
         # 客照换脸
         # data = {
         #     "task_type": "face_swap_thumbnail",
         #     "content": {
-        #         "image_path": image_url,
+        #         "image_path": 'https://www.jiaphoto.net/Public/upload/2019-06-18/5d085600a806e.jpg',
         #         "face_image_path": "https://k.sinaimg.cn/www/dy/slidenews/24_img/2016_19/74485_1363976_499220.jpg/w640slw.jpg"
         #     }
         # }
@@ -212,12 +213,12 @@ class ImageTaskTester:
         # }
 
         # 多人快速 人脸脱敏 
-        data = {
-            "task_type": "multi_face_desensitization_fast",
-            "content": {
-                "image_path": 'https://www.jiaphoto.net/Public/upload/2019-06-18/5d085600a806e.jpg'
-            }
-        }
+        # data = {
+        #     "task_type": "multi_face_desensitization_fast",
+        #     "content": {
+        #         "image_path": 'https://www.jiaphoto.net/Public/upload/2019-06-18/5d085600a806e.jpg'
+        #     }
+        # }
 
         # 多人 客照换脸 
         # data = {
@@ -242,8 +243,8 @@ class ImageTaskTester:
         # data = {
         #     "task_type": "multi_face_desensitization_auto",
         #     "content": {
-        #         "order": [1, 2, 3],
-        #         "image_path": 'https://www.jiaphoto.net/Public/upload/2019-06-18/5d085600a806e.jpg'
+        #         # "image_path": 'https://www.jiaphoto.net/Public/upload/2019-06-18/5d085600a806e.jpg'
+        #         "image_path": image_url
         #     }
         # }
 
@@ -385,7 +386,7 @@ async def run_test():
         return
     
     # 3. 处理图片文件夹
-    image_folder = "./input"
+    image_folder = "./input/images"
     logger.info(f"Starting to process images from: {image_folder}")
     await tester.process_image_folder(image_folder, interval=10, max_concurrent=3)
 

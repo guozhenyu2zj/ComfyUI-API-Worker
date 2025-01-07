@@ -6,8 +6,6 @@ import time
 import logging
 import chardet
 import random
-import ollama
-import base64
 from io import BytesIO
 from PIL import Image
 from typing import Optional
@@ -18,9 +16,8 @@ from datetime import timedelta
 
 # 配置类
 class Settings(BaseSettings):
-    # COMFYUI_URL: str = "http://127.0.0.1:8188"
+    COMFYUI_URL: str = "http://127.0.0.1:8188"
     # COMFYUI_URL: str = "http://192.168.0.158:8188"
-    COMFYUI_URL: str = "http://192.168.0.52:8188"
     MAX_ATTEMPTS: int = 100
     RETRY_DELAY: int = 5
     CLIENT_ID: str = "your_client_id"
@@ -43,9 +40,6 @@ class ComfyUIClient:
         self.tasks = {}
         self.task_id = ""
         self.task_name = ""
-        self.image_data = ""
-        self.ollama_model = 'minicpm-v:latest'
-        self.ollama_host = "http://192.168.0.158:11434"
         
         # 配置日志
         self.comfyui_logger = logging.getLogger('comfyui')
@@ -251,9 +245,8 @@ class ComfyUIClient:
             if api_response.status_code == 200:
                 api_response_json = api_response.json()  
                 num_faces = api_response_json.get("num_faces")
-                faces = api_response_json.get("faces")
                 print(f"检测到 {num_faces} 张人脸")
-                return {"num_faces": num_faces, "faces": faces}
+                return num_faces
             elif api_response.status_code == 422:
                 print(f"验证错误: {api_response.json()}")
                 return 0  
@@ -264,52 +257,6 @@ class ComfyUIClient:
         except Exception as e:
             print(f"人脸检测失败: {e}")
             return 0  
-
-    # 获取图片的尺寸           
-    def get_image_longest_side(self, image_url: str) -> Optional[int]:
-        try:
-            response = requests.get(image_url, stream=True)
-            response.raise_for_status()  # 检查 HTTP 状态码
-
-            self.image_data = BytesIO(response.content)
-            img = Image.open(self.image_data)
-            width, height = img.size
-            longest_side = max(width, height)
-            return longest_side
-
-        except requests.exceptions.RequestException as e:
-            print(f"下载图片失败: {e}")
-            return None
-        except Exception as e:
-            print(f"处理图片失败: {e}")
-            return None
-    
-    # 使用 Ollama 询问图片中的信息
-    def ask_ollama_about_image(self, prompt: str) -> str:
-        try:
-            img = Image.open(self.image_data)
-            buffered = BytesIO()
-            img.save(buffered, format="JPEG")
-            base64_image = base64.b64encode(buffered.getvalue()).decode()
-            if not base64_image:
-                return None
-            
-            host = os.environ.get("OLLAMA_HOST", self.ollama_host)
-            client = ollama.Client(host=host)
-            response = client.chat(
-                model = self.ollama_model,
-                messages=[
-                    {
-                        "role": "user",
-                        "content": prompt,
-                        "images": [base64_image],
-                    }
-                ],
-            )
-            return response['message']['content']
-        except Exception as e:
-            print(f"Ollama 询问失败: {e}")
-            return None
 
     # 客片人脸脱敏 缩略图
     def process_face_desensitization_thumbnail(self, input_image: str) -> Optional[str]:
@@ -338,7 +285,8 @@ class ComfyUIClient:
     # 客片换脸 缩略图
     def process_face_swap_thumbnail(self, input_image: str, input_face: str) -> Optional[dict]:
         self.task_name = "face_swap_thumbnail"
-        workflow_api = './api/客照换脸/客照换脸.json'
+        # workflow_api = './api/客照换脸/客照换脸.json'
+        workflow_api = './api/客照换脸/客照换脸-单人.json'
 
         uploaded_file_nodeID = "637"
         uploaded_face_nodeID = "639"
@@ -626,154 +574,63 @@ class ComfyUIClient:
 
     # 多重人脸脱敏 自动
     def process_multiple_face_desensitization_auto(self, input_image: str) -> Optional[dict]:
-        self.task_name = "multiple_face_desensitization_auto"
-        face_data = self.detect_faces(input_image)
-        if not face_data:
-            return {"status": 1, "message": f"人脸检测失败"}
 
-        face_count = face_data["num_faces"]
-        faces = face_data["faces"]
+        face_count = self.detect_faces(input_image)
+
+        if not face_count:
+            return {"status": 1, "message": f"人脸检测失败"}
 
         order = list(range(1, face_count + 1))
         print(order)
 
-        longest_side = self.get_image_longest_side(input_image)
-        if longest_side:
-            print(f"图片的最长边为: {longest_side} 像素")
+        self.task_name = "multiple_face_desensitization"
+        workflow_api = './api/人脸脱敏/多重人脸细致脱敏.json'
+
+        uploaded_file_nodeID = "920"
+        index_num_nodeID = "865"
+        save_image_nodeID = '902'
 
         self.tasks = {
             'image_url': input_image, 
             'result_url': "",  
         }
+                
+        self.workflow = self.load_workflow(workflow_api)
+        self.save_image_nodeID = save_image_nodeID
 
-        if face_count == 1:
-            prompt = '''
-            Only use keywords to output the gender and age of the characters and facial expressions in the image. For example: "boy, 2 years old, laugh".
-            Gender keywords must be: elderly woman, elderly man, man, woman, girl, boy, little girl, baby.
-            '''
-            keywords_to_check = ["elderly woman", "elderly man", "little girl", "little boy", "baby", "toddler", "2 years old", "1 years old"]
-            
-            ollama_answer = self.ask_ollama_about_image(prompt)
-            if ollama_answer:
-                print(ollama_answer)
+        uploaded_file = input_image
 
-            if any(keyword in ollama_answer for keyword in keywords_to_check):    
-                if longest_side < 1024:
-                    workflow_api = './api/人脸匿名化/人脸匿名化-单人-原尺寸.json'
-                elif longest_side > 2048:
-                    workflow_api = './api/人脸匿名化/人脸匿名化-单人-2048.json' 
-                else:
-                    workflow_api = './api/人脸匿名化/人脸匿名化-单人-1024.json'    
-
-                uploaded_file_nodeID = "238"
-                prompt_nodeID = "240"
-                save_image_nodeID = '237'    
-
-                self.workflow = self.load_workflow(workflow_api)
-                self.save_image_nodeID = save_image_nodeID
-                uploaded_file = input_image
-                if not uploaded_file:
-                    return {"status": 1, "message": "图片上传失败"}
-                self.workflow[uploaded_file_nodeID]["inputs"]["url"] = uploaded_file
-                self.workflow[prompt_nodeID]["inputs"]["text"] = ollama_answer
-                print(f"执行工作流{workflow_api}")
-                result = self.process_workflow()
-                if result.get("status") == 0:
-                    print(f"生成图{self.result_url}") 
-                else:
-                    return result
+        if not uploaded_file:
+            return {"status": 1, "message": "图片上传失败"}
+        
+        for i in range(len(order)):
+          
+            print(f"更换第{order[i]}张人脸。")
+            if i == 0:
+                current_image = uploaded_file
             else:
-                faces_max_side = 0
-                for face in faces:
-                    box = face["box"]
-                    width = abs(box[2] - box[0])
-                    height = abs(box[3] - box[1])
-                    side = max(width, height)
-                    faces_max_side = max(faces_max_side, side)
-                print(f"faces_max_side: {faces_max_side}")    
+                current_image = self.result_url
 
-                if longest_side < 1024:
-                    workflow_api = './api/人脸匿名化/人脸匿名化-妆容迁移-原尺寸.json'
-                elif longest_side > 2048: 
-                  if faces_max_side > 768:
-                    workflow_api = './api/人脸匿名化/人脸匿名化-妆容迁移-2048.json' 
-                  else:  
-                    workflow_api = './api/人脸匿名化/人脸匿名化-妆容迁移-1024.json' 
-                else:
-                    workflow_api = './api/人脸匿名化/人脸匿名化-妆容迁移-1024.json'
-                        
+            self.workflow[index_num_nodeID]["inputs"]["Number"] = str(order[i] - 1)
+            self.workflow[uploaded_file_nodeID]["inputs"]["url"] = current_image
 
-                uploaded_file_nodeID = "238"
-                prompt_nodeID = "240"
-                save_image_nodeID = '237'    
+            result = self.process_workflow()
 
-                self.workflow = self.load_workflow(workflow_api)
-                self.save_image_nodeID = save_image_nodeID
-                uploaded_file = input_image
-                if not uploaded_file:
-                    return {"status": 1, "message": "图片上传失败"}
-                self.workflow[uploaded_file_nodeID]["inputs"]["url"] = uploaded_file
-                self.workflow[prompt_nodeID]["inputs"]["text"] = ollama_answer
-                print(f"执行工作流{workflow_api}")
-                result = self.process_workflow()
-                if result.get("status") == 0:
-                    print(f"生成图{self.result_url}") 
-                else:
-                    return result
-
-            
-        elif face_count > 1:
-            
-            if longest_side < 1024:
-                workflow_api = './api/人脸匿名化/人脸匿名化-原尺寸.json'
-            elif longest_side > 2048:
-                workflow_api = './api/人脸匿名化/人脸匿名化-2048.json' 
+            if result.get("status") == 0:
+                print(f"生成图{self.result_url}") 
             else:
-                workflow_api = './api/人脸匿名化/人脸匿名化-1024.json'    
-
-            uploaded_file_nodeID = "238"
-            index_num_nodeID = "127"
-            save_image_nodeID = '237'    
-
-            self.workflow = self.load_workflow(workflow_api)
-            self.save_image_nodeID = save_image_nodeID
-
-            uploaded_file = input_image
-
-            if not uploaded_file:
-                return {"status": 1, "message": "图片上传失败"}
-            
-            for i in range(len(order)):
-              
-                print(f"更换第{order[i]}张人脸。")
-                if i == 0:
-                    current_image = uploaded_file
-                else:
-                    current_image = self.result_url
-
-                print(current_image)
-                print(f"输入原图{current_image}。")
-                self.workflow[index_num_nodeID]["inputs"]["Number"] = str(order[i] - 1)
-                self.workflow[uploaded_file_nodeID]["inputs"]["url"] = current_image
-                print(f"执行工作流{workflow_api}")
-
-                result = self.process_workflow()
-
-                if result.get("status") == 0:
-                    print(f"生成图{self.result_url}") 
-                else:
-                    return result
+                return result
 
         return {"status": 0, "url": self.tasks['result_url'], "task_id": result['task_id'], "file_path": result['file_path']}   
 
-    # 客片换脸 自动
+    # 客片换脸 缩略图
     def process_face_swap_auto(self, input_image: str, input_face: str) -> Optional[dict]:
         self.task_name = "face_swap_auto"
         workflow_api = './api/客照换脸/客照换脸-单人.json'
 
         uploaded_file_nodeID = "637"
         uploaded_face_nodeID = "639"
-        save_image_nodeID = '806'
+        save_image_nodeID = '367'
 
         self.tasks = {
             'image_url': input_image, 
@@ -796,3 +653,66 @@ class ComfyUIClient:
         self.workflow[uploaded_face_nodeID]["inputs"]["url"] = uploaded_face
         
         return self.process_workflow()
+# 主函数
+if __name__ == "__main__":
+
+    client = ComfyUIClient()
+
+    image_path = 'https://ts1.cn.mm.bing.net/th/id/R-C.eed97557f689df2382b6a9fc85ed172e?rik=d%2fBN9fsXJ2nz2w&riu=http%3a%2f%2fup.bizhizu.com%2fpic%2fd1%2fb7%2fc1%2fd1b7c1c9d4362b4ed5a433e69a19b383.jpg&ehk=OafBZEPbO07cQidzqmNBh0FzR5lM78gdhBOg7%2bjNdis%3d&risl=&pid=ImgRaw&r=0'
+    
+    face_image_path = 'https://k.sinaimg.cn/www/dy/slidenews/24_img/2016_19/74485_1363976_499220.jpg/w640slw.jpg'
+    
+    task_id = '78799ed9-f8c1-4e3d-a6f4-f2e230ad3a47'
+    work_id = '1'
+
+    # 记录开始时间
+    start_time = time.time()
+
+    # 客片换脸
+    # result = client.process_face_swap_thumbnail(image_path, face_image_path)
+    # print(result)
+
+    result = client.process_face_swap(task_id, work_id)
+    print(result)
+
+    # # 客片人脸脱敏
+    result = client.process_face_desensitization_thumbnail(image_path)
+    print(result)
+
+    # result = client.process_face_desensitization(task_id, work_id)
+    # print(result)
+
+    # task_id = '11a09ebb-208c-46b3-adfe-44952b8f679a'
+
+    # result = client.process_image_upscale(task_id)
+    # print(result)
+
+    image_path = 'https://www.jiaphoto.net/Public/upload/2019-06-18/5d085600a806e.jpg'
+    # image_path = 'http://img-admin.sw.gz.cn/api/v1/download-shared-object/aHR0cDovLzEyNy4wLjAuMTo5MDAwL2NvbWZ5dWktb3V0cHV0L211bHRpcGxlX2ZhY2VfZGVzZW5zaXRpemF0aW9uLzdBMUE3NTAwJTJCJTJCLmpwZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPTlOS0czM1NZSFpDNENBSlA2VEFDJTJGMjAyNDEyMjMlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQxMjIzVDAzMjQyOVomWC1BbXotRXhwaXJlcz00MzE5NiZYLUFtei1TZWN1cml0eS1Ub2tlbj1leUpoYkdjaU9pSklVelV4TWlJc0luUjVjQ0k2SWtwWFZDSjkuZXlKaFkyTmxjM05MWlhraU9pSTVUa3RITXpOVFdVaGFRelJEUVVwUU5sUkJReUlzSW1WNGNDSTZNVGN6TkRrMk1Ea3pOeXdpY0dGeVpXNTBJam9pYldsdWFXOWhaRzFwYmlKOS4wc2E1WkowaU9LUjhjRjR3SUJqMHhCT0YwelkyOHk4UWtlWDNQM3dvZGw3VzJhRGpiaTJaaFQxRVU3R3pzelFhOFFGejBXSVpWd0NEUFhHTEc4NDNiZyZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmdmVyc2lvbklkPW51bGwmWC1BbXotU2lnbmF0dXJlPWI2YWM5NTc2YThiM2FlNWM5YzBkZTY1NjU0MmI3NTA3YzNhNTEwYTUzYjMyNWQ1MjZiOWFjYTlkMTM1NzJkODY'
+    
+    # face_image_path = 'https://ts1.cn.mm.bing.net/th/id/R-C.5f10d21d142995f1e28c791d9a8fdc24?rik=WMQ89o3a%2bYYq5Q&riu=http%3a%2f%2fp1.qhimg.com%2ft010e22b8490821150f.jpg%3f1200*800&ehk=hqeRq5HPWFHQTJvCHcmKkVT3RM9RSS8oQgiVx6Wq%2fOU%3d&risl=&pid=ImgRaw&r=0'
+    
+    # order = [1, 2]
+    
+    # result = client.process_multiple_face_swap_fast(image_path, face_image_path)
+    # print(result)
+
+    # result = client.process_multiple_face_desensitization_fast(image_path)
+    # print(result)
+
+    # result = client.process_multiple_face_swap(image_path, face_image_path, order)
+    # print(result) 
+
+    # result = client.process_multiple_face_desensitization(image_path, order)
+    # print(result)
+
+    # result = client.process_multiple_face_desensitization_auto(image_path)
+    # print(result)
+
+    # 记录结束时间
+    end_time = time.time()
+
+    # 计算耗时
+    elapsed_time = end_time - start_time
+
+    print(f"耗时: {elapsed_time:.2f} 秒")

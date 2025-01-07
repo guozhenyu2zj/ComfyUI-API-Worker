@@ -19,6 +19,8 @@ app.conf.update(
         'tasks.process_multiple_face_swap_fast': {'queue': 'multi_face_swap_fast'},
         'tasks.process_multiple_face_desensitization': {'queue': 'multi_face_desensitization'},
         'tasks.process_multiple_face_swap': {'queue': 'multi_face_swap'},
+        'tasks.process_multiple_face_desensitization_auto': {'queue': 'multi_face_desensitization_auto'},
+        'tasks.process_face_swap_auto': {'queue': 'face_swap_auto'},
     },
 )
 
@@ -113,6 +115,15 @@ def process_multiple_face_swap(image_path, face_image_path, order, **kwargs):
 def process_multiple_face_desensitization_auto(image_path, **kwargs):
     client = ComfyUIClient()  
     result = client.process_multiple_face_desensitization_auto(image_path)
+    status = result["status"]
+    if status != 0:
+        raise ValueError(result["message"])
+    return result
+
+@app.task
+def process_face_swap_auto(image_path, face_image_path, **kwargs):
+    client = ComfyUIClient()  
+    result = client.process_face_swap_auto(image_path, face_image_path)
     status = result["status"]
     if status != 0:
         raise ValueError(result["message"])

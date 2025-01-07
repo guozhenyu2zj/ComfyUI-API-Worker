@@ -27,10 +27,7 @@
         0
       ]
     },
-    "class_type": "KSampler",
-    "_meta": {
-      "title": "KSampler"
-    }
+    "class_type": "KSampler"
   },
   "6": {
     "inputs": {
@@ -40,10 +37,7 @@
         1
       ]
     },
-    "class_type": "CLIPTextEncode",
-    "_meta": {
-      "title": "CLIP Text Encode (Prompt)"
-    }
+    "class_type": "CLIPTextEncode"
   },
   "7": {
     "inputs": {
@@ -53,10 +47,7 @@
         1
       ]
     },
-    "class_type": "CLIPTextEncode",
-    "_meta": {
-      "title": "CLIP Text Encode (Prompt)"
-    }
+    "class_type": "CLIPTextEncode"
   },
   "8": {
     "inputs": {
@@ -69,10 +60,7 @@
         2
       ]
     },
-    "class_type": "VAEDecode",
-    "_meta": {
-      "title": "VAE Decode"
-    }
+    "class_type": "VAEDecode"
   },
   "12": {
     "inputs": {
@@ -115,28 +103,19 @@
         0
       ]
     },
-    "class_type": "ApplyInstantIDAdvanced",
-    "_meta": {
-      "title": "Apply InstantID Advanced"
-    }
+    "class_type": "ApplyInstantIDAdvanced"
   },
   "13": {
     "inputs": {
       "instantid_file": "ip-adapter.bin"
     },
-    "class_type": "InstantIDModelLoader",
-    "_meta": {
-      "title": "Load InstantID Model"
-    }
+    "class_type": "InstantIDModelLoader"
   },
   "14": {
     "inputs": {
       "control_net_name": "SDXL/instantid/diffusion_pytorch_model.safetensors"
     },
-    "class_type": "ControlNetLoader",
-    "_meta": {
-      "title": "Load ControlNet Model"
-    }
+    "class_type": "ControlNetLoader"
   },
   "38": {
     "inputs": {
@@ -149,10 +128,7 @@
         2
       ]
     },
-    "class_type": "VAEEncode",
-    "_meta": {
-      "title": "VAE Encode"
-    }
+    "class_type": "VAEEncode"
   },
   "41": {
     "inputs": {
@@ -175,10 +151,7 @@
         0
       ]
     },
-    "class_type": "SAMDetectorCombined",
-    "_meta": {
-      "title": "SAMDetector (combined)"
-    }
+    "class_type": "SAMDetectorCombined"
   },
   "42": {
     "inputs": {
@@ -196,10 +169,7 @@
         0
       ]
     },
-    "class_type": "BboxDetectorSEGS",
-    "_meta": {
-      "title": "BBOX Detector (SEGS)"
-    }
+    "class_type": "BboxDetectorSEGS"
   },
   "43": {
     "inputs": {
@@ -229,14 +199,11 @@
         0
       ]
     },
-    "class_type": "Bounded Image Crop with Mask",
-    "_meta": {
-      "title": "Bounded Image Crop with Mask"
-    }
+    "class_type": "Bounded Image Crop with Mask"
   },
   "47": {
     "inputs": {
-      "method": "VITMatte",
+      "method": "VITMatte(local)",
       "mask_grow": 5,
       "fix_gap": 32,
       "fix_threshold": 0.98,
@@ -255,10 +222,7 @@
         0
       ]
     },
-    "class_type": "LayerMask: MaskEdgeUltraDetail V2",
-    "_meta": {
-      "title": "LayerMask: MaskEdgeUltraDetail V2"
-    }
+    "class_type": "LayerMask: MaskEdgeUltraDetail V2"
   },
   "55": {
     "inputs": {
@@ -267,28 +231,19 @@
         0
       ]
     },
-    "class_type": "MaskPreview+",
-    "_meta": {
-      "title": "🔧 Mask Preview"
-    }
+    "class_type": "MaskPreview+"
   },
   "56": {
     "inputs": {
-      "model_name": "bbox/face_yolov8m.pt"
+      "model_name": "bbox/yolov8n-face-lindevs.pt"
     },
-    "class_type": "UltralyticsDetectorProvider",
-    "_meta": {
-      "title": "UltralyticsDetectorProvider"
-    }
+    "class_type": "UltralyticsDetectorProvider"
   },
   "58": {
     "inputs": {
       "provider": "CUDA"
     },
-    "class_type": "InstantIDFaceAnalysis",
-    "_meta": {
-      "title": "InstantID Face Analysis"
-    }
+    "class_type": "InstantIDFaceAnalysis"
   },
   "60": {
     "inputs": {
@@ -301,20 +256,14 @@
         0
       ]
     },
-    "class_type": "SetLatentNoiseMask",
-    "_meta": {
-      "title": "Set Latent Noise Mask"
-    }
+    "class_type": "SetLatentNoiseMask"
   },
   "62": {
     "inputs": {
       "model_name": "sam_vit_b_01ec64.pth",
       "device_mode": "Prefer GPU"
     },
-    "class_type": "SAMLoader",
-    "_meta": {
-      "title": "SAMLoader (Impact)"
-    }
+    "class_type": "SAMLoader"
   },
   "64": {
     "inputs": {
@@ -326,10 +275,7 @@
         0
       ]
     },
-    "class_type": "LayerMask: MaskGrow",
-    "_meta": {
-      "title": "LayerMask: MaskGrow"
-    }
+    "class_type": "LayerMask: MaskGrow"
   },
   "65": {
     "inputs": {
@@ -338,10 +284,7 @@
         0
       ]
     },
-    "class_type": "DifferentialDiffusion",
-    "_meta": {
-      "title": "Differential Diffusion"
-    }
+    "class_type": "DifferentialDiffusion"
   },
   "67": {
     "inputs": {
@@ -359,10 +302,7 @@
         0
       ]
     },
-    "class_type": "JWMaskResize",
-    "_meta": {
-      "title": "Mask Resize"
-    }
+    "class_type": "JWMaskResize"
   },
   "68": {
     "inputs": {
@@ -371,19 +311,13 @@
         0
       ]
     },
-    "class_type": "easy imageSize",
-    "_meta": {
-      "title": "ImageSize"
-    }
+    "class_type": "easy imageSize"
   },
   "90": {
     "inputs": {
       "value": 368
     },
-    "class_type": "easy int",
-    "_meta": {
-      "title": "Int"
-    }
+    "class_type": "easy int"
   },
   "92": {
     "inputs": {
@@ -392,10 +326,7 @@
         1
       ]
     },
-    "class_type": "Mask Fill Holes",
-    "_meta": {
-      "title": "Mask Fill Holes"
-    }
+    "class_type": "Mask Fill Holes"
   },
   "96": {
     "inputs": {
@@ -404,10 +335,7 @@
         0
       ]
     },
-    "class_type": "MaskPreview+",
-    "_meta": {
-      "title": "🔧 Mask Preview"
-    }
+    "class_type": "MaskPreview+"
   },
   "98": {
     "inputs": {
@@ -416,10 +344,7 @@
         0
       ]
     },
-    "class_type": "MaskPreview+",
-    "_meta": {
-      "title": "🔧 Mask Preview"
-    }
+    "class_type": "MaskPreview+"
   },
   "104": {
     "inputs": {
@@ -446,10 +371,7 @@
         0
       ]
     },
-    "class_type": "KSampler",
-    "_meta": {
-      "title": "KSampler"
-    }
+    "class_type": "KSampler"
   },
   "105": {
     "inputs": {
@@ -462,10 +384,7 @@
         2
       ]
     },
-    "class_type": "VAEEncode",
-    "_meta": {
-      "title": "VAE Encode"
-    }
+    "class_type": "VAEEncode"
   },
   "106": {
     "inputs": {
@@ -478,10 +397,7 @@
         0
       ]
     },
-    "class_type": "SetLatentNoiseMask",
-    "_meta": {
-      "title": "Set Latent Noise Mask"
-    }
+    "class_type": "SetLatentNoiseMask"
   },
   "108": {
     "inputs": {
@@ -494,10 +410,7 @@
         2
       ]
     },
-    "class_type": "VAEDecode",
-    "_meta": {
-      "title": "VAE Decode"
-    }
+    "class_type": "VAEDecode"
   },
   "124": {
     "inputs": {
@@ -526,44 +439,29 @@
         0
       ]
     },
-    "class_type": "ApplyPulid",
-    "_meta": {
-      "title": "Apply PuLID"
-    }
+    "class_type": "ApplyPulid"
   },
   "125": {
     "inputs": {
       "pulid_file": "ip-adapter_pulid_sdxl_fp16.safetensors"
     },
-    "class_type": "PulidModelLoader",
-    "_meta": {
-      "title": "Load PuLID Model"
-    }
+    "class_type": "PulidModelLoader"
   },
   "126": {
     "inputs": {},
-    "class_type": "PulidEvaClipLoader",
-    "_meta": {
-      "title": "Load Eva Clip (PuLID)"
-    }
+    "class_type": "PulidEvaClipLoader"
   },
   "127": {
     "inputs": {
       "provider": "CUDA"
     },
-    "class_type": "PulidInsightFaceLoader",
-    "_meta": {
-      "title": "Load InsightFace (PuLID)"
-    }
+    "class_type": "PulidInsightFaceLoader"
   },
   "129": {
     "inputs": {
       "seed": 118893991707790
     },
-    "class_type": "easy seed",
-    "_meta": {
-      "title": "EasySeed"
-    }
+    "class_type": "easy seed"
   },
   "136": {
     "inputs": {
@@ -582,10 +480,7 @@
         0
       ]
     },
-    "class_type": "Bounded Image Blend",
-    "_meta": {
-      "title": "Bounded Image Blend"
-    }
+    "class_type": "Bounded Image Blend"
   },
   "145": {
     "inputs": {
@@ -594,10 +489,7 @@
         0
       ]
     },
-    "class_type": "MaskToImage",
-    "_meta": {
-      "title": "Convert Mask to Image"
-    }
+    "class_type": "MaskToImage"
   },
   "146": {
     "inputs": {
@@ -627,10 +519,7 @@
         0
       ]
     },
-    "class_type": "Bounded Image Crop with Mask",
-    "_meta": {
-      "title": "Bounded Image Crop with Mask"
-    }
+    "class_type": "Bounded Image Crop with Mask"
   },
   "147": {
     "inputs": {
@@ -640,10 +529,7 @@
         0
       ]
     },
-    "class_type": "ImageToMask",
-    "_meta": {
-      "title": "Convert Image to Mask"
-    }
+    "class_type": "ImageToMask"
   },
   "166": {
     "inputs": {
@@ -654,10 +540,7 @@
         0
       ]
     },
-    "class_type": "RemapMaskRange",
-    "_meta": {
-      "title": "Remap Mask Range"
-    }
+    "class_type": "RemapMaskRange"
   },
   "170": {
     "inputs": {
@@ -669,10 +552,7 @@
         0
       ]
     },
-    "class_type": "ImageRandomTransform+",
-    "_meta": {
-      "title": "🔧 Image Random Transform"
-    }
+    "class_type": "ImageRandomTransform+"
   },
   "175": {
     "inputs": {
@@ -681,10 +561,7 @@
         0
       ]
     },
-    "class_type": "ImpactMakeImageBatch",
-    "_meta": {
-      "title": "Make Image Batch"
-    }
+    "class_type": "ImpactMakeImageBatch"
   },
   "176": {
     "inputs": {
@@ -693,10 +570,7 @@
         0
       ]
     },
-    "class_type": "PreviewImage",
-    "_meta": {
-      "title": "Preview Image"
-    }
+    "class_type": "PreviewImage"
   },
   "177": {
     "inputs": {
@@ -711,10 +585,7 @@
         0
       ]
     },
-    "class_type": "ColorMatch",
-    "_meta": {
-      "title": "Color Match"
-    }
+    "class_type": "ColorMatch"
   },
   "194": {
     "inputs": {
@@ -723,10 +594,7 @@
         0
       ]
     },
-    "class_type": "MaskToImage",
-    "_meta": {
-      "title": "Convert Mask to Image"
-    }
+    "class_type": "MaskToImage"
   },
   "195": {
     "inputs": {
@@ -736,10 +604,7 @@
         0
       ]
     },
-    "class_type": "ImageToMask",
-    "_meta": {
-      "title": "Convert Image to Mask"
-    }
+    "class_type": "ImageToMask"
   },
   "196": {
     "inputs": {
@@ -748,10 +613,7 @@
         0
       ]
     },
-    "class_type": "MaskPreview+",
-    "_meta": {
-      "title": "🔧 Mask Preview"
-    }
+    "class_type": "MaskPreview+"
   },
   "261": {
     "inputs": {
@@ -761,10 +623,7 @@
         0
       ]
     },
-    "class_type": "RepeatLatentBatch",
-    "_meta": {
-      "title": "Repeat Latent Batch"
-    }
+    "class_type": "RepeatLatentBatch"
   },
   "317": {
     "inputs": {
@@ -792,10 +651,7 @@
         0
       ]
     },
-    "class_type": "ReActorFaceSwap",
-    "_meta": {
-      "title": "ReActor 🌌 Fast Face Swap"
-    }
+    "class_type": "ReActorFaceSwap"
   },
   "318": {
     "inputs": {
@@ -806,10 +662,7 @@
       "codeformer_weight": 0.5,
       "restore_with_main_after": true
     },
-    "class_type": "ReActorFaceBoost",
-    "_meta": {
-      "title": "ReActor 🌌 Face Booster"
-    }
+    "class_type": "ReActorFaceBoost"
   },
   "337": {
     "inputs": {
@@ -818,23 +671,17 @@
         0
       ]
     },
-    "class_type": "PreviewImage",
-    "_meta": {
-      "title": "Preview Image"
-    }
+    "class_type": "PreviewImage"
   },
   "367": {
     "inputs": {
       "filename_prefix": "Face/人脸脱敏/人脸脱敏",
       "images": [
-        "497",
+        "638",
         0
       ]
     },
-    "class_type": "SaveImage",
-    "_meta": {
-      "title": "Save Image"
-    }
+    "class_type": "SaveImage"
   },
   "413": {
     "inputs": {
@@ -844,10 +691,7 @@
       ],
       "separator": ", only Asian face, realistic photos"
     },
-    "class_type": "CR Text Concatenate",
-    "_meta": {
-      "title": "🔤 CR Text Concatenate"
-    }
+    "class_type": "CR Text Concatenate"
   },
   "415": {
     "inputs": {
@@ -855,12 +699,9 @@
         "413",
         0
       ],
-      "text2": "girl, 20s, only Asian face, realistic photos"
+      "text2": "woman, approximately 25 years old, only Asian face, realistic photos"
     },
-    "class_type": "ShowText|pysssss",
-    "_meta": {
-      "title": "Show Text 🐍"
-    }
+    "class_type": "ShowText|pysssss"
   },
   "426": {
     "inputs": {
@@ -869,10 +710,7 @@
         0
       ]
     },
-    "class_type": "CLIPTextEncode",
-    "_meta": {
-      "title": "CLIP Text Encode (Prompt)"
-    }
+    "class_type": "CLIPTextEncode"
   },
   "430": {
     "inputs": {
@@ -881,10 +719,7 @@
         0
       ]
     },
-    "class_type": "PreviewImage",
-    "_meta": {
-      "title": "Preview Image"
-    }
+    "class_type": "PreviewImage"
   },
   "484": {
     "inputs": {
@@ -895,10 +730,7 @@
         0
       ]
     },
-    "class_type": "Image Caption",
-    "_meta": {
-      "title": "Image Caption (Mikey)"
-    }
+    "class_type": "Image Caption"
   },
   "487": {
     "inputs": {
@@ -909,10 +741,7 @@
         0
       ]
     },
-    "class_type": "Image Caption",
-    "_meta": {
-      "title": "Image Caption (Mikey)"
-    }
+    "class_type": "Image Caption"
   },
   "495": {
     "inputs": {
@@ -927,10 +756,7 @@
         0
       ]
     },
-    "class_type": "ImageConcanate",
-    "_meta": {
-      "title": "Image Concatenate"
-    }
+    "class_type": "ImageConcanate"
   },
   "496": {
     "inputs": {
@@ -945,10 +771,7 @@
         0
       ]
     },
-    "class_type": "ImageConcanate",
-    "_meta": {
-      "title": "Image Concatenate"
-    }
+    "class_type": "ImageConcanate"
   },
   "497": {
     "inputs": {
@@ -963,10 +786,7 @@
         0
       ]
     },
-    "class_type": "ImageConcanate",
-    "_meta": {
-      "title": "Image Concatenate"
-    }
+    "class_type": "ImageConcanate"
   },
   "499": {
     "inputs": {
@@ -977,10 +797,7 @@
         0
       ]
     },
-    "class_type": "Image Caption",
-    "_meta": {
-      "title": "Image Caption (Mikey)"
-    }
+    "class_type": "Image Caption"
   },
   "503": {
     "inputs": {
@@ -991,10 +808,7 @@
         0
       ]
     },
-    "class_type": "Image Caption",
-    "_meta": {
-      "title": "Image Caption (Mikey)"
-    }
+    "class_type": "Image Caption"
   },
   "528": {
     "inputs": {
@@ -1021,10 +835,7 @@
         0
       ]
     },
-    "class_type": "KSampler",
-    "_meta": {
-      "title": "KSampler"
-    }
+    "class_type": "KSampler"
   },
   "530": {
     "inputs": {
@@ -1032,10 +843,7 @@
       "height": 600,
       "batch_size": 1
     },
-    "class_type": "EmptyLatentImage",
-    "_meta": {
-      "title": "Empty Latent Image"
-    }
+    "class_type": "EmptyLatentImage"
   },
   "531": {
     "inputs": {
@@ -1045,10 +853,7 @@
         1
       ]
     },
-    "class_type": "CLIPTextEncode",
-    "_meta": {
-      "title": "CLIP Text Encode (Prompt)"
-    }
+    "class_type": "CLIPTextEncode"
   },
   "532": {
     "inputs": {
@@ -1061,10 +866,7 @@
         2
       ]
     },
-    "class_type": "VAEDecode",
-    "_meta": {
-      "title": "VAE Decode"
-    }
+    "class_type": "VAEDecode"
   },
   "533": {
     "inputs": {
@@ -1077,10 +879,7 @@
         1
       ]
     },
-    "class_type": "CLIPTextEncode",
-    "_meta": {
-      "title": "CLIP Text Encode (Prompt)"
-    }
+    "class_type": "CLIPTextEncode"
   },
   "534": {
     "inputs": {
@@ -1089,10 +888,7 @@
         0
       ]
     },
-    "class_type": "PreviewImage",
-    "_meta": {
-      "title": "Preview Image"
-    }
+    "class_type": "PreviewImage"
   },
   "541": {
     "inputs": {
@@ -1119,19 +915,13 @@
         0
       ]
     },
-    "class_type": "KSampler",
-    "_meta": {
-      "title": "KSampler"
-    }
+    "class_type": "KSampler"
   },
   "542": {
     "inputs": {
       "ckpt_name": "realisticVisionV660.safetensors"
     },
-    "class_type": "CheckpointLoaderSimple",
-    "_meta": {
-      "title": "Load Checkpoint"
-    }
+    "class_type": "CheckpointLoaderSimple"
   },
   "543": {
     "inputs": {
@@ -1139,10 +929,7 @@
       "height": 600,
       "batch_size": 1
     },
-    "class_type": "EmptyLatentImage",
-    "_meta": {
-      "title": "Empty Latent Image"
-    }
+    "class_type": "EmptyLatentImage"
   },
   "544": {
     "inputs": {
@@ -1152,10 +939,7 @@
         1
       ]
     },
-    "class_type": "CLIPTextEncode",
-    "_meta": {
-      "title": "CLIP Text Encode (Prompt)"
-    }
+    "class_type": "CLIPTextEncode"
   },
   "545": {
     "inputs": {
@@ -1168,10 +952,7 @@
         2
       ]
     },
-    "class_type": "VAEDecode",
-    "_meta": {
-      "title": "VAE Decode"
-    }
+    "class_type": "VAEDecode"
   },
   "546": {
     "inputs": {
@@ -1184,10 +965,7 @@
         1
       ]
     },
-    "class_type": "CLIPTextEncode",
-    "_meta": {
-      "title": "CLIP Text Encode (Prompt)"
-    }
+    "class_type": "CLIPTextEncode"
   },
   "547": {
     "inputs": {
@@ -1196,10 +974,7 @@
         0
       ]
     },
-    "class_type": "PreviewImage",
-    "_meta": {
-      "title": "Preview Image"
-    }
+    "class_type": "PreviewImage"
   },
   "554": {
     "inputs": {
@@ -1229,10 +1004,7 @@
         0
       ]
     },
-    "class_type": "KSampler",
-    "_meta": {
-      "title": "KSampler"
-    }
+    "class_type": "KSampler"
   },
   "556": {
     "inputs": {
@@ -1242,10 +1014,7 @@
         1
       ]
     },
-    "class_type": "CLIPTextEncode",
-    "_meta": {
-      "title": "CLIP Text Encode (Prompt)"
-    }
+    "class_type": "CLIPTextEncode"
   },
   "557": {
     "inputs": {
@@ -1255,10 +1024,7 @@
         1
       ]
     },
-    "class_type": "CLIPTextEncode",
-    "_meta": {
-      "title": "CLIP Text Encode (Prompt)"
-    }
+    "class_type": "CLIPTextEncode"
   },
   "558": {
     "inputs": {
@@ -1271,10 +1037,7 @@
         2
       ]
     },
-    "class_type": "VAEDecode",
-    "_meta": {
-      "title": "VAE Decode"
-    }
+    "class_type": "VAEDecode"
   },
   "559": {
     "inputs": {
@@ -1317,28 +1080,19 @@
         0
       ]
     },
-    "class_type": "ApplyInstantIDAdvanced",
-    "_meta": {
-      "title": "Apply InstantID Advanced"
-    }
+    "class_type": "ApplyInstantIDAdvanced"
   },
   "560": {
     "inputs": {
       "instantid_file": "ip-adapter.bin"
     },
-    "class_type": "InstantIDModelLoader",
-    "_meta": {
-      "title": "Load InstantID Model"
-    }
+    "class_type": "InstantIDModelLoader"
   },
   "561": {
     "inputs": {
       "control_net_name": "SDXL/instantid/diffusion_pytorch_model.safetensors"
     },
-    "class_type": "ControlNetLoader",
-    "_meta": {
-      "title": "Load ControlNet Model"
-    }
+    "class_type": "ControlNetLoader"
   },
   "562": {
     "inputs": {
@@ -1351,19 +1105,13 @@
         2
       ]
     },
-    "class_type": "VAEEncode",
-    "_meta": {
-      "title": "VAE Encode"
-    }
+    "class_type": "VAEEncode"
   },
   "563": {
     "inputs": {
       "provider": "CUDA"
     },
-    "class_type": "InstantIDFaceAnalysis",
-    "_meta": {
-      "title": "InstantID Face Analysis"
-    }
+    "class_type": "InstantIDFaceAnalysis"
   },
   "564": {
     "inputs": {
@@ -1376,10 +1124,7 @@
         0
       ]
     },
-    "class_type": "SetLatentNoiseMask",
-    "_meta": {
-      "title": "Set Latent Noise Mask"
-    }
+    "class_type": "SetLatentNoiseMask"
   },
   "565": {
     "inputs": {
@@ -1388,10 +1133,7 @@
         0
       ]
     },
-    "class_type": "DifferentialDiffusion",
-    "_meta": {
-      "title": "Differential Diffusion"
-    }
+    "class_type": "DifferentialDiffusion"
   },
   "566": {
     "inputs": {
@@ -1418,10 +1160,7 @@
         0
       ]
     },
-    "class_type": "KSampler",
-    "_meta": {
-      "title": "KSampler"
-    }
+    "class_type": "KSampler"
   },
   "567": {
     "inputs": {
@@ -1434,10 +1173,7 @@
         2
       ]
     },
-    "class_type": "VAEEncode",
-    "_meta": {
-      "title": "VAE Encode"
-    }
+    "class_type": "VAEEncode"
   },
   "568": {
     "inputs": {
@@ -1450,10 +1186,7 @@
         0
       ]
     },
-    "class_type": "SetLatentNoiseMask",
-    "_meta": {
-      "title": "Set Latent Noise Mask"
-    }
+    "class_type": "SetLatentNoiseMask"
   },
   "569": {
     "inputs": {
@@ -1466,10 +1199,7 @@
         2
       ]
     },
-    "class_type": "VAEDecode",
-    "_meta": {
-      "title": "VAE Decode"
-    }
+    "class_type": "VAEDecode"
   },
   "570": {
     "inputs": {
@@ -1498,44 +1228,29 @@
         0
       ]
     },
-    "class_type": "ApplyPulid",
-    "_meta": {
-      "title": "Apply PuLID"
-    }
+    "class_type": "ApplyPulid"
   },
   "571": {
     "inputs": {
       "pulid_file": "ip-adapter_pulid_sdxl_fp16.safetensors"
     },
-    "class_type": "PulidModelLoader",
-    "_meta": {
-      "title": "Load PuLID Model"
-    }
+    "class_type": "PulidModelLoader"
   },
   "572": {
     "inputs": {},
-    "class_type": "PulidEvaClipLoader",
-    "_meta": {
-      "title": "Load Eva Clip (PuLID)"
-    }
+    "class_type": "PulidEvaClipLoader"
   },
   "573": {
     "inputs": {
       "provider": "CUDA"
     },
-    "class_type": "PulidInsightFaceLoader",
-    "_meta": {
-      "title": "Load InsightFace (PuLID)"
-    }
+    "class_type": "PulidInsightFaceLoader"
   },
   "574": {
     "inputs": {
       "seed": 428616128077682
     },
-    "class_type": "easy seed",
-    "_meta": {
-      "title": "EasySeed"
-    }
+    "class_type": "easy seed"
   },
   "575": {
     "inputs": {
@@ -1554,10 +1269,7 @@
         0
       ]
     },
-    "class_type": "Bounded Image Blend",
-    "_meta": {
-      "title": "Bounded Image Blend"
-    }
+    "class_type": "Bounded Image Blend"
   },
   "576": {
     "inputs": {
@@ -1569,10 +1281,7 @@
         0
       ]
     },
-    "class_type": "ImageRandomTransform+",
-    "_meta": {
-      "title": "🔧 Image Random Transform"
-    }
+    "class_type": "ImageRandomTransform+"
   },
   "577": {
     "inputs": {
@@ -1581,10 +1290,7 @@
         0
       ]
     },
-    "class_type": "ImpactMakeImageBatch",
-    "_meta": {
-      "title": "Make Image Batch"
-    }
+    "class_type": "ImpactMakeImageBatch"
   },
   "578": {
     "inputs": {
@@ -1593,10 +1299,7 @@
         0
       ]
     },
-    "class_type": "PreviewImage",
-    "_meta": {
-      "title": "Preview Image"
-    }
+    "class_type": "PreviewImage"
   },
   "579": {
     "inputs": {
@@ -1611,10 +1314,7 @@
         0
       ]
     },
-    "class_type": "ColorMatch",
-    "_meta": {
-      "title": "Color Match"
-    }
+    "class_type": "ColorMatch"
   },
   "580": {
     "inputs": {
@@ -1624,10 +1324,7 @@
         0
       ]
     },
-    "class_type": "RepeatLatentBatch",
-    "_meta": {
-      "title": "Repeat Latent Batch"
-    }
+    "class_type": "RepeatLatentBatch"
   },
   "581": {
     "inputs": {
@@ -1636,10 +1333,7 @@
         0
       ]
     },
-    "class_type": "PreviewImage",
-    "_meta": {
-      "title": "Preview Image"
-    }
+    "class_type": "PreviewImage"
   },
   "592": {
     "inputs": {
@@ -1658,10 +1352,7 @@
         0
       ]
     },
-    "class_type": "Bounded Image Blend",
-    "_meta": {
-      "title": "Bounded Image Blend"
-    }
+    "class_type": "Bounded Image Blend"
   },
   "596": {
     "inputs": {
@@ -1670,10 +1361,7 @@
         0
       ]
     },
-    "class_type": "PreviewImage",
-    "_meta": {
-      "title": "Preview Image"
-    }
+    "class_type": "PreviewImage"
   },
   "598": {
     "inputs": {
@@ -1701,10 +1389,7 @@
         0
       ]
     },
-    "class_type": "ReActorFaceSwap",
-    "_meta": {
-      "title": "ReActor 🌌 Fast Face Swap"
-    }
+    "class_type": "ReActorFaceSwap"
   },
   "599": {
     "inputs": {
@@ -1715,10 +1400,7 @@
       "codeformer_weight": 0.5,
       "restore_with_main_after": true
     },
-    "class_type": "ReActorFaceBoost",
-    "_meta": {
-      "title": "ReActor 🌌 Face Booster"
-    }
+    "class_type": "ReActorFaceBoost"
   },
   "603": {
     "inputs": {
@@ -1737,10 +1419,7 @@
         0
       ]
     },
-    "class_type": "Bounded Image Blend",
-    "_meta": {
-      "title": "Bounded Image Blend"
-    }
+    "class_type": "Bounded Image Blend"
   },
   "606": {
     "inputs": {
@@ -1749,10 +1428,7 @@
         0
       ]
     },
-    "class_type": "PreviewImage",
-    "_meta": {
-      "title": "Preview Image"
-    }
+    "class_type": "PreviewImage"
   },
   "607": {
     "inputs": {
@@ -1765,19 +1441,13 @@
         0
       ]
     },
-    "class_type": "DF_Image_scale_to_side",
-    "_meta": {
-      "title": "Image scale to side"
-    }
+    "class_type": "DF_Image_scale_to_side"
   },
   "609": {
     "inputs": {
       "ckpt_name": "dreamshaperXL_lightningDPMSDE.safetensors"
     },
-    "class_type": "CheckpointLoaderSimple",
-    "_meta": {
-      "title": "Load Checkpoint"
-    }
+    "class_type": "CheckpointLoaderSimple"
   },
   "630": {
     "inputs": {
@@ -1790,10 +1460,7 @@
         0
       ]
     },
-    "class_type": "DF_Image_scale_to_side",
-    "_meta": {
-      "title": "Image scale to side"
-    }
+    "class_type": "DF_Image_scale_to_side"
   },
   "636": {
     "inputs": {
@@ -1809,18 +1476,38 @@
         0
       ]
     },
-    "class_type": "OllamaVision",
-    "_meta": {
-      "title": "Ollama Vision"
-    }
+    "class_type": "OllamaVision"
   },
   "637": {
     "inputs": {
-      "url": "https://k.sinaimg.cn/www/dy/slidenews/24_img/2016_19/74485_1363976_499220.jpg/w640slw.jpg"
+      "url": "https://ts1.cn.mm.bing.net/th/id/R-C.eed97557f689df2382b6a9fc85ed172e?rik=d%2fBN9fsXJ2nz2w&riu=http%3a%2f%2fup.bizhizu.com%2fpic%2fd1%2fb7%2fc1%2fd1b7c1c9d4362b4ed5a433e69a19b383.jpg&ehk=OafBZEPbO07cQidzqmNBh0FzR5lM78gdhBOg7%2bjNdis%3d&risl=&pid=ImgRaw&r=0"
     },
-    "class_type": "LoadImagesFromURL",
-    "_meta": {
-      "title": "Load Images From URL ♾️Mixlab"
-    }
+    "class_type": "LoadImagesFromURL"
+  },
+  "638": {
+    "inputs": {
+      "direction": "right",
+      "match_image_size": true,
+      "image1": [
+        "640",
+        0
+      ],
+      "image2": [
+        "497",
+        0
+      ]
+    },
+    "class_type": "ImageConcanate"
+  },
+  "640": {
+    "inputs": {
+      "font": "/home/swgz/work/ComfyUI/input/font/Alibaba-PuHuiTi-Heavy.ttf",
+      "caption": "原图",
+      "image": [
+        "607",
+        0
+      ]
+    },
+    "class_type": "Image Caption"
   }
 }

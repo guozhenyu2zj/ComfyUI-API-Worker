@@ -19,8 +19,8 @@ from datetime import timedelta
 # 配置类
 class Settings(BaseSettings):
     # COMFYUI_URL: str = "http://127.0.0.1:8188"
-    # COMFYUI_URL: str = "http://192.168.0.158:8188"
-    COMFYUI_URL: str = "http://192.168.0.52:8188"
+    COMFYUI_URL: str = "http://192.168.0.158:8188"
+    # COMFYUI_URL: str = "http://192.168.0.52:8188"
     MAX_ATTEMPTS: int = 100
     RETRY_DELAY: int = 5
     CLIENT_ID: str = "your_client_id"
@@ -338,11 +338,13 @@ class ComfyUIClient:
     # 客片换脸 缩略图
     def process_face_swap_thumbnail(self, input_image: str, input_face: str) -> Optional[dict]:
         self.task_name = "face_swap_thumbnail"
-        workflow_api = './api/客照换脸/客照换脸.json'
+        # workflow_api = './api/客照换脸/客照换脸.json'
+        workflow_api = './api/客照换脸/客照换脸-单人.json'
 
         uploaded_file_nodeID = "637"
         uploaded_face_nodeID = "639"
-        save_image_nodeID = '367'
+        # save_image_nodeID = '367'
+        save_image_nodeID = '806'
 
         self.tasks = {
             'image_url': input_image, 
@@ -626,7 +628,7 @@ class ComfyUIClient:
 
     # 多重人脸脱敏 自动
     def process_multiple_face_desensitization_auto(self, input_image: str) -> Optional[dict]:
-        self.task_name = "multiple_face_desensitization_auto"
+
         face_data = self.detect_faces(input_image)
         if not face_data:
             return {"status": 1, "message": f"人脸检测失败"}
@@ -637,132 +639,63 @@ class ComfyUIClient:
         order = list(range(1, face_count + 1))
         print(order)
 
-        longest_side = self.get_image_longest_side(input_image)
-        if longest_side:
-            print(f"图片的最长边为: {longest_side} 像素")
+        # faces_max_side = 0
+        # for face in faces:
+        #     box = face["box"]
+        #     width = abs(box[2] - box[0])
+        #     height = abs(box[3] - box[1])
+        #     side = max(width, height)
+        #     faces_max_side = max(faces_max_side, side)
+
+        # print(f"faces_max_side: {faces_max_side}")
+        # longest_side = self.get_image_longest_side(input_image)
+        # if longest_side:
+        #     print(f"图片的最长边为: {longest_side} 像素")
+    
+        # prompt = '''
+        # Only use keywords to output the gender and age of the characters in the image. For example: "boy, 2 years old"
+        # '''
+        # answer = self.ask_ollama_about_image(prompt)
+        # if answer:
+        #     print(answer)
+                
+        self.task_name = "multiple_face_desensitization"
+        workflow_api = './api/人脸脱敏/多重人脸细致脱敏.json'
+
+        uploaded_file_nodeID = "920"
+        index_num_nodeID = "865"
+        save_image_nodeID = '902'
 
         self.tasks = {
             'image_url': input_image, 
             'result_url': "",  
         }
+                
+        self.workflow = self.load_workflow(workflow_api)
+        self.save_image_nodeID = save_image_nodeID
 
-        if face_count == 1:
-            prompt = '''
-            Only use keywords to output the gender and age of the characters and facial expressions in the image. For example: "boy, 2 years old, laugh".
-            Gender keywords must be: elderly woman, elderly man, man, woman, girl, boy, little girl, baby.
-            '''
-            keywords_to_check = ["elderly woman", "elderly man", "little girl", "little boy", "baby", "toddler", "2 years old", "1 years old"]
-            
-            ollama_answer = self.ask_ollama_about_image(prompt)
-            if ollama_answer:
-                print(ollama_answer)
+        uploaded_file = input_image
 
-            if any(keyword in ollama_answer for keyword in keywords_to_check):    
-                if longest_side < 1024:
-                    workflow_api = './api/人脸匿名化/人脸匿名化-单人-原尺寸.json'
-                elif longest_side > 2048:
-                    workflow_api = './api/人脸匿名化/人脸匿名化-单人-2048.json' 
-                else:
-                    workflow_api = './api/人脸匿名化/人脸匿名化-单人-1024.json'    
-
-                uploaded_file_nodeID = "238"
-                prompt_nodeID = "240"
-                save_image_nodeID = '237'    
-
-                self.workflow = self.load_workflow(workflow_api)
-                self.save_image_nodeID = save_image_nodeID
-                uploaded_file = input_image
-                if not uploaded_file:
-                    return {"status": 1, "message": "图片上传失败"}
-                self.workflow[uploaded_file_nodeID]["inputs"]["url"] = uploaded_file
-                self.workflow[prompt_nodeID]["inputs"]["text"] = ollama_answer
-                print(f"执行工作流{workflow_api}")
-                result = self.process_workflow()
-                if result.get("status") == 0:
-                    print(f"生成图{self.result_url}") 
-                else:
-                    return result
+        if not uploaded_file:
+            return {"status": 1, "message": "图片上传失败"}
+        
+        for i in range(len(order)):
+          
+            print(f"更换第{order[i]}张人脸。")
+            if i == 0:
+                current_image = uploaded_file
             else:
-                faces_max_side = 0
-                for face in faces:
-                    box = face["box"]
-                    width = abs(box[2] - box[0])
-                    height = abs(box[3] - box[1])
-                    side = max(width, height)
-                    faces_max_side = max(faces_max_side, side)
-                print(f"faces_max_side: {faces_max_side}")    
+                current_image = self.result_url
 
-                if longest_side < 1024:
-                    workflow_api = './api/人脸匿名化/人脸匿名化-妆容迁移-原尺寸.json'
-                elif longest_side > 2048: 
-                  if faces_max_side > 768:
-                    workflow_api = './api/人脸匿名化/人脸匿名化-妆容迁移-2048.json' 
-                  else:  
-                    workflow_api = './api/人脸匿名化/人脸匿名化-妆容迁移-1024.json' 
-                else:
-                    workflow_api = './api/人脸匿名化/人脸匿名化-妆容迁移-1024.json'
-                        
+            self.workflow[index_num_nodeID]["inputs"]["Number"] = str(order[i] - 1)
+            self.workflow[uploaded_file_nodeID]["inputs"]["url"] = current_image
 
-                uploaded_file_nodeID = "238"
-                prompt_nodeID = "240"
-                save_image_nodeID = '237'    
+            result = self.process_workflow()
 
-                self.workflow = self.load_workflow(workflow_api)
-                self.save_image_nodeID = save_image_nodeID
-                uploaded_file = input_image
-                if not uploaded_file:
-                    return {"status": 1, "message": "图片上传失败"}
-                self.workflow[uploaded_file_nodeID]["inputs"]["url"] = uploaded_file
-                self.workflow[prompt_nodeID]["inputs"]["text"] = ollama_answer
-                print(f"执行工作流{workflow_api}")
-                result = self.process_workflow()
-                if result.get("status") == 0:
-                    print(f"生成图{self.result_url}") 
-                else:
-                    return result
-
-            
-        elif face_count > 1:
-            
-            if longest_side < 1024:
-                workflow_api = './api/人脸匿名化/人脸匿名化-原尺寸.json'
-            elif longest_side > 2048:
-                workflow_api = './api/人脸匿名化/人脸匿名化-2048.json' 
+            if result.get("status") == 0:
+                print(f"生成图{self.result_url}") 
             else:
-                workflow_api = './api/人脸匿名化/人脸匿名化-1024.json'    
-
-            uploaded_file_nodeID = "238"
-            index_num_nodeID = "127"
-            save_image_nodeID = '237'    
-
-            self.workflow = self.load_workflow(workflow_api)
-            self.save_image_nodeID = save_image_nodeID
-
-            uploaded_file = input_image
-
-            if not uploaded_file:
-                return {"status": 1, "message": "图片上传失败"}
-            
-            for i in range(len(order)):
-              
-                print(f"更换第{order[i]}张人脸。")
-                if i == 0:
-                    current_image = uploaded_file
-                else:
-                    current_image = self.result_url
-
-                print(current_image)
-                print(f"输入原图{current_image}。")
-                self.workflow[index_num_nodeID]["inputs"]["Number"] = str(order[i] - 1)
-                self.workflow[uploaded_file_nodeID]["inputs"]["url"] = current_image
-                print(f"执行工作流{workflow_api}")
-
-                result = self.process_workflow()
-
-                if result.get("status") == 0:
-                    print(f"生成图{self.result_url}") 
-                else:
-                    return result
+                return result
 
         return {"status": 0, "url": self.tasks['result_url'], "task_id": result['task_id'], "file_path": result['file_path']}   
 

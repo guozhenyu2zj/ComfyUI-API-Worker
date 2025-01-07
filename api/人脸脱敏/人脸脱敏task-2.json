@@ -236,7 +236,7 @@
   },
   "47": {
     "inputs": {
-      "method": "VITMatte",
+      "method": "VITMatte(local)",
       "mask_grow": 5,
       "fix_gap": 32,
       "fix_threshold": 0.98,
@@ -274,7 +274,7 @@
   },
   "56": {
     "inputs": {
-      "model_name": "bbox/face_yolov8m.pt"
+      "model_name": "bbox/yolov8n-face-lindevs.pt"
     },
     "class_type": "UltralyticsDetectorProvider",
     "_meta": {
@@ -784,7 +784,7 @@
         "636",
         0
       ],
-      "separator": ", only Asian face, realistic photos"
+      "separator": ", only Chinese face, realistic photos"
     },
     "class_type": "CR Text Concatenate",
     "_meta": {
