@@ -1,51 +1,4 @@
 {
-  "7": {
-    "inputs": {
-      "ckpt_name": "realisticVisionV51_v51VAE.safetensors",
-      "clip": "/home/swgz/work/ComfyUI/models/clip/clip-vit-large-patch14",
-      "scheduler": "DDIM"
-    },
-    "class_type": "StableMakeup_LoadModel",
-    "_meta": {
-      "title": "StableMakeup_LoadModel"
-    }
-  },
-  "9": {
-    "inputs": {
-      "facedetector": "resnet",
-      "dataname": "300wpublic",
-      "cfg": 1.6,
-      "steps": 30,
-      "width": [
-        "236",
-        0
-      ],
-      "height": [
-        "236",
-        0
-      ],
-      "id_image": [
-        "266",
-        0
-      ],
-      "makeup_image": [
-        "117",
-        0
-      ],
-      "pipe": [
-        "7",
-        0
-      ],
-      "makeup_encoder": [
-        "7",
-        1
-      ]
-    },
-    "class_type": "StableMakeup_Sampler",
-    "_meta": {
-      "title": "StableMakeup_Sampler"
-    }
-  },
   "89": {
     "inputs": {
       "clip_name1": "clip_l.safetensors",
@@ -82,7 +35,7 @@
         0
       ],
       "image": [
-        "238",
+        "150",
         0
       ],
       "sam_model_opt": [
@@ -267,21 +220,22 @@
   "105": {
     "inputs": {
       "padding_left": [
-        "221",
+        "283",
         0
       ],
       "padding_right": [
-        "221",
+        "283",
         0
       ],
       "padding_top": [
-        "221",
+        "283",
         0
       ],
       "padding_bottom": [
-        "221",
+        "283",
         0
       ],
+      "return_list": false,
       "image": [
         "104",
         0
@@ -378,23 +332,24 @@
   "117": {
     "inputs": {
       "padding_left": [
-        "221",
+        "283",
         0
       ],
       "padding_right": [
-        "221",
+        "283",
         0
       ],
       "padding_top": [
-        "221",
+        "283",
         0
       ],
       "padding_bottom": [
-        "221",
+        "283",
         0
       ],
+      "return_list": false,
       "image": [
-        "238",
+        "150",
         0
       ],
       "mask": [
@@ -504,7 +459,7 @@
   "133": {
     "inputs": {
       "images": [
-        "238",
+        "150",
         0
       ]
     },
@@ -594,7 +549,7 @@
       "blend_factor": 1,
       "feathering": 4,
       "target": [
-        "238",
+        "150",
         0
       ],
       "target_bounds": [
@@ -674,6 +629,22 @@
       "title": "差分扩散"
     }
   },
+  "150": {
+    "inputs": {
+      "side_length": 2048,
+      "side": "Longest",
+      "upscale_method": "nearest-exact",
+      "crop": "disabled",
+      "image": [
+        "238",
+        0
+      ]
+    },
+    "class_type": "DF_Image_scale_to_side",
+    "_meta": {
+      "title": "Image scale to side"
+    }
+  },
   "152": {
     "inputs": {
       "context_expand_pixels": 10,
@@ -708,7 +679,7 @@
   },
   "153": {
     "inputs": {
-      "seed": 404403669963157,
+      "seed": 359744265782233,
       "steps": 25,
       "cfg": 1,
       "sampler_name": "euler",
@@ -739,7 +710,7 @@
   "162": {
     "inputs": {
       "text": [
-        "164",
+        "290",
         0
       ],
       "clip": [
@@ -752,146 +723,10 @@
       "title": "CLIP文本编码（提示）"
     }
   },
-  "164": {
-    "inputs": {
-      "text": [
-        "165",
-        0
-      ]
-    },
-    "class_type": "ShowText|pysssss",
-    "_meta": {
-      "title": "Show Text 🐍"
-    }
-  },
-  "165": {
-    "inputs": {
-      "text1": [
-        "240",
-        0
-      ],
-      "separator": "，same expression，Chinese face，enhance aesthetics"
-    },
-    "class_type": "CR Text Concatenate",
-    "_meta": {
-      "title": "🔤 CR Text Concatenate"
-    }
-  },
-  "186": {
-    "inputs": {
-      "images": [
-        "9",
-        0
-      ]
-    },
-    "class_type": "PreviewImage",
-    "_meta": {
-      "title": "预览图像"
-    }
-  },
   "199": {
     "inputs": {
       "images": [
         "117",
-        0
-      ]
-    },
-    "class_type": "PreviewImage",
-    "_meta": {
-      "title": "预览图像"
-    }
-  },
-  "221": {
-    "inputs": {
-      "int": 0
-    },
-    "class_type": "Int Literal",
-    "_meta": {
-      "title": "Int Literal"
-    }
-  },
-  "222": {
-    "inputs": {
-      "image": [
-        "9",
-        0
-      ]
-    },
-    "class_type": "GetImageSize+",
-    "_meta": {
-      "title": "🔧 Get Image Size"
-    }
-  },
-  "223": {
-    "inputs": {
-      "text": "360",
-      "anything": [
-        "222",
-        0
-      ]
-    },
-    "class_type": "easy showAnything",
-    "_meta": {
-      "title": "Show Any"
-    }
-  },
-  "224": {
-    "inputs": {
-      "text": "360",
-      "anything": [
-        "222",
-        1
-      ]
-    },
-    "class_type": "easy showAnything",
-    "_meta": {
-      "title": "Show Any"
-    }
-  },
-  "225": {
-    "inputs": {
-      "method": "mkl",
-      "strength": 1,
-      "image_ref": [
-        "266",
-        0
-      ],
-      "image_target": [
-        "9",
-        0
-      ]
-    },
-    "class_type": "ColorMatch",
-    "_meta": {
-      "title": "Color Match"
-    }
-  },
-  "226": {
-    "inputs": {
-      "blend_factor": 1,
-      "feathering": 4,
-      "target": [
-        "142",
-        0
-      ],
-      "target_bounds": [
-        "266",
-        1
-      ],
-      "source": [
-        "225",
-        0
-      ]
-    },
-    "class_type": "Bounded Image Blend",
-    "_meta": {
-      "title": "Bounded Image Blend"
-    }
-  },
-  "232": {
-    "inputs": {
-      "images": [
-        "226",
         0
       ]
     },
@@ -914,7 +749,7 @@
   },
   "234": {
     "inputs": {
-      "text": "672",
+      "text": "1104",
       "anything": [
         "233",
         0
@@ -927,7 +762,7 @@
   },
   "235": {
     "inputs": {
-      "text": "672",
+      "text": "1243",
       "anything": [
         "233",
         1
@@ -938,23 +773,11 @@
       "title": "Show Any"
     }
   },
-  "236": {
-    "inputs": {
-      "image": [
-        "266",
-        0
-      ]
-    },
-    "class_type": "GetImageSize+",
-    "_meta": {
-      "title": "🔧 Get Image Size"
-    }
-  },
   "237": {
     "inputs": {
       "filename_prefix": "人脸匿名化/人脸匿名化",
       "images": [
-        "226",
+        "365",
         0
       ]
     },
@@ -972,243 +795,457 @@
       "title": "Load Images From URL ♾️Mixlab"
     }
   },
-  "240": {
+  "283": {
     "inputs": {
-      "text": ""
+      "Number": "368"
     },
-    "class_type": "ttN text",
+    "class_type": "Int",
     "_meta": {
-      "title": "text"
+      "title": "Int"
     }
   },
-  "241": {
+  "289": {
     "inputs": {
-      "bbox_threshold": 0.5,
-      "bbox_dilation": 0,
-      "crop_factor": 3,
-      "drop_size": 10,
-      "sub_threshold": 0.5,
-      "sub_dilation": 0,
-      "sub_bbox_expansion": 0,
-      "sam_mask_hint_threshold": 0.7,
-      "post_dilation": 0,
-      "bbox_detector": [
-        "254",
+      "model_name": "qwen-vl-max",
+      "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+      "api_key": "sk-5c681ca16a69422f88ad52dacc518a69",
+      "is_ollama": false
+    },
+    "class_type": "LLM_api_loader",
+    "_meta": {
+      "title": "API LLM Loader"
+    }
+  },
+  "290": {
+    "inputs": {
+      "text": [
+        "291",
+        0
+      ]
+    },
+    "class_type": "ShowText|pysssss",
+    "_meta": {
+      "title": "Show Text 🐍"
+    }
+  },
+  "291": {
+    "inputs": {
+      "system_prompt": "You are a professional photographer.",
+      "user_prompt": "Please generate a detailed description based on each person's  facial features in the image, including accurate age, gender, race, makeup, light, the direction in which the eyes are looking, mouth movements, expressions, accessories on the face, and according to your professional knowledge.  All the people in the picture are Chinese faces. Only output the description of the person's face in the picture.Do not output background description.",
+      "temperature": 0.7,
+      "is_memory": "disable",
+      "is_tools_in_sys_prompt": "disable",
+      "is_locked": "disable",
+      "main_brain": "enable",
+      "max_length": 1920,
+      "imgbb_api_key": "",
+      "conversation_rounds": 100,
+      "historical_record": "",
+      "is_enable": true,
+      "model": [
+        "289",
         0
       ],
+      "images": [
+        "150",
+        0
+      ]
+    },
+    "class_type": "LLM",
+    "_meta": {
+      "title": "API LLM general link"
+    }
+  },
+  "296": {
+    "inputs": {
+      "lora_name": "Flux_小红书真实风格丨日常照片丨极致逼真_V2.safetensors",
+      "strength_model": 1,
+      "strength_clip": 1
+    },
+    "class_type": "LoraLoader",
+    "_meta": {
+      "title": "加载LoRA"
+    }
+  },
+  "325": {
+    "inputs": {
+      "direction": "right",
+      "match_image_size": true,
+      "image1": [
+        "328",
+        0
+      ],
+      "image2": [
+        "327",
+        0
+      ]
+    },
+    "class_type": "ImageConcanate",
+    "_meta": {
+      "title": "Image Concatenate"
+    }
+  },
+  "327": {
+    "inputs": {
+      "font": "/home/swgz/work/ComfyUI/input/font/Alibaba-PuHuiTi-Heavy.ttf",
+      "caption": "千问反推提示词",
       "image": [
         "142",
         0
-      ],
-      "sam_model_opt": [
-        "262",
-        0
       ]
     },
-    "class_type": "ImpactSimpleDetectorSEGS",
+    "class_type": "Image Caption",
     "_meta": {
-      "title": "Simple Detector (SEGS)"
+      "title": "Image Caption (Mikey)"
     }
   },
-  "242": {
+  "328": {
     "inputs": {
-      "segs": [
-        "241",
-        0
-      ]
-    },
-    "class_type": "ImpactSEGSToMaskBatch",
-    "_meta": {
-      "title": "SEGS to Mask Batch"
-    }
-  },
-  "243": {
-    "inputs": {
-      "mask": [
-        "242",
-        0
-      ]
-    },
-    "class_type": "MaskToImage",
-    "_meta": {
-      "title": "将遮罩转换为图像"
-    }
-  },
-  "247": {
-    "inputs": {
+      "font": "/home/swgz/work/ComfyUI/input/font/Alibaba-PuHuiTi-Heavy.ttf",
+      "caption": "原图",
       "image": [
-        "266",
+        "150",
         0
       ]
     },
-    "class_type": "easy imageSize",
+    "class_type": "Image Caption",
     "_meta": {
-      "title": "ImageSize"
+      "title": "Image Caption (Mikey)"
     }
   },
-  "254": {
+  "336": {
     "inputs": {
-      "model_name": "bbox/yolov8n-face-lindevs.pt"
-    },
-    "class_type": "UltralyticsDetectorProvider",
-    "_meta": {
-      "title": "UltralyticsDetectorProvider"
-    }
-  },
-  "260": {
-    "inputs": {
+      "query": "Please generate a detailed description based on each person's  facial features in the image, including accurate age, gender, race, makeup, light, the direction in which the eyes are looking, mouth movements, expressions, accessories on the face, and according to your professional knowledge.  All the people in the picture are Chinese faces. Only output the description of the person's face in the picture. Do not output background description.",
+      "debug": "enable",
+      "url": "http://192.168.0.53:11434",
+      "model": "llama3.2-vision:latest",
+      "keep_alive": 60,
+      "format": "text",
+      "seed": 372272276,
       "images": [
-        "261",
+        "150",
         0
       ]
     },
-    "class_type": "PreviewImage",
+    "class_type": "OllamaVision",
     "_meta": {
-      "title": "预览图像"
+      "title": "Ollama Vision"
     }
   },
-  "261": {
+  "338": {
     "inputs": {
-      "alpha_mode": true,
-      "min_alpha": 0.38,
-      "segs": [
-        "241",
+      "clip_name1": "clip_l.safetensors",
+      "clip_name2": "t5xxl_fp8_e4m3fn.safetensors",
+      "type": "flux"
+    },
+    "class_type": "DualCLIPLoader",
+    "_meta": {
+      "title": "双CLIP加载器"
+    }
+  },
+  "339": {
+    "inputs": {
+      "vae_name": "FLUX1/ae.safetensors"
+    },
+    "class_type": "VAELoader",
+    "_meta": {
+      "title": "加载VAE"
+    }
+  },
+  "340": {
+    "inputs": {
+      "text": "",
+      "clip": [
+        "338",
         0
       ]
     },
-    "class_type": "SEGSPreview",
+    "class_type": "CLIPTextEncode",
     "_meta": {
-      "title": "SEGSPreview"
+      "title": "CLIP文本编码（提示）"
     }
   },
-  "262": {
+  "341": {
     "inputs": {
-      "model_name": "sam_vit_b_01ec64.pth",
-      "device_mode": "AUTO"
-    },
-    "class_type": "SAMLoader",
-    "_meta": {
-      "title": "SAMLoader (Impact)"
-    }
-  },
-  "266": {
-    "inputs": {
-      "padding_left": [
-        "271",
+      "method": "mkl",
+      "strength": 1,
+      "image_ref": [
+        "117",
         0
       ],
-      "padding_right": [
-        "271",
+      "image_target": [
+        "359",
+        0
+      ]
+    },
+    "class_type": "ColorMatch",
+    "_meta": {
+      "title": "Color Match"
+    }
+  },
+  "342": {
+    "inputs": {
+      "unet_name": "flux1-fill-dev.safetensors",
+      "weight_dtype": "default"
+    },
+    "class_type": "UNETLoader",
+    "_meta": {
+      "title": "加载扩散模型"
+    }
+  },
+  "345": {
+    "inputs": {
+      "samples": [
+        "350",
         0
       ],
-      "padding_top": [
-        "271",
+      "vae": [
+        "339",
+        0
+      ]
+    },
+    "class_type": "VAEDecode",
+    "_meta": {
+      "title": "VAE解码"
+    }
+  },
+  "348": {
+    "inputs": {
+      "text": [
+        "366",
         0
       ],
-      "padding_bottom": [
-        "271",
+      "clip": [
+        "338",
+        0
+      ]
+    },
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "CLIP文本编码（提示）"
+    }
+  },
+  "349": {
+    "inputs": {
+      "guidance": 30,
+      "conditioning": [
+        "348",
+        0
+      ]
+    },
+    "class_type": "FluxGuidance",
+    "_meta": {
+      "title": "Flux引导"
+    }
+  },
+  "350": {
+    "inputs": {
+      "seed": 1025557620839661,
+      "steps": 25,
+      "cfg": 1,
+      "sampler_name": "euler",
+      "scheduler": "normal",
+      "denoise": 0.8,
+      "model": [
+        "352",
         0
       ],
-      "image": [
-        "142",
+      "positive": [
+        "351",
         0
       ],
-      "mask": [
-        "269",
-        0
-      ]
-    },
-    "class_type": "Bounded Image Crop with Mask",
-    "_meta": {
-      "title": "Bounded Image Crop with Mask"
-    }
-  },
-  "269": {
-    "inputs": {
-      "start": [
-        "127",
-        0
-      ],
-      "length": 1,
-      "mask": [
-        "242",
-        0
-      ]
-    },
-    "class_type": "MaskFromBatch+",
-    "_meta": {
-      "title": "🔧 Mask From Batch"
-    }
-  },
-  "270": {
-    "inputs": {
-      "images": [
-        "243",
-        0
-      ]
-    },
-    "class_type": "PreviewImage",
-    "_meta": {
-      "title": "预览图像"
-    }
-  },
-  "271": {
-    "inputs": {
-      "int": 0
-    },
-    "class_type": "Int Literal",
-    "_meta": {
-      "title": "Int Literal"
-    }
-  },
-  "276": {
-    "inputs": {
-      "text": "360",
-      "anything": [
-        "277",
-        0
-      ]
-    },
-    "class_type": "easy showAnything",
-    "_meta": {
-      "title": "Show Any"
-    }
-  },
-  "277": {
-    "inputs": {
-      "image": [
-        "266",
-        0
-      ]
-    },
-    "class_type": "GetImageSize+",
-    "_meta": {
-      "title": "🔧 Get Image Size"
-    }
-  },
-  "278": {
-    "inputs": {
-      "images": [
-        "266",
-        0
-      ]
-    },
-    "class_type": "PreviewImage",
-    "_meta": {
-      "title": "预览图像"
-    }
-  },
-  "279": {
-    "inputs": {
-      "text": "360",
-      "anything": [
-        "277",
+      "negative": [
+        "351",
         1
+      ],
+      "latent_image": [
+        "351",
+        2
       ]
     },
-    "class_type": "easy showAnything",
+    "class_type": "KSampler",
     "_meta": {
-      "title": "Show Any"
+      "title": "K采样器"
+    }
+  },
+  "351": {
+    "inputs": {
+      "noise_mask": true,
+      "positive": [
+        "349",
+        0
+      ],
+      "negative": [
+        "340",
+        0
+      ],
+      "vae": [
+        "339",
+        0
+      ],
+      "pixels": [
+        "355",
+        1
+      ],
+      "mask": [
+        "355",
+        2
+      ]
+    },
+    "class_type": "InpaintModelConditioning",
+    "_meta": {
+      "title": "修复模型条件"
+    }
+  },
+  "352": {
+    "inputs": {
+      "model": [
+        "342",
+        0
+      ]
+    },
+    "class_type": "DifferentialDiffusion",
+    "_meta": {
+      "title": "差分扩散"
+    }
+  },
+  "354": {
+    "inputs": {
+      "images": [
+        "345",
+        0
+      ]
+    },
+    "class_type": "PreviewImage",
+    "_meta": {
+      "title": "预览图像"
+    }
+  },
+  "355": {
+    "inputs": {
+      "context_expand_pixels": 10,
+      "context_expand_factor": 1,
+      "fill_mask_holes": true,
+      "blur_mask_pixels": 16,
+      "invert_mask": false,
+      "blend_pixels": 16,
+      "rescale_algorithm": "bicubic",
+      "mode": "ranged size",
+      "force_width": 1024,
+      "force_height": 1024,
+      "rescale_factor": 1,
+      "min_width": 768,
+      "min_height": 768,
+      "max_width": 1024,
+      "max_height": 1024,
+      "padding": 32,
+      "image": [
+        "117",
+        0
+      ],
+      "mask": [
+        "111",
+        0
+      ]
+    },
+    "class_type": "InpaintCrop",
+    "_meta": {
+      "title": "✂️ Inpaint Crop"
+    }
+  },
+  "359": {
+    "inputs": {
+      "rescale_algorithm": "bislerp",
+      "stitch": [
+        "355",
+        0
+      ],
+      "inpainted_image": [
+        "345",
+        0
+      ]
+    },
+    "class_type": "InpaintStitch",
+    "_meta": {
+      "title": "✂️ Inpaint Stitch"
+    }
+  },
+  "360": {
+    "inputs": {
+      "images": [
+        "361",
+        0
+      ]
+    },
+    "class_type": "PreviewImage",
+    "_meta": {
+      "title": "预览图像"
+    }
+  },
+  "361": {
+    "inputs": {
+      "blend_factor": 1,
+      "feathering": 4,
+      "target": [
+        "150",
+        0
+      ],
+      "target_bounds": [
+        "117",
+        1
+      ],
+      "source": [
+        "341",
+        0
+      ]
+    },
+    "class_type": "Bounded Image Blend",
+    "_meta": {
+      "title": "Bounded Image Blend"
+    }
+  },
+  "364": {
+    "inputs": {
+      "font": "/home/swgz/work/ComfyUI/input/font/Alibaba-PuHuiTi-Heavy.ttf",
+      "caption": "minicpm反推提示词",
+      "image": [
+        "361",
+        0
+      ]
+    },
+    "class_type": "Image Caption",
+    "_meta": {
+      "title": "Image Caption (Mikey)"
+    }
+  },
+  "365": {
+    "inputs": {
+      "direction": "right",
+      "match_image_size": true,
+      "image1": [
+        "325",
+        0
+      ],
+      "image2": [
+        "364",
+        0
+      ]
+    },
+    "class_type": "ImageConcanate",
+    "_meta": {
+      "title": "Image Concatenate"
+    }
+  },
+  "366": {
+    "inputs": {
+      "text": [
+        "336",
+        0
+      ]
+    },
+    "class_type": "ShowText|pysssss",
+    "_meta": {
+      "title": "Show Text 🐍"
     }
   }
 }

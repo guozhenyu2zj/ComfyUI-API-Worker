@@ -35,7 +35,7 @@
         0
       ],
       "image": [
-        "238",
+        "150",
         0
       ],
       "sam_model_opt": [
@@ -220,21 +220,22 @@
   "105": {
     "inputs": {
       "padding_left": [
-        "221",
+        "283",
         0
       ],
       "padding_right": [
-        "221",
+        "283",
         0
       ],
       "padding_top": [
-        "221",
+        "283",
         0
       ],
       "padding_bottom": [
-        "221",
+        "283",
         0
       ],
+      "return_list": false,
       "image": [
         "104",
         0
@@ -331,23 +332,24 @@
   "117": {
     "inputs": {
       "padding_left": [
-        "221",
+        "283",
         0
       ],
       "padding_right": [
-        "221",
+        "283",
         0
       ],
       "padding_top": [
-        "221",
+        "283",
         0
       ],
       "padding_bottom": [
-        "221",
+        "283",
         0
       ],
+      "return_list": false,
       "image": [
-        "238",
+        "150",
         0
       ],
       "mask": [
@@ -457,7 +459,7 @@
   "133": {
     "inputs": {
       "images": [
-        "238",
+        "150",
         0
       ]
     },
@@ -547,7 +549,7 @@
       "blend_factor": 1,
       "feathering": 4,
       "target": [
-        "238",
+        "150",
         0
       ],
       "target_bounds": [
@@ -627,6 +629,22 @@
       "title": "差分扩散"
     }
   },
+  "150": {
+    "inputs": {
+      "side_length": 2048,
+      "side": "Longest",
+      "upscale_method": "nearest-exact",
+      "crop": "disabled",
+      "image": [
+        "238",
+        0
+      ]
+    },
+    "class_type": "DF_Image_scale_to_side",
+    "_meta": {
+      "title": "Image scale to side"
+    }
+  },
   "152": {
     "inputs": {
       "context_expand_pixels": 10,
@@ -661,7 +679,7 @@
   },
   "153": {
     "inputs": {
-      "seed": 289830099747410,
+      "seed": 315122091590185,
       "steps": 25,
       "cfg": 1,
       "sampler_name": "euler",
@@ -689,29 +707,10 @@
       "title": "K采样器"
     }
   },
-  "161": {
-    "inputs": {
-      "query": "Only use keywords to output the gender and age of the characters and facial expressions in the image. For example: \"boy, 2 years old, laugh\"",
-      "debug": "enable",
-      "url": "http://192.168.0.158:11434",
-      "model": "minicpm-v:latest",
-      "keep_alive": 60,
-      "format": "text",
-      "seed": 1267763459,
-      "images": [
-        "117",
-        0
-      ]
-    },
-    "class_type": "OllamaVision",
-    "_meta": {
-      "title": "Ollama Vision"
-    }
-  },
   "162": {
     "inputs": {
       "text": [
-        "164",
+        "290",
         0
       ],
       "clip": [
@@ -724,31 +723,6 @@
       "title": "CLIP文本编码（提示）"
     }
   },
-  "164": {
-    "inputs": {
-      "text": [
-        "165",
-        0
-      ]
-    },
-    "class_type": "ShowText|pysssss",
-    "_meta": {
-      "title": "Show Text 🐍"
-    }
-  },
-  "165": {
-    "inputs": {
-      "text1": [
-        "161",
-        0
-      ],
-      "separator": "，same expression，Chinese face，enhance aesthetics"
-    },
-    "class_type": "CR Text Concatenate",
-    "_meta": {
-      "title": "🔤 CR Text Concatenate"
-    }
-  },
   "199": {
     "inputs": {
       "images": [
@@ -759,15 +733,6 @@
     "class_type": "PreviewImage",
     "_meta": {
       "title": "预览图像"
-    }
-  },
-  "221": {
-    "inputs": {
-      "int": 0
-    },
-    "class_type": "Int Literal",
-    "_meta": {
-      "title": "Int Literal"
     }
   },
   "233": {
@@ -784,7 +749,7 @@
   },
   "234": {
     "inputs": {
-      "text": "235",
+      "text": "666",
       "anything": [
         "233",
         0
@@ -797,7 +762,7 @@
   },
   "235": {
     "inputs": {
-      "text": "312",
+      "text": "765",
       "anything": [
         "233",
         1
@@ -823,11 +788,98 @@
   },
   "238": {
     "inputs": {
-      "url": "https://k.sinaimg.cn/www/dy/slidenews/24_img/2016_19/74485_1363976_499220.jpg/w640slw.jpg"
+      "url": "https://img.sw.gz.cn/photography-comfyui/user_1/20250117/3%2815%29.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250117%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250117T014807Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=37e245707863cec46134e61f24fb2100a8d5804b45ce5c0d31abbc56e8705874"
     },
     "class_type": "LoadImagesFromURL",
     "_meta": {
       "title": "Load Images From URL ♾️Mixlab"
+    }
+  },
+  "283": {
+    "inputs": {
+      "Number": "156"
+    },
+    "class_type": "Int",
+    "_meta": {
+      "title": "Int"
+    }
+  },
+  "289": {
+    "inputs": {
+      "model_name": "qwen-vl-max",
+      "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+      "api_key": "sk-5c681ca16a69422f88ad52dacc518a69",
+      "is_ollama": false
+    },
+    "class_type": "LLM_api_loader",
+    "_meta": {
+      "title": "API LLM Loader"
+    }
+  },
+  "290": {
+    "inputs": {
+      "text": [
+        "292",
+        0
+      ]
+    },
+    "class_type": "ShowText|pysssss",
+    "_meta": {
+      "title": "Show Text 🐍"
+    }
+  },
+  "291": {
+    "inputs": {
+      "system_prompt": "You are a professional photographer.",
+      "user_prompt": "Please generate a detailed description based on each person's  facial features in the image, including accurate age, gender, makeup, light, the direction in which the eyes are looking, mouth movements, expressions, accessories on the face, and according to your professional knowledge. Only output the description of the person's face in the picture. \nDo not output background description.\nDo not output background description.\nDo not output background description.",
+      "temperature": 0.7,
+      "is_memory": "disable",
+      "is_tools_in_sys_prompt": "disable",
+      "is_locked": "disable",
+      "main_brain": "enable",
+      "max_length": 1920,
+      "imgbb_api_key": "",
+      "conversation_rounds": 100,
+      "historical_record": "",
+      "is_enable": true,
+      "model": [
+        "289",
+        0
+      ],
+      "images": [
+        "150",
+        0
+      ]
+    },
+    "class_type": "LLM",
+    "_meta": {
+      "title": "API LLM general link"
+    }
+  },
+  "292": {
+    "inputs": {
+      "text1": [
+        "293",
+        0
+      ],
+      "text2": [
+        "291",
+        0
+      ],
+      "separator": ""
+    },
+    "class_type": "CR Text Concatenate",
+    "_meta": {
+      "title": "🔤 CR Text Concatenate"
+    }
+  },
+  "293": {
+    "inputs": {
+      "text": "Chinese face."
+    },
+    "class_type": "Text _O",
+    "_meta": {
+      "title": "Text _O"
     }
   }
 }

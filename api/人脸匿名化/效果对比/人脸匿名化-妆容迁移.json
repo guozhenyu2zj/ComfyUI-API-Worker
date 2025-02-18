@@ -1,4 +1,51 @@
 {
+  "7": {
+    "inputs": {
+      "ckpt_name": "realisticVisionV51_v51VAE.safetensors",
+      "clip": "/home/swgz/work/ComfyUI/models/clip/clip-vit-large-patch14",
+      "scheduler": "DDIM"
+    },
+    "class_type": "StableMakeup_LoadModel",
+    "_meta": {
+      "title": "StableMakeup_LoadModel"
+    }
+  },
+  "9": {
+    "inputs": {
+      "facedetector": "resnet",
+      "dataname": "300wpublic",
+      "cfg": 1.6,
+      "steps": 30,
+      "width": [
+        "236",
+        0
+      ],
+      "height": [
+        "236",
+        0
+      ],
+      "id_image": [
+        "266",
+        0
+      ],
+      "makeup_image": [
+        "117",
+        0
+      ],
+      "pipe": [
+        "7",
+        0
+      ],
+      "makeup_encoder": [
+        "7",
+        1
+      ]
+    },
+    "class_type": "StableMakeup_Sampler",
+    "_meta": {
+      "title": "StableMakeup_Sampler"
+    }
+  },
   "89": {
     "inputs": {
       "clip_name1": "clip_l.safetensors",
@@ -220,19 +267,19 @@
   "105": {
     "inputs": {
       "padding_left": [
-        "221",
+        "283",
         0
       ],
       "padding_right": [
-        "221",
+        "283",
         0
       ],
       "padding_top": [
-        "221",
+        "283",
         0
       ],
       "padding_bottom": [
-        "221",
+        "283",
         0
       ],
       "image": [
@@ -331,19 +378,19 @@
   "117": {
     "inputs": {
       "padding_left": [
-        "221",
+        "283",
         0
       ],
       "padding_right": [
-        "221",
+        "283",
         0
       ],
       "padding_top": [
-        "221",
+        "283",
         0
       ],
       "padding_bottom": [
-        "221",
+        "283",
         0
       ],
       "image": [
@@ -629,7 +676,7 @@
   },
   "150": {
     "inputs": {
-      "side_length": 1024,
+      "side_length": 1280,
       "side": "Longest",
       "upscale_method": "nearest-exact",
       "crop": "disabled",
@@ -677,7 +724,7 @@
   },
   "153": {
     "inputs": {
-      "seed": 155720516196659,
+      "seed": 297728310200542,
       "steps": 25,
       "cfg": 1,
       "sampler_name": "euler",
@@ -705,25 +752,6 @@
       "title": "K采样器"
     }
   },
-  "161": {
-    "inputs": {
-      "query": "Only use keywords to output the gender and age of the characters and facial expressions in the image. For example: \"boy, 2 years old, laugh\"",
-      "debug": "enable",
-      "url": "http://192.168.0.158:11434",
-      "model": "minicpm-v:latest",
-      "keep_alive": 60,
-      "format": "text",
-      "seed": 689295056,
-      "images": [
-        "117",
-        0
-      ]
-    },
-    "class_type": "OllamaVision",
-    "_meta": {
-      "title": "Ollama Vision"
-    }
-  },
   "162": {
     "inputs": {
       "text": [
@@ -743,7 +771,7 @@
   "164": {
     "inputs": {
       "text": [
-        "165",
+        "286",
         0
       ]
     },
@@ -752,17 +780,16 @@
       "title": "Show Text 🐍"
     }
   },
-  "165": {
+  "186": {
     "inputs": {
-      "text1": [
-        "161",
+      "images": [
+        "9",
         0
-      ],
-      "separator": "，same expression，Chinese face，enhance aesthetics"
+      ]
     },
-    "class_type": "CR Text Concatenate",
+    "class_type": "PreviewImage",
     "_meta": {
-      "title": "🔤 CR Text Concatenate"
+      "title": "预览图像"
     }
   },
   "199": {
@@ -777,13 +804,94 @@
       "title": "预览图像"
     }
   },
-  "221": {
+  "222": {
     "inputs": {
-      "int": 63
+      "image": [
+        "9",
+        0
+      ]
     },
-    "class_type": "Int Literal",
+    "class_type": "GetImageSize+",
     "_meta": {
-      "title": "Int Literal"
+      "title": "🔧 Get Image Size"
+    }
+  },
+  "223": {
+    "inputs": {
+      "text": "360",
+      "anything": [
+        "222",
+        0
+      ]
+    },
+    "class_type": "easy showAnything",
+    "_meta": {
+      "title": "Show Any"
+    }
+  },
+  "224": {
+    "inputs": {
+      "text": "360",
+      "anything": [
+        "222",
+        1
+      ]
+    },
+    "class_type": "easy showAnything",
+    "_meta": {
+      "title": "Show Any"
+    }
+  },
+  "225": {
+    "inputs": {
+      "method": "mkl",
+      "strength": 1,
+      "image_ref": [
+        "266",
+        0
+      ],
+      "image_target": [
+        "9",
+        0
+      ]
+    },
+    "class_type": "ColorMatch",
+    "_meta": {
+      "title": "Color Match"
+    }
+  },
+  "226": {
+    "inputs": {
+      "blend_factor": 1,
+      "feathering": 4,
+      "target": [
+        "142",
+        0
+      ],
+      "target_bounds": [
+        "266",
+        1
+      ],
+      "source": [
+        "225",
+        0
+      ]
+    },
+    "class_type": "Bounded Image Blend",
+    "_meta": {
+      "title": "Bounded Image Blend"
+    }
+  },
+  "232": {
+    "inputs": {
+      "images": [
+        "226",
+        0
+      ]
+    },
+    "class_type": "PreviewImage",
+    "_meta": {
+      "title": "预览图像"
     }
   },
   "233": {
@@ -800,7 +908,7 @@
   },
   "234": {
     "inputs": {
-      "text": "508",
+      "text": "360",
       "anything": [
         "233",
         0
@@ -813,7 +921,7 @@
   },
   "235": {
     "inputs": {
-      "text": "508",
+      "text": "360",
       "anything": [
         "233",
         1
@@ -824,11 +932,23 @@
       "title": "Show Any"
     }
   },
+  "236": {
+    "inputs": {
+      "image": [
+        "266",
+        0
+      ]
+    },
+    "class_type": "GetImageSize+",
+    "_meta": {
+      "title": "🔧 Get Image Size"
+    }
+  },
   "237": {
     "inputs": {
       "filename_prefix": "人脸匿名化/人脸匿名化",
       "images": [
-        "142",
+        "226",
         0
       ]
     },
@@ -839,11 +959,250 @@
   },
   "238": {
     "inputs": {
-      "url": "https://k.sinaimg.cn/www/dy/slidenews/24_img/2016_19/74485_1363976_499220.jpg/w640slw.jpg"
+      "url": "https://ts1.cn.mm.bing.net/th/id/R-C.eed97557f689df2382b6a9fc85ed172e?rik=d%2fBN9fsXJ2nz2w&riu=http%3a%2f%2fup.bizhizu.com%2fpic%2fd1%2fb7%2fc1%2fd1b7c1c9d4362b4ed5a433e69a19b383.jpg&ehk=OafBZEPbO07cQidzqmNBh0FzR5lM78gdhBOg7%2bjNdis%3d&risl=&pid=ImgRaw&r=0"
     },
     "class_type": "LoadImagesFromURL",
     "_meta": {
       "title": "Load Images From URL ♾️Mixlab"
+    }
+  },
+  "241": {
+    "inputs": {
+      "bbox_threshold": 0.5,
+      "bbox_dilation": 0,
+      "crop_factor": 3,
+      "drop_size": 10,
+      "sub_threshold": 0.5,
+      "sub_dilation": 0,
+      "sub_bbox_expansion": 0,
+      "sam_mask_hint_threshold": 0.7,
+      "post_dilation": 0,
+      "bbox_detector": [
+        "254",
+        0
+      ],
+      "image": [
+        "142",
+        0
+      ],
+      "sam_model_opt": [
+        "262",
+        0
+      ]
+    },
+    "class_type": "ImpactSimpleDetectorSEGS",
+    "_meta": {
+      "title": "Simple Detector (SEGS)"
+    }
+  },
+  "242": {
+    "inputs": {
+      "segs": [
+        "241",
+        0
+      ]
+    },
+    "class_type": "ImpactSEGSToMaskBatch",
+    "_meta": {
+      "title": "SEGS to Mask Batch"
+    }
+  },
+  "243": {
+    "inputs": {
+      "mask": [
+        "242",
+        0
+      ]
+    },
+    "class_type": "MaskToImage",
+    "_meta": {
+      "title": "将遮罩转换为图像"
+    }
+  },
+  "247": {
+    "inputs": {
+      "image": [
+        "266",
+        0
+      ]
+    },
+    "class_type": "easy imageSize",
+    "_meta": {
+      "title": "ImageSize"
+    }
+  },
+  "254": {
+    "inputs": {
+      "model_name": "bbox/yolov8n-face-lindevs.pt"
+    },
+    "class_type": "UltralyticsDetectorProvider",
+    "_meta": {
+      "title": "UltralyticsDetectorProvider"
+    }
+  },
+  "260": {
+    "inputs": {
+      "images": [
+        "261",
+        0
+      ]
+    },
+    "class_type": "PreviewImage",
+    "_meta": {
+      "title": "预览图像"
+    }
+  },
+  "261": {
+    "inputs": {
+      "alpha_mode": true,
+      "min_alpha": 0.38,
+      "segs": [
+        "241",
+        0
+      ]
+    },
+    "class_type": "SEGSPreview",
+    "_meta": {
+      "title": "SEGSPreview"
+    }
+  },
+  "262": {
+    "inputs": {
+      "model_name": "sam_vit_b_01ec64.pth",
+      "device_mode": "AUTO"
+    },
+    "class_type": "SAMLoader",
+    "_meta": {
+      "title": "SAMLoader (Impact)"
+    }
+  },
+  "266": {
+    "inputs": {
+      "padding_left": [
+        "283",
+        0
+      ],
+      "padding_right": [
+        "283",
+        0
+      ],
+      "padding_top": [
+        "283",
+        0
+      ],
+      "padding_bottom": [
+        "283",
+        0
+      ],
+      "image": [
+        "142",
+        0
+      ],
+      "mask": [
+        "269",
+        0
+      ]
+    },
+    "class_type": "Bounded Image Crop with Mask",
+    "_meta": {
+      "title": "Bounded Image Crop with Mask"
+    }
+  },
+  "269": {
+    "inputs": {
+      "start": [
+        "127",
+        0
+      ],
+      "length": 1,
+      "mask": [
+        "242",
+        0
+      ]
+    },
+    "class_type": "MaskFromBatch+",
+    "_meta": {
+      "title": "🔧 Mask From Batch"
+    }
+  },
+  "270": {
+    "inputs": {
+      "images": [
+        "243",
+        0
+      ]
+    },
+    "class_type": "PreviewImage",
+    "_meta": {
+      "title": "预览图像"
+    }
+  },
+  "276": {
+    "inputs": {
+      "text": "360",
+      "anything": [
+        "277",
+        0
+      ]
+    },
+    "class_type": "easy showAnything",
+    "_meta": {
+      "title": "Show Any"
+    }
+  },
+  "277": {
+    "inputs": {
+      "image": [
+        "266",
+        0
+      ]
+    },
+    "class_type": "GetImageSize+",
+    "_meta": {
+      "title": "🔧 Get Image Size"
+    }
+  },
+  "278": {
+    "inputs": {
+      "images": [
+        "266",
+        0
+      ]
+    },
+    "class_type": "PreviewImage",
+    "_meta": {
+      "title": "预览图像"
+    }
+  },
+  "279": {
+    "inputs": {
+      "text": "360",
+      "anything": [
+        "277",
+        1
+      ]
+    },
+    "class_type": "easy showAnything",
+    "_meta": {
+      "title": "Show Any"
+    }
+  },
+  "283": {
+    "inputs": {
+      "Number": "10"
+    },
+    "class_type": "Int",
+    "_meta": {
+      "title": "Int"
+    }
+  },
+  "286": {
+    "inputs": {
+      "text": ""
+    },
+    "class_type": "ttN text",
+    "_meta": {
+      "title": "text"
     }
   }
 }

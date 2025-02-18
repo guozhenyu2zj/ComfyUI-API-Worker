@@ -267,19 +267,19 @@
   "105": {
     "inputs": {
       "padding_left": [
-        "221",
+        "283",
         0
       ],
       "padding_right": [
-        "221",
+        "283",
         0
       ],
       "padding_top": [
-        "221",
+        "283",
         0
       ],
       "padding_bottom": [
-        "221",
+        "283",
         0
       ],
       "image": [
@@ -378,19 +378,19 @@
   "117": {
     "inputs": {
       "padding_left": [
-        "221",
+        "283",
         0
       ],
       "padding_right": [
-        "221",
+        "283",
         0
       ],
       "padding_top": [
-        "221",
+        "283",
         0
       ],
       "padding_bottom": [
-        "221",
+        "283",
         0
       ],
       "image": [
@@ -676,7 +676,7 @@
   },
   "150": {
     "inputs": {
-      "side_length": 2048,
+      "side_length": 1280,
       "side": "Longest",
       "upscale_method": "nearest-exact",
       "crop": "disabled",
@@ -771,26 +771,13 @@
   "164": {
     "inputs": {
       "text": [
-        "165",
+        "281",
         0
       ]
     },
     "class_type": "ShowText|pysssss",
     "_meta": {
       "title": "Show Text 🐍"
-    }
-  },
-  "165": {
-    "inputs": {
-      "text1": [
-        "240",
-        0
-      ],
-      "separator": "，same expression，Chinese face，enhance aesthetics"
-    },
-    "class_type": "CR Text Concatenate",
-    "_meta": {
-      "title": "🔤 CR Text Concatenate"
     }
   },
   "186": {
@@ -815,15 +802,6 @@
     "class_type": "PreviewImage",
     "_meta": {
       "title": "预览图像"
-    }
-  },
-  "221": {
-    "inputs": {
-      "int": 128
-    },
-    "class_type": "Int Literal",
-    "_meta": {
-      "title": "Int Literal"
     }
   },
   "222": {
@@ -988,15 +966,6 @@
       "title": "Load Images From URL ♾️Mixlab"
     }
   },
-  "240": {
-    "inputs": {
-      "text": ""
-    },
-    "class_type": "ttN text",
-    "_meta": {
-      "title": "text"
-    }
-  },
   "241": {
     "inputs": {
       "bbox_threshold": 0.5,
@@ -1110,19 +1079,19 @@
   "266": {
     "inputs": {
       "padding_left": [
-        "271",
+        "283",
         0
       ],
       "padding_right": [
-        "271",
+        "283",
         0
       ],
       "padding_top": [
-        "271",
+        "283",
         0
       ],
       "padding_bottom": [
-        "271",
+        "283",
         0
       ],
       "image": [
@@ -1166,15 +1135,6 @@
     "class_type": "PreviewImage",
     "_meta": {
       "title": "预览图像"
-    }
-  },
-  "271": {
-    "inputs": {
-      "int": 128
-    },
-    "class_type": "Int Literal",
-    "_meta": {
-      "title": "Int Literal"
     }
   },
   "276": {
@@ -1225,6 +1185,34 @@
     "class_type": "easy showAnything",
     "_meta": {
       "title": "Show Any"
+    }
+  },
+  "281": {
+    "inputs": {
+      "query": "You are a professional photographer, please generate a detailed description for guiding photography based on the facial features in the image, including accurate age, race, makeup, light, the direction in which the eyes are looking, mouth movements, expressions, accessories, and according to your professional knowledge.",
+      "debug": "enable",
+      "url": "http://192.168.0.53:11434",
+      "model": "minicpm-v:latest",
+      "keep_alive": 60,
+      "format": "text",
+      "seed": 1267763459,
+      "images": [
+        "117",
+        0
+      ]
+    },
+    "class_type": "OllamaVision",
+    "_meta": {
+      "title": "Ollama Vision"
+    }
+  },
+  "283": {
+    "inputs": {
+      "Number": "10"
+    },
+    "class_type": "Int",
+    "_meta": {
+      "title": "Int"
     }
   }
 }

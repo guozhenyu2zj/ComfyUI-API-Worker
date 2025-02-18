@@ -380,7 +380,7 @@
   },
   "90": {
     "inputs": {
-      "value": 63
+      "value": 128
     },
     "class_type": "easy int",
     "_meta": {
@@ -793,7 +793,7 @@
   },
   "607": {
     "inputs": {
-      "side_length": 2048,
+      "side_length": 1920,
       "side": "Longest",
       "upscale_method": "nearest-exact",
       "crop": "disabled",

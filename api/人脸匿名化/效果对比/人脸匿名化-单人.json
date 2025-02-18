@@ -35,7 +35,7 @@
         0
       ],
       "image": [
-        "238",
+        "150",
         0
       ],
       "sam_model_opt": [
@@ -220,19 +220,19 @@
   "105": {
     "inputs": {
       "padding_left": [
-        "221",
+        "283",
         0
       ],
       "padding_right": [
-        "221",
+        "283",
         0
       ],
       "padding_top": [
-        "221",
+        "283",
         0
       ],
       "padding_bottom": [
-        "221",
+        "283",
         0
       ],
       "image": [
@@ -331,23 +331,23 @@
   "117": {
     "inputs": {
       "padding_left": [
-        "221",
+        "283",
         0
       ],
       "padding_right": [
-        "221",
+        "283",
         0
       ],
       "padding_top": [
-        "221",
+        "283",
         0
       ],
       "padding_bottom": [
-        "221",
+        "283",
         0
       ],
       "image": [
-        "238",
+        "150",
         0
       ],
       "mask": [
@@ -457,7 +457,7 @@
   "133": {
     "inputs": {
       "images": [
-        "238",
+        "150",
         0
       ]
     },
@@ -547,7 +547,7 @@
       "blend_factor": 1,
       "feathering": 4,
       "target": [
-        "238",
+        "150",
         0
       ],
       "target_bounds": [
@@ -627,6 +627,22 @@
       "title": "差分扩散"
     }
   },
+  "150": {
+    "inputs": {
+      "side_length": 2048,
+      "side": "Longest",
+      "upscale_method": "nearest-exact",
+      "crop": "disabled",
+      "image": [
+        "238",
+        0
+      ]
+    },
+    "class_type": "DF_Image_scale_to_side",
+    "_meta": {
+      "title": "Image scale to side"
+    }
+  },
   "152": {
     "inputs": {
       "context_expand_pixels": 10,
@@ -661,7 +677,7 @@
   },
   "153": {
     "inputs": {
-      "seed": 155720516196659,
+      "seed": 297728310200542,
       "steps": 25,
       "cfg": 1,
       "sampler_name": "euler",
@@ -708,26 +724,13 @@
   "164": {
     "inputs": {
       "text": [
-        "165",
+        "286",
         0
       ]
     },
     "class_type": "ShowText|pysssss",
     "_meta": {
       "title": "Show Text 🐍"
-    }
-  },
-  "165": {
-    "inputs": {
-      "text1": [
-        "240",
-        0
-      ],
-      "separator": "，same expression，Chinese face，enhance aesthetics"
-    },
-    "class_type": "CR Text Concatenate",
-    "_meta": {
-      "title": "🔤 CR Text Concatenate"
     }
   },
   "199": {
@@ -740,15 +743,6 @@
     "class_type": "PreviewImage",
     "_meta": {
       "title": "预览图像"
-    }
-  },
-  "221": {
-    "inputs": {
-      "int": 0
-    },
-    "class_type": "Int Literal",
-    "_meta": {
-      "title": "Int Literal"
     }
   },
   "233": {
@@ -765,7 +759,7 @@
   },
   "234": {
     "inputs": {
-      "text": "508",
+      "text": "360",
       "anything": [
         "233",
         0
@@ -778,7 +772,7 @@
   },
   "235": {
     "inputs": {
-      "text": "508",
+      "text": "360",
       "anything": [
         "233",
         1
@@ -804,14 +798,23 @@
   },
   "238": {
     "inputs": {
-      "url": "https://k.sinaimg.cn/www/dy/slidenews/24_img/2016_19/74485_1363976_499220.jpg/w640slw.jpg"
+      "url": "https://ts1.cn.mm.bing.net/th/id/R-C.eed97557f689df2382b6a9fc85ed172e?rik=d%2fBN9fsXJ2nz2w&riu=http%3a%2f%2fup.bizhizu.com%2fpic%2fd1%2fb7%2fc1%2fd1b7c1c9d4362b4ed5a433e69a19b383.jpg&ehk=OafBZEPbO07cQidzqmNBh0FzR5lM78gdhBOg7%2bjNdis%3d&risl=&pid=ImgRaw&r=0"
     },
     "class_type": "LoadImagesFromURL",
     "_meta": {
       "title": "Load Images From URL ♾️Mixlab"
     }
   },
-  "240": {
+  "283": {
+    "inputs": {
+      "Number": "156"
+    },
+    "class_type": "Int",
+    "_meta": {
+      "title": "Int"
+    }
+  },
+  "286": {
     "inputs": {
       "text": ""
     },

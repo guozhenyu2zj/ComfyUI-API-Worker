@@ -1,16 +1,100 @@
 from comfyui_api import ComfyUIClient
 import time
+import os
+import mimetypes
+import asyncio
+import websockets
+import json
+import requests
+import os
+import logging
+from typing import Optional, Dict
+from pathlib import Path
+
+
+def upload_image(image_path: str):
+    """上传图片并返回URL"""
+    try:
+        # 获取文件的 MIME 类型
+        content_type = mimetypes.guess_type(image_path)[0]
+        print(f"Uploading image: {image_path}")
+        
+        # 准备文件和headers
+        files = {
+            'file': (
+                os.path.basename(image_path),
+                open(image_path, 'rb'),
+                content_type
+            )
+        }
+
+        MinIO_TOKEN = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MzkwMDg1NTMsInN1YiI6IjEifQ.VURfKY7NyPIsnIJz9P-ElZz-HMlF7nqnX4Am5eQ7wO0'
+        base_url = "http://192.168.0.52:8000/api/v1"
+
+        headers = {'Authorization': f'Bearer {MinIO_TOKEN}'}
+        
+        # 发送请求
+        response = requests.post(
+            f"{base_url}/images/upload",
+            files=files,
+            headers=headers
+        )
+        
+        if response.status_code == 200:
+            image_data = response.json()
+            print(f"Image data: {image_data}")
+            print(f"Image uploaded successfully: {image_data['url']}")
+            return image_data['url'], image_data['id']
+        else:
+            print(f"Image upload failed: {response.text}")
+            return None
+            
+    except Exception as e:
+        print(f"Error uploading image: {str(e)}")
+        return None
+    finally:
+        # 确保关闭文件
+        if 'files' in locals() and 'file' in files:
+            files['file'][1].close()
+
+def test():
+    # image_folder = "/home/swgz/work/ComfyUI/input/images"
+    image_folder = "/home/swgz/work/comfyui_api/input/人脸匿名样片4"
+    client = ComfyUIClient()
+
+    if not client.server_available:
+        print("ComfyUI 服务器不可用，请检查配置或服务器状态。")
+        exit()
+
+    for filename in os.listdir(image_folder):
+        if filename.lower().endswith(('.png', '.jpg', '.jpeg')):
+            image_path = os.path.join(image_folder, filename)
+            print(f"正在处理图片: {image_path}")
+            # 上传到 MinIO
+            result = upload_image(image_path) 
+            minio_url = result[0] 
+
+            # 记录开始时间
+            start_time = time.time()
+            print(f"图片minio_url: {minio_url}")
+            result = client.process_multiple_face_desensitization_auto(minio_url)
+            print(result)
+            # 记录结束时间
+            end_time = time.time()
+
+            # 计算耗时
+            elapsed_time = end_time - start_time
+
+            print(f"耗时: {elapsed_time:.2f} 秒")
 
 # 主函数
 if __name__ == "__main__":
 
     client = ComfyUIClient()
 
-    image_path = 'https://ts1.cn.mm.bing.net/th/id/R-C.eed97557f689df2382b6a9fc85ed172e?rik=d%2fBN9fsXJ2nz2w&riu=http%3a%2f%2fup.bizhizu.com%2fpic%2fd1%2fb7%2fc1%2fd1b7c1c9d4362b4ed5a433e69a19b383.jpg&ehk=OafBZEPbO07cQidzqmNBh0FzR5lM78gdhBOg7%2bjNdis%3d&risl=&pid=ImgRaw&r=0'
-    
-    # image_path = 'https://k.sinaimg.cn/www/dy/slidenews/24_img/2016_19/74485_1363976_499220.jpg/w640slw.jpg'
+    image_path = 'https://n.sinaimg.cn/sinakd10111/325/w1242h1483/20201118/8b70-kcysmrw5280926.jpg'
 
-    face_image_path = 'https://k.sinaimg.cn/www/dy/slidenews/24_img/2016_19/74485_1363976_499220.jpg/w640slw.jpg'
+    face_image_path = 'https://pic1.zhimg.com/v2-ddc98982b76a61236672a9fca809dd6c_720w.jpg?source=172ae18b'
     
     task_id = '9eae9df7-eac6-4c0d-9df9-e7f4f83f8ba1'
     work_id = '1'
@@ -19,8 +103,8 @@ if __name__ == "__main__":
     start_time = time.time()
 
     # 客片换脸
-    result = client.process_face_swap_thumbnail(image_path, face_image_path)
-    print(result)
+    # result = client.process_face_swap_thumbnail(image_path, face_image_path)
+    # print(result)
 
     # result = client.process_face_swap(task_id, work_id)
     # print(result)
@@ -54,11 +138,13 @@ if __name__ == "__main__":
     # result = client.process_multiple_face_desensitization(image_path, order)
     # print(result)
 
-    # result = client.process_multiple_face_desensitization_auto(image_path)
-    # print(result)
+    result = client.process_multiple_face_desensitization_auto(image_path)
+    print(result)
     
     # result = client.process_face_swap_auto(image_path, face_image_path)
     # print(result)
+
+    # test()
 
     # 记录结束时间
     end_time = time.time()

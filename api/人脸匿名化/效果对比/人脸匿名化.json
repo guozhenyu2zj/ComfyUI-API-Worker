@@ -220,19 +220,19 @@
   "105": {
     "inputs": {
       "padding_left": [
-        "221",
+        "283",
         0
       ],
       "padding_right": [
-        "221",
+        "283",
         0
       ],
       "padding_top": [
-        "221",
+        "283",
         0
       ],
       "padding_bottom": [
-        "221",
+        "283",
         0
       ],
       "image": [
@@ -331,19 +331,19 @@
   "117": {
     "inputs": {
       "padding_left": [
-        "221",
+        "283",
         0
       ],
       "padding_right": [
-        "221",
+        "283",
         0
       ],
       "padding_top": [
-        "221",
+        "283",
         0
       ],
       "padding_bottom": [
-        "221",
+        "283",
         0
       ],
       "image": [
@@ -677,7 +677,7 @@
   },
   "153": {
     "inputs": {
-      "seed": 155720516196659,
+      "seed": 279335383428527,
       "steps": 25,
       "cfg": 1,
       "sampler_name": "euler",
@@ -736,10 +736,14 @@
   "165": {
     "inputs": {
       "text1": [
-        "240",
+        "287",
         0
       ],
-      "separator": "，same expression，Chinese face，enhance aesthetics"
+      "text2": [
+        "281",
+        0
+      ],
+      "separator": ""
     },
     "class_type": "CR Text Concatenate",
     "_meta": {
@@ -758,15 +762,6 @@
       "title": "预览图像"
     }
   },
-  "221": {
-    "inputs": {
-      "int": 128
-    },
-    "class_type": "Int Literal",
-    "_meta": {
-      "title": "Int Literal"
-    }
-  },
   "233": {
     "inputs": {
       "image": [
@@ -781,7 +776,7 @@
   },
   "234": {
     "inputs": {
-      "text": "508",
+      "text": "779",
       "anything": [
         "233",
         0
@@ -794,7 +789,7 @@
   },
   "235": {
     "inputs": {
-      "text": "508",
+      "text": "779",
       "anything": [
         "233",
         1
@@ -820,20 +815,48 @@
   },
   "238": {
     "inputs": {
-      "url": "https://k.sinaimg.cn/www/dy/slidenews/24_img/2016_19/74485_1363976_499220.jpg/w640slw.jpg"
+      "url": "https://ts1.cn.mm.bing.net/th/id/R-C.eed97557f689df2382b6a9fc85ed172e?rik=d%2fBN9fsXJ2nz2w&riu=http%3a%2f%2fup.bizhizu.com%2fpic%2fd1%2fb7%2fc1%2fd1b7c1c9d4362b4ed5a433e69a19b383.jpg&ehk=OafBZEPbO07cQidzqmNBh0FzR5lM78gdhBOg7%2bjNdis%3d&risl=&pid=ImgRaw&r=0"
     },
     "class_type": "LoadImagesFromURL",
     "_meta": {
       "title": "Load Images From URL ♾️Mixlab"
     }
   },
-  "240": {
+  "281": {
     "inputs": {
-      "text": ""
+      "query": "Only use keywords to output the gender and age of the characters and facial expressions in the image. For example: \"boy, 2 years old, neutral\".",
+      "debug": "enable",
+      "url": "http://192.168.0.53:11434",
+      "model": "minicpm-v:latest",
+      "keep_alive": 60,
+      "format": "text",
+      "seed": 1000604607,
+      "images": [
+        "117",
+        0
+      ]
     },
-    "class_type": "ttN text",
+    "class_type": "OllamaVision",
     "_meta": {
-      "title": "text"
+      "title": "Ollama Vision"
+    }
+  },
+  "283": {
+    "inputs": {
+      "Number": "156"
+    },
+    "class_type": "Int",
+    "_meta": {
+      "title": "Int"
+    }
+  },
+  "287": {
+    "inputs": {
+      "text": "Chinese face，"
+    },
+    "class_type": "Text _O",
+    "_meta": {
+      "title": "Text _O"
     }
   }
 }

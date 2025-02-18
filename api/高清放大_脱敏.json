@@ -1,0 +1,720 @@
+{
+  "1": {
+    "inputs": {
+      "model_name": "4x-UltraSharp.pth"
+    },
+    "class_type": "UpscaleModelLoader"
+  },
+  "2": {
+    "inputs": {
+      "upscale_model": [
+        "1",
+        0
+      ],
+      "image": [
+        "5",
+        0
+      ]
+    },
+    "class_type": "ImageUpscaleWithModel"
+  },
+  "3": {
+    "inputs": {
+      "filename_prefix": "高清放大/高清放大图",
+      "images": [
+        "2",
+        0
+      ]
+    },
+    "class_type": "SaveImage"
+  },
+  "4": {
+    "inputs": {
+      "url": "https://ts1.cn.mm.bing.net/th/id/R-C.eed97557f689df2382b6a9fc85ed172e?rik=d%2fBN9fsXJ2nz2w&riu=http%3a%2f%2fup.bizhizu.com%2fpic%2fd1%2fb7%2fc1%2fd1b7c1c9d4362b4ed5a433e69a19b383.jpg&ehk=OafBZEPbO07cQidzqmNBh0FzR5lM78gdhBOg7%2bjNdis%3d&risl=&pid=ImgRaw&r=0"
+    },
+    "class_type": "LoadImagesFromURL"
+  },
+  "5": {
+    "inputs": {
+      "upscale_method": "nearest-exact",
+      "scale_by": 0.5,
+      "image": [
+        "4",
+        0
+      ]
+    },
+    "class_type": "ImageScaleBy"
+  },
+  "6": {
+    "inputs": {
+      "text": "(looking_at_viewer:1.2)",
+      "clip": [
+        "60",
+        1
+      ]
+    },
+    "class_type": "CLIPTextEncode"
+  },
+  "7": {
+    "inputs": {
+      "text": "text, watermarkNSFW,lowres,bad anatomy,bad hand,paintings,sketches,(worst quality:2),(low quality:2),(normal quality:2),lowres,((monochrome)),((grayscale)),skin spots,acnes,skin blemishes,age spot,glans,extra fingers,fewer fingers,((watermark:2)),(white letters:1),(multi nipples),bad anatomy,bad hands,text,error,missing fingers,missing arms,missing legs,extra digit,fewer digits,cropped,worst quality,jpeg artifacts,signature,watermark,username,bad feet,Multiple people,blurry,poorly drawn hands,poorly drawn face,mutation,deformed,extra limbs,extra arms,extra legs,malformed limbs,fused fingers,too many fingers,long neck,cross-eyed,mutated hands,polar lowres,bad body,bad proportions,gross proportions,wrong feet bottom render,abdominal stretch,briefs,knickers,kecks,thong,fused fingers,bad body,bad proportion body to legs,wrong toes,extra toes,missing toes,weird toes,2 body,2 pussy,2 upper,2 lower,2 head,3 hand,3 feet,extra long leg,super long leg,mirrored image,mirrored noise",
+      "clip": [
+        "60",
+        1
+      ]
+    },
+    "class_type": "CLIPTextEncode"
+  },
+  "8": {
+    "inputs": {
+      "samples": [
+        "67",
+        0
+      ],
+      "vae": [
+        "60",
+        2
+      ]
+    },
+    "class_type": "VAEDecode"
+  },
+  "9": {
+    "inputs": {
+      "ip_weight": 0.98,
+      "cn_strength": 0.98,
+      "start_at": 0,
+      "end_at": 1,
+      "noise": 0.30000000000000004,
+      "combine_embeds": "average",
+      "instantid": [
+        "10",
+        0
+      ],
+      "insightface": [
+        "61",
+        0
+      ],
+      "control_net": [
+        "11",
+        0
+      ],
+      "image": [
+        "73",
+        0
+      ],
+      "model": [
+        "60",
+        0
+      ],
+      "positive": [
+        "6",
+        0
+      ],
+      "negative": [
+        "7",
+        0
+      ],
+      "image_kps": [
+        "15",
+        0
+      ]
+    },
+    "class_type": "ApplyInstantIDAdvanced"
+  },
+  "10": {
+    "inputs": {
+      "instantid_file": "ip-adapter.bin"
+    },
+    "class_type": "InstantIDModelLoader"
+  },
+  "11": {
+    "inputs": {
+      "control_net_name": "SDXL/instantid/diffusion_pytorch_model.safetensors"
+    },
+    "class_type": "ControlNetLoader"
+  },
+  "12": {
+    "inputs": {
+      "pixels": [
+        "15",
+        0
+      ],
+      "vae": [
+        "60",
+        2
+      ]
+    },
+    "class_type": "VAEEncode"
+  },
+  "13": {
+    "inputs": {
+      "detection_hint": "center-1",
+      "dilation": 0,
+      "threshold": 1,
+      "bbox_expansion": 0,
+      "mask_hint_threshold": 1,
+      "mask_hint_use_negative": "False",
+      "sam_model": [
+        "19",
+        0
+      ],
+      "segs": [
+        "14",
+        0
+      ],
+      "image": [
+        "82",
+        0
+      ]
+    },
+    "class_type": "SAMDetectorCombined"
+  },
+  "14": {
+    "inputs": {
+      "threshold": 0.5,
+      "dilation": 10,
+      "crop_factor": 1,
+      "drop_size": 10,
+      "labels": "all",
+      "bbox_detector": [
+        "18",
+        0
+      ],
+      "image": [
+        "82",
+        0
+      ]
+    },
+    "class_type": "BboxDetectorSEGS"
+  },
+  "15": {
+    "inputs": {
+      "padding_left": [
+        "23",
+        0
+      ],
+      "padding_right": [
+        "23",
+        0
+      ],
+      "padding_top": [
+        "23",
+        0
+      ],
+      "padding_bottom": [
+        "23",
+        0
+      ],
+      "return_list": false,
+      "image": [
+        "82",
+        0
+      ],
+      "mask": [
+        "13",
+        0
+      ]
+    },
+    "class_type": "Bounded Image Crop with Mask"
+  },
+  "16": {
+    "inputs": {
+      "method": "VITMatte",
+      "mask_grow": 5,
+      "fix_gap": 32,
+      "fix_threshold": 0.98,
+      "edge_erode": 9,
+      "edte_dilate": 9,
+      "black_point": 0.11,
+      "white_point": 0.99,
+      "device": "cuda",
+      "max_megapixels": 2,
+      "image": [
+        "15",
+        0
+      ],
+      "mask": [
+        "36",
+        0
+      ]
+    },
+    "class_type": "LayerMask: MaskEdgeUltraDetail V2"
+  },
+  "17": {
+    "inputs": {
+      "mask": [
+        "13",
+        0
+      ]
+    },
+    "class_type": "MaskPreview+"
+  },
+  "18": {
+    "inputs": {
+      "model_name": "bbox/face_yolov8m.pt"
+    },
+    "class_type": "UltralyticsDetectorProvider"
+  },
+  "19": {
+    "inputs": {
+      "model_name": "sam_vit_b_01ec64.pth",
+      "device_mode": "Prefer GPU"
+    },
+    "class_type": "SAMLoader"
+  },
+  "20": {
+    "inputs": {
+      "model": [
+        "62",
+        0
+      ]
+    },
+    "class_type": "DifferentialDiffusion"
+  },
+  "21": {
+    "inputs": {
+      "height": [
+        "22",
+        1
+      ],
+      "width": [
+        "22",
+        0
+      ],
+      "interpolation_mode": "bicubic",
+      "mask": [
+        "37",
+        0
+      ]
+    },
+    "class_type": "JWMaskResize"
+  },
+  "22": {
+    "inputs": {
+      "image": [
+        "15",
+        0
+      ]
+    },
+    "class_type": "easy imageSize"
+  },
+  "23": {
+    "inputs": {
+      "value": 368
+    },
+    "class_type": "easy int"
+  },
+  "24": {
+    "inputs": {
+      "masks": [
+        "16",
+        1
+      ]
+    },
+    "class_type": "Mask Fill Holes"
+  },
+  "25": {
+    "inputs": {
+      "mask": [
+        "24",
+        0
+      ]
+    },
+    "class_type": "MaskPreview+"
+  },
+  "26": {
+    "inputs": {
+      "mask": [
+        "54",
+        0
+      ]
+    },
+    "class_type": "MaskPreview+"
+  },
+  "27": {
+    "inputs": {
+      "seed": 976572742337147,
+      "steps": 8,
+      "cfg": 1.4000000000000001,
+      "sampler_name": "euler_ancestral",
+      "scheduler": "sgm_uniform",
+      "denoise": 0.15,
+      "model": [
+        "20",
+        0
+      ],
+      "positive": [
+        "9",
+        1
+      ],
+      "negative": [
+        "9",
+        2
+      ],
+      "latent_image": [
+        "42",
+        0
+      ]
+    },
+    "class_type": "KSampler"
+  },
+  "28": {
+    "inputs": {
+      "pixels": [
+        "8",
+        0
+      ],
+      "vae": [
+        "60",
+        2
+      ]
+    },
+    "class_type": "VAEEncode"
+  },
+  "29": {
+    "inputs": {
+      "samples": [
+        "27",
+        0
+      ],
+      "vae": [
+        "60",
+        2
+      ]
+    },
+    "class_type": "VAEDecode"
+  },
+  "30": {
+    "inputs": {
+      "pulid_file": "ip-adapter_pulid_sdxl_fp16.safetensors"
+    },
+    "class_type": "PulidModelLoader"
+  },
+  "31": {
+    "inputs": {},
+    "class_type": "PulidEvaClipLoader"
+  },
+  "32": {
+    "inputs": {
+      "provider": "CUDA"
+    },
+    "class_type": "PulidInsightFaceLoader"
+  },
+  "33": {
+    "inputs": {
+      "seed": 118893991707790
+    },
+    "class_type": "easy seed"
+  },
+  "34": {
+    "inputs": {
+      "mask": [
+        "13",
+        0
+      ]
+    },
+    "class_type": "MaskToImage"
+  },
+  "35": {
+    "inputs": {
+      "padding_left": [
+        "23",
+        0
+      ],
+      "padding_right": [
+        "23",
+        0
+      ],
+      "padding_top": [
+        "23",
+        0
+      ],
+      "padding_bottom": [
+        "23",
+        0
+      ],
+      "return_list": false,
+      "image": [
+        "34",
+        0
+      ],
+      "mask": [
+        "13",
+        0
+      ]
+    },
+    "class_type": "Bounded Image Crop with Mask"
+  },
+  "36": {
+    "inputs": {
+      "channel": "red",
+      "image": [
+        "35",
+        0
+      ]
+    },
+    "class_type": "ImageToMask"
+  },
+  "37": {
+    "inputs": {
+      "min": 0,
+      "max": 0.9,
+      "mask": [
+        "40",
+        0
+      ]
+    },
+    "class_type": "RemapMaskRange"
+  },
+  "38": {
+    "inputs": {
+      "method": "mkl",
+      "strength": 1,
+      "image_ref": [
+        "15",
+        0
+      ],
+      "image_target": [
+        "29",
+        0
+      ]
+    },
+    "class_type": "ColorMatch"
+  },
+  "39": {
+    "inputs": {
+      "mask": [
+        "24",
+        0
+      ]
+    },
+    "class_type": "MaskToImage"
+  },
+  "40": {
+    "inputs": {
+      "channel": "red",
+      "image": [
+        "39",
+        0
+      ]
+    },
+    "class_type": "ImageToMask"
+  },
+  "41": {
+    "inputs": {
+      "mask": [
+        "37",
+        0
+      ]
+    },
+    "class_type": "MaskPreview+"
+  },
+  "42": {
+    "inputs": {
+      "amount": 1,
+      "samples": [
+        "66",
+        0
+      ]
+    },
+    "class_type": "RepeatLatentBatch"
+  },
+  "43": {
+    "inputs": {
+      "images": [
+        "71",
+        0
+      ]
+    },
+    "class_type": "PreviewImage"
+  },
+  "54": {
+    "inputs": {
+      "invert_mask": false,
+      "grow": 20,
+      "blur": 15,
+      "mask": [
+        "21",
+        0
+      ]
+    },
+    "class_type": "LayerMask: MaskGrow"
+  },
+  "60": {
+    "inputs": {
+      "ckpt_name": "dreamshaperXL_lightningDPMSDE.safetensors"
+    },
+    "class_type": "CheckpointLoaderSimple"
+  },
+  "61": {
+    "inputs": {
+      "provider": "CUDA"
+    },
+    "class_type": "InstantIDFaceAnalysis"
+  },
+  "62": {
+    "inputs": {
+      "method": "fidelity",
+      "weight": 0.7000000000000001,
+      "start_at": 0.05,
+      "end_at": 0.683,
+      "model": [
+        "9",
+        0
+      ],
+      "pulid": [
+        "30",
+        0
+      ],
+      "eva_clip": [
+        "31",
+        0
+      ],
+      "face_analysis": [
+        "32",
+        0
+      ],
+      "image": [
+        "73",
+        0
+      ]
+    },
+    "class_type": "ApplyPulid"
+  },
+  "66": {
+    "inputs": {
+      "samples": [
+        "28",
+        0
+      ],
+      "mask": [
+        "54",
+        0
+      ]
+    },
+    "class_type": "SetLatentNoiseMask"
+  },
+  "67": {
+    "inputs": {
+      "seed": [
+        "33",
+        0
+      ],
+      "steps": 8,
+      "cfg": 1.3,
+      "sampler_name": "euler_ancestral",
+      "scheduler": "sgm_uniform",
+      "denoise": 0.42,
+      "model": [
+        "20",
+        0
+      ],
+      "positive": [
+        "9",
+        1
+      ],
+      "negative": [
+        "9",
+        2
+      ],
+      "latent_image": [
+        "68",
+        0
+      ]
+    },
+    "class_type": "KSampler"
+  },
+  "68": {
+    "inputs": {
+      "samples": [
+        "12",
+        0
+      ],
+      "mask": [
+        "54",
+        0
+      ]
+    },
+    "class_type": "SetLatentNoiseMask"
+  },
+  "70": {
+    "inputs": {
+      "images": [
+        "82",
+        0
+      ]
+    },
+    "class_type": "PreviewImage"
+  },
+  "71": {
+    "inputs": {
+      "blend_factor": 1,
+      "feathering": 4,
+      "target": [
+        "82",
+        0
+      ],
+      "target_bounds": [
+        "15",
+        1
+      ],
+      "source": [
+        "38",
+        0
+      ]
+    },
+    "class_type": "Bounded Image Blend"
+  },
+  "72": {
+    "inputs": {
+      "seed": 352665211591127,
+      "repeat": 3,
+      "variation": 0.5,
+      "image": [
+        "82",
+        0
+      ]
+    },
+    "class_type": "ImageRandomTransform+"
+  },
+  "73": {
+    "inputs": {
+      "image1": [
+        "72",
+        0
+      ]
+    },
+    "class_type": "ImpactMakeImageBatch"
+  },
+  "74": {
+    "inputs": {
+      "images": [
+        "73",
+        0
+      ]
+    },
+    "class_type": "PreviewImage"
+  },
+  "76": {
+    "inputs": {
+      "images": [
+        "82",
+        0
+      ]
+    },
+    "class_type": "PreviewImage"
+  },
+  "82": {
+    "inputs": {
+      "side_length": 128,
+      "side": "Longest",
+      "upscale_method": "nearest-exact",
+      "crop": "disabled",
+      "image": [
+        "4",
+        0
+      ]
+    },
+    "class_type": "DF_Image_scale_to_side"
+  }
+}

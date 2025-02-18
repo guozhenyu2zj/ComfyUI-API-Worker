@@ -1,0 +1,478 @@
+{
+  "89": {
+    "inputs": {
+      "clip_name1": "clip_l.safetensors",
+      "clip_name2": "t5xxl_fp8_e4m3fn.safetensors",
+      "type": "flux"
+    },
+    "class_type": "DualCLIPLoader",
+    "_meta": {
+      "title": "双CLIP加载器"
+    }
+  },
+  "90": {
+    "inputs": {
+      "vae_name": "FLUX1/ae.safetensors"
+    },
+    "class_type": "VAELoader",
+    "_meta": {
+      "title": "加载VAE"
+    }
+  },
+  "131": {
+    "inputs": {
+      "text": "",
+      "clip": [
+        "89",
+        0
+      ]
+    },
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "CLIP文本编码（提示）"
+    }
+  },
+  "135": {
+    "inputs": {
+      "noise_mask": true,
+      "positive": [
+        "136",
+        0
+      ],
+      "negative": [
+        "131",
+        0
+      ],
+      "vae": [
+        "90",
+        0
+      ],
+      "pixels": [
+        "152",
+        1
+      ],
+      "mask": [
+        "152",
+        2
+      ]
+    },
+    "class_type": "InpaintModelConditioning",
+    "_meta": {
+      "title": "修复模型条件"
+    }
+  },
+  "136": {
+    "inputs": {
+      "guidance": 30,
+      "conditioning": [
+        "162",
+        0
+      ]
+    },
+    "class_type": "FluxGuidance",
+    "_meta": {
+      "title": "Flux引导"
+    }
+  },
+  "137": {
+    "inputs": {
+      "samples": [
+        "153",
+        0
+      ],
+      "vae": [
+        "90",
+        0
+      ]
+    },
+    "class_type": "VAEDecode",
+    "_meta": {
+      "title": "VAE解码"
+    }
+  },
+  "140": {
+    "inputs": {
+      "method": "mkl",
+      "strength": 1,
+      "image_ref": [
+        "150",
+        0
+      ],
+      "image_target": [
+        "147",
+        0
+      ]
+    },
+    "class_type": "ColorMatch",
+    "_meta": {
+      "title": "Color Match"
+    }
+  },
+  "145": {
+    "inputs": {
+      "images": [
+        "140",
+        0
+      ]
+    },
+    "class_type": "PreviewImage",
+    "_meta": {
+      "title": "预览图像"
+    }
+  },
+  "146": {
+    "inputs": {
+      "images": [
+        "137",
+        0
+      ]
+    },
+    "class_type": "PreviewImage",
+    "_meta": {
+      "title": "预览图像"
+    }
+  },
+  "147": {
+    "inputs": {
+      "rescale_algorithm": "bislerp",
+      "stitch": [
+        "152",
+        0
+      ],
+      "inpainted_image": [
+        "137",
+        0
+      ]
+    },
+    "class_type": "InpaintStitch",
+    "_meta": {
+      "title": "✂️ Inpaint Stitch"
+    }
+  },
+  "148": {
+    "inputs": {
+      "unet_name": "flux1-fill-dev.safetensors",
+      "weight_dtype": "default"
+    },
+    "class_type": "UNETLoader",
+    "_meta": {
+      "title": "加载扩散模型"
+    }
+  },
+  "149": {
+    "inputs": {
+      "model": [
+        "148",
+        0
+      ]
+    },
+    "class_type": "DifferentialDiffusion",
+    "_meta": {
+      "title": "差分扩散"
+    }
+  },
+  "150": {
+    "inputs": {
+      "side_length": 2048,
+      "side": "Longest",
+      "upscale_method": "nearest-exact",
+      "crop": "disabled",
+      "image": [
+        "238",
+        0
+      ]
+    },
+    "class_type": "DF_Image_scale_to_side",
+    "_meta": {
+      "title": "Image scale to side"
+    }
+  },
+  "152": {
+    "inputs": {
+      "context_expand_pixels": 10,
+      "context_expand_factor": 1.27,
+      "fill_mask_holes": true,
+      "blur_mask_pixels": 16,
+      "invert_mask": false,
+      "blend_pixels": 16,
+      "rescale_algorithm": "bicubic",
+      "mode": "ranged size",
+      "force_width": 1024,
+      "force_height": 1024,
+      "rescale_factor": 1,
+      "min_width": 768,
+      "min_height": 768,
+      "max_width": 2048,
+      "max_height": 2048,
+      "padding": 32,
+      "image": [
+        "150",
+        0
+      ],
+      "mask": [
+        "368",
+        0
+      ]
+    },
+    "class_type": "InpaintCrop",
+    "_meta": {
+      "title": "✂️ Inpaint Crop"
+    }
+  },
+  "153": {
+    "inputs": {
+      "seed": 433005194253541,
+      "steps": 25,
+      "cfg": 1,
+      "sampler_name": "euler",
+      "scheduler": "normal",
+      "denoise": 0.8,
+      "model": [
+        "149",
+        0
+      ],
+      "positive": [
+        "135",
+        0
+      ],
+      "negative": [
+        "135",
+        1
+      ],
+      "latent_image": [
+        "135",
+        2
+      ]
+    },
+    "class_type": "KSampler",
+    "_meta": {
+      "title": "K采样器"
+    }
+  },
+  "162": {
+    "inputs": {
+      "text": [
+        "375",
+        0
+      ],
+      "clip": [
+        "89",
+        0
+      ]
+    },
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "CLIP文本编码（提示）"
+    }
+  },
+  "164": {
+    "inputs": {
+      "text": [
+        "351",
+        0
+      ]
+    },
+    "class_type": "ShowText|pysssss",
+    "_meta": {
+      "title": "Show Text 🐍"
+    }
+  },
+  "237": {
+    "inputs": {
+      "filename_prefix": "人脸匿名化/人脸匿名化",
+      "images": [
+        "140",
+        0
+      ]
+    },
+    "class_type": "SaveImage",
+    "_meta": {
+      "title": "保存图像"
+    }
+  },
+  "238": {
+    "inputs": {
+      "url": "https://img.sw.gz.cn/photography-comfyui/user_1/20250120/output%20%282%29.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250120%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250120T055245Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=ec9e3fbc904fd13c9104ca640842260c52e515e285023c008b4cf797b197dd10"
+    },
+    "class_type": "LoadImagesFromURL",
+    "_meta": {
+      "title": "Load Images From URL ♾️Mixlab"
+    }
+  },
+  "347": {
+    "inputs": {
+      "images": [
+        "147",
+        0
+      ]
+    },
+    "class_type": "PreviewImage",
+    "_meta": {
+      "title": "预览图像"
+    }
+  },
+  "351": {
+    "inputs": {
+      "system_prompt": "You are a professional photographer.",
+      "user_prompt": "Please generate a detailed description for guiding photography based on each person's  facial features in the image, including accurate age, gender, race, makeup, light, the direction in which the eyes are looking，mouth movements, expressions, accessories on the face, and according to your professional knowledge. All the people in the picture are Chinese faces. If there are elderly people in the picture, please describe their wrinkles. Describe in detail whether each person has their eyes open or closed.",
+      "temperature": 0.7,
+      "is_memory": "disable",
+      "is_tools_in_sys_prompt": "disable",
+      "is_locked": "disable",
+      "main_brain": "enable",
+      "max_length": 1920,
+      "imgbb_api_key": "",
+      "conversation_rounds": 100,
+      "historical_record": "",
+      "is_enable": true,
+      "model": [
+        "353",
+        0
+      ],
+      "images": [
+        "238",
+        0
+      ]
+    },
+    "class_type": "LLM",
+    "_meta": {
+      "title": "API LLM general link"
+    }
+  },
+  "353": {
+    "inputs": {
+      "model_name": "qwen-vl-max",
+      "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+      "api_key": "sk-5c681ca16a69422f88ad52dacc518a69",
+      "is_ollama": false
+    },
+    "class_type": "LLM_api_loader",
+    "_meta": {
+      "title": "API LLM Loader"
+    }
+  },
+  "357": {
+    "inputs": {
+      "mask": [
+        "368",
+        0
+      ]
+    },
+    "class_type": "MaskPreview+",
+    "_meta": {
+      "title": "🔧 Mask Preview"
+    }
+  },
+  "358": {
+    "inputs": {
+      "bbox_threshold": 0.5,
+      "bbox_dilation": 0,
+      "crop_factor": 3,
+      "drop_size": 10,
+      "sub_threshold": 0.5,
+      "sub_dilation": 0,
+      "sub_bbox_expansion": 0,
+      "sam_mask_hint_threshold": 0.7,
+      "post_dilation": 0,
+      "bbox_detector": [
+        "362",
+        0
+      ],
+      "image": [
+        "150",
+        0
+      ],
+      "sam_model_opt": [
+        "365",
+        0
+      ]
+    },
+    "class_type": "ImpactSimpleDetectorSEGS",
+    "_meta": {
+      "title": "Simple Detector (SEGS)"
+    }
+  },
+  "362": {
+    "inputs": {
+      "model_name": "bbox/yolov8n-face-lindevs.pt"
+    },
+    "class_type": "UltralyticsDetectorProvider",
+    "_meta": {
+      "title": "UltralyticsDetectorProvider"
+    }
+  },
+  "364": {
+    "inputs": {
+      "alpha_mode": true,
+      "min_alpha": 0.38,
+      "segs": [
+        "358",
+        0
+      ]
+    },
+    "class_type": "SEGSPreview",
+    "_meta": {
+      "title": "SEGSPreview"
+    }
+  },
+  "365": {
+    "inputs": {
+      "model_name": "sam_vit_b_01ec64.pth",
+      "device_mode": "AUTO"
+    },
+    "class_type": "SAMLoader",
+    "_meta": {
+      "title": "SAMLoader (Impact)"
+    }
+  },
+  "368": {
+    "inputs": {
+      "segs": [
+        "358",
+        0
+      ]
+    },
+    "class_type": "SegsToCombinedMask",
+    "_meta": {
+      "title": "SEGS to MASK (combined)"
+    }
+  },
+  "369": {
+    "inputs": {
+      "images": [
+        "150",
+        0
+      ]
+    },
+    "class_type": "PreviewImage",
+    "_meta": {
+      "title": "预览图像"
+    }
+  },
+  "370": {
+    "inputs": {
+      "text": "Preserve wrinkles for the elderly."
+    },
+    "class_type": "ttN text",
+    "_meta": {
+      "title": "text"
+    }
+  },
+  "375": {
+    "inputs": {
+      "text1": [
+        "164",
+        0
+      ],
+      "text2": [
+        "370",
+        0
+      ],
+      "separator": ""
+    },
+    "class_type": "CR Text Concatenate",
+    "_meta": {
+      "title": "🔤 CR Text Concatenate"
+    }
+  }
+}

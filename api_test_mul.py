@@ -7,6 +7,7 @@ import mimetypes
 import logging
 from typing import Optional, Dict
 from pathlib import Path
+from websockets.exceptions import ConnectionClosed
 
 # 配置日志
 logging.basicConfig(
@@ -180,26 +181,18 @@ class ImageTaskTester:
         # }
 
         # 多人自动人脸脱敏 
-        # data = {
-        #     "task_type": "multi_face_desensitization_auto",
-        #     "content": {
-        #         "image_path": image_url
-        #     }
-        # }
-
         data = {
-            "task_type": "single_face_desensitization_auto",
+            "task_type": "multi_face_desensitization_auto",
             "content": {
                 "image_path": image_url
             }
         }
 
-
         # 超分
         # data = {
         #     "task_type": "image_upscale",
         #     "content": {
-        #         "comfyui_task_id": "b6d143c3-a430-49d4-bb7a-6b1ca5e4d05c"
+        #         "comfyui_task_id": "fde7e104-2e80-42f4-a6db-283ea24f234a"
         #     }
         # }
 
@@ -221,77 +214,99 @@ class ImageTaskTester:
         ws_url = f"ws://192.168.0.52:8000/api/v1/tasks/ws/task/{self.user_id}?api_key={self.api_key}&api_secret={self.api_secret}"
         logger.info("Starting global task monitor")
         
-        try:
-            async with websockets.connect(ws_url) as websocket:
-                self.websocket = websocket
-                logger.info(f"WebSocket connection established for user {self.user_id}")
-                
-                while True:
-                    try:
-                        message = await websocket.recv()
-                        data = json.loads(message)
-                        logger.info("=== Message Details ===")
-                        logger.info(f"Raw message: {message}")
-                        logger.info(f"Parsed data: {data}")
-                        logger.info("==================")
-                        
-                        # 处理任务状态更新
-                        task_id = data.get("task_id")
-                        status = data.get("result", {}).get("processed")
-                        
-                        if task_id and status:
-                            if status == "successful":
-                                logger.info(f"Task {task_id} completed successfully")
-                                if task_id in self.active_tasks:
-                                    self.active_tasks.remove(task_id)
-                            elif status == "failed":
-                                logger.error(f"Task {task_id} failed: {data.get('error')}")
-                                if task_id in self.active_tasks:
-                                    self.active_tasks.remove(task_id)
-                        
-                    except json.JSONDecodeError as e:
-                        logger.error(f"Failed to parse message: {e}")
-                    except Exception as e:
-                        logger.error(f"Error processing message: {e}")
-                        
-        except Exception as e:
-            logger.error(f"Error in monitor: {e}", exc_info=True)
-        finally:
-            self.websocket = None
-            logger.info("Monitor connection closed")
+        while True: # 添加一个循环来处理连接中断
+            try:
+                async with websockets.connect(ws_url, ping_interval=20, ping_timeout=20) as websocket:
+                    self.websocket = websocket
+                    logger.info(f"WebSocket connection established for user {self.user_id}")
+                    
+                    while True:
+                        try:
+                            message = await websocket.recv()
+                            data = json.loads(message)
+                            logger.info("=== Message Details ===")
+                            logger.info(f"Raw message: {message}")
+                            logger.info(f"Parsed data: {data}")
+                            logger.info("==================")
+                            
+                            # 处理任务状态更新
+                            task_id = data.get("task_id")
+                            status = data.get("result", {}).get("processed")
+                            
+                            if task_id and status:
+                                if status == "successful":
+                                    logger.info(f"Task {task_id} completed successfully")
+                                    if task_id in self.active_tasks:
+                                        self.active_tasks.remove(task_id)
+                                elif status == "failed":
+                                    logger.error(f"Task {task_id} failed: {data.get('error')}")
+                                    if task_id in self.active_tasks:
+                                        self.active_tasks.remove(task_id)
+                            
+                        except json.JSONDecodeError as e:
+                            logger.error(f"Failed to parse message: {e}")
+                        except ConnectionClosed as e:
+                            logger.error(f"WebSocket connection closed: {e}")
+                            break # 退出内部循环，尝试重新连接
+                        except Exception as e:
+                            logger.error(f"Error processing message: {e}")
+                            
+            except Exception as e:
+                logger.error(f"Error in monitor: {e}", exc_info=True)
+                await asyncio.sleep(5) # 等待一段时间后重试
+            finally:
+                self.websocket = None
+                logger.info("Monitor connection closed")
 
-    async def process_single_image(self, image_path: str):
-        """处理单张图片"""
+    async def process_image_folder(self, folder_path: str, interval: int = 10, max_concurrent: int = 3):
+        """处理文件夹中的所有图片"""
+        folder = Path(folder_path)
+        image_files = [f for f in folder.glob("*.jpg") or folder.glob("*.png")]
+        logger.info(f"Found {len(image_files)} images in {folder_path}")
+
         # 启动监控任务
         self.monitor_task = asyncio.create_task(self.start_monitor())
         logger.info("Started global monitor task")
 
         try:
-            # 1. 上传图片
-            logger.info(f"Processing image: {image_path}")
-            upload_result = self.upload_image(image_path)
-            if not upload_result:
-                logger.error(f"Failed to upload image: {image_path}")
-                return
+            for image_file in image_files:
+                try:
+                    # 等待，直到活动任务数量小于最大并发数
+                    while len(self.active_tasks) >= max_concurrent:
+                        logger.info(f"Waiting for tasks to complete. Active tasks: {len(self.active_tasks)}")
+                        await asyncio.sleep(10)
+                    
+                    # 1. 上传图片
+                    logger.info(f"Processing image: {image_file.name}")
+                    image_url,image_id = self.upload_image(str(image_file))
+                    if not image_url:
+                        logger.error(f"Failed to upload image: {image_file.name}")
+                        continue
 
-            image_url, image_id = upload_result
+                    # 2. 提交任务
+                    task_data = await self.submit_task(image_url, image_id)
+                    if not task_data:
+                        logger.error(f"Failed to submit task for image: {image_file.name}")
+                        continue
 
-            # 2. 提交任务
-            task_data = await self.submit_task(image_url, image_id)
-            if not task_data:
-                logger.error(f"Failed to submit task for image: {image_path}")
-                return
+                    # 3. 添加到活动任务
+                    task_id = task_data["task_id"]
+                    self.active_tasks.add(task_id)
+                    logger.info(f"Added task {task_id}. Active tasks: {len(self.active_tasks)}")
 
-            # 3. 添加到活动任务
-            task_id = task_data["task_id"]
-            self.active_tasks.add(task_id)
-            logger.info(f"Added task {task_id}")
+                    # 4. 等待指定间隔
+                    logger.info(f"Waiting {interval} seconds before next image...")
+                    await asyncio.sleep(interval)
 
-            # 等待任务完成
+                except Exception as e:
+                    logger.error(f"Error processing image {image_file.name}: {e}")
+                    continue
+
+            # 等待所有任务完成
             while self.active_tasks:
-                logger.info(f"Waiting for task to complete...")
-                await asyncio.sleep(1)
-
+                logger.info(f"Waiting for {len(self.active_tasks)} tasks to complete...")
+                await asyncio.sleep(10)
+                
         finally:
             # 取消监控任务
             if self.monitor_task:
@@ -300,7 +315,7 @@ class ImageTaskTester:
                     await self.monitor_task
                 except asyncio.CancelledError:
                     pass
-            logger.info("Task completed")
+            logger.info("All tasks completed")
 
 async def run_test():
     tester = ImageTaskTester()
@@ -315,10 +330,10 @@ async def run_test():
         logger.error("Failed to create API key")
         return
     
-    # 3. 处理单张图片
-    image_path = "./input/test.jpg"  # 替换为你的图片路径
-    logger.info(f"Starting to process image: {image_path}")
-    await tester.process_single_image(image_path)
+    # 3. 处理图片文件夹
+    image_folder = "/home/swgz/work/comfyui_api/input/人脸匿名样片4"
+    logger.info(f"Starting to process images from: {image_folder}")
+    await tester.process_image_folder(image_folder, interval=10, max_concurrent=1)
 
 def main():
     """主函数"""
@@ -332,4 +347,4 @@ def main():
         logger.info("Process completed")
 
 if __name__ == "__main__":
-    main() 
+    main()

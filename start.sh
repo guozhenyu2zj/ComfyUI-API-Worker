@@ -23,3 +23,5 @@ pkill -9 -f 'celery'
 /home/swgz/miniconda3/envs/ComfyUI/bin/python -m celery -A tasks worker -n multi_face_swap@GPU-4070 -Q multi_face_swap --concurrency=1 --loglevel=INFO >> logs/multi_face_swap.log 2>&1&
 
 /home/swgz/miniconda3/envs/ComfyUI/bin/python -m celery -A tasks worker -n multi_face_desensitization_auto@GPU-4070 -Q multi_face_desensitization_auto --concurrency=1 --loglevel=INFO >> logs/multi_face_desensitization_auto.log 2>&1&
+
+/home/swgz/miniconda3/envs/ComfyUI/bin/python -m celery -A tasks worker -n face_swap_auto@GPU-4070 -Q face_swap_auto --concurrency=1 --loglevel=INFO >> logs/face_swap_auto.log 2>&1&

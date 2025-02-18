@@ -1,374 +1,471 @@
 {
-    "10c98679-baf1-4921-a8d9-27431a5d013a": {
-        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_1/20250102/131912_48d59a344d7d4bd4b8162410ab8ad89b.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250102%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250102T051912Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=20621bfb2d31db305dd5cda7d430526f19fd2649e04e5028a3d1818c0722e728",
-        "result_url": "https://img.sw.gz.cn/comfyui-output/multiple_face_desensitization/comfyui_output_1735795235_10c98679-baf1-4921-a8d9-27431a5d013a.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250102%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250102T052038Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=6fdb27cdce8c42f502828c9b268356556d0761d7b2c252d475e21ab1f85fc2b3",
-        "task_name": "multiple_face_desensitization"
-    },
-    "1ffb9469-2b88-4b99-94ff-11a49e989d60": {
-        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_1/20250102/132044_6d7a010f093c408397fe950ae8fea114.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250102%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250102T052045Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=e4470abebddfdc4cac66b59b291deb64fc92be274056e3d391f1c64193dc6388",
-        "result_url": "https://img.sw.gz.cn/comfyui-output/multiple_face_desensitization/comfyui_output_1735795357_1ffb9469-2b88-4b99-94ff-11a49e989d60.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250102%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250102T052241Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=8d3d140be6af5034690329a00b7db3f89fe494855159b3efe6eae080d7a42a79",
-        "task_name": "multiple_face_desensitization"
-    },
-    "c2e0167f-2f02-4d54-b479-998571523d08": {
-        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_1/20250102/132257_1e1997b5b9374080857d92b267590bb8.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250102%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250102T052257Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=ff3c349c49c7f243ea3dd8c517bfa8f2a0f17f5e2e010ebb624d7bf733b82a25",
-        "result_url": "https://img.sw.gz.cn/comfyui-output/multiple_face_desensitization/comfyui_output_1735795414_c2e0167f-2f02-4d54-b479-998571523d08.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250102%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250102T052338Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=113c35f88145f0bd43c9fe1cdf1fe2df4e4b8798978212cc45c750cfd98d9698",
-        "task_name": "multiple_face_desensitization"
-    },
-    "72d8c54e-01c5-4170-b633-9d7a70bcac34": {
-        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_1/20250102/133216_7174bee9f18747708defd2eb165f105e.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250102%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250102T053217Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=7b29bdf63526370c120ddf66f18a5e5f54332b0cfb4a8834ea42e2e0cf9a3f06",
-        "result_url": "https://img.sw.gz.cn/comfyui-output/multiple_face_desensitization/comfyui_output_1735795975_72d8c54e-01c5-4170-b633-9d7a70bcac34.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250102%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250102T053258Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=25003588e1d6c9ff2dfe835c98bd767d4264d63fff38a86fe84223b1406659c6",
-        "task_name": "multiple_face_desensitization"
-    },
-    "3ed45570-4dae-4b0c-b5ef-df5407d05734": {
-        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_1/20250102/141204_afb31f8eb41d471fa8302ba65ebaf56d.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250102%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250102T061205Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=20f698be94d2885ca4d0fd6d003012d1eed39c1b759264c87cb2db6a6881e8b1",
-        "result_url": "https://img.sw.gz.cn/comfyui-output/multiple_face_desensitization/comfyui_output_1735798387_3ed45570-4dae-4b0c-b5ef-df5407d05734.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250102%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250102T061310Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=8d085a5093e4230d63f86a6ff2fde5370ef14337abd16187af023ba531220d1a",
-        "task_name": "multiple_face_desensitization"
-    },
-    "0088a618-2cbe-49dd-972a-2861fdaa1bd6": {
-        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_1/20250102/143902_6c29fafa26084f919747a01ee3adc11f.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250102%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250102T063902Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=6ad7ffc9b9124af4becef575aa6704d45044fc12186fcaf5dd09a7796fbc0583",
-        "result_url": "https://img.sw.gz.cn/comfyui-output/multiple_face_desensitization/comfyui_output_1735799990_0088a618-2cbe-49dd-972a-2861fdaa1bd6.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250102%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250102T063953Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=867bfff5cc23491f40025cd73cd2006fbb50e612f3f621e17cd7dfd59ae6bf66",
-        "task_name": "multiple_face_desensitization"
-    },
-    "d37882cb-c404-48d7-9446-080a9833ef35": {
-        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_1/20250102/144142_5264f58975054fd39981dde2b5ac36ee.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250102%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250102T064146Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=5bfd54f68ef8a58ab275c37979db9cc7dab55a8e1260426ebb8d62ac349cfe9f",
-        "result_url": "https://img.sw.gz.cn/comfyui-output/multiple_face_desensitization/comfyui_output_1735800153_d37882cb-c404-48d7-9446-080a9833ef35.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250102%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250102T064238Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=af1bd5770229b7973cef9f405b1fff09f9bd2c24485e8036a33f56d6f63e5b35",
-        "task_name": "multiple_face_desensitization"
-    },
-    "11c27b38-1cf7-4144-be91-d7cc0ff0bd71": {
-        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_1/20250102/144142_5264f58975054fd39981dde2b5ac36ee.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250102%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250102T064146Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=5bfd54f68ef8a58ab275c37979db9cc7dab55a8e1260426ebb8d62ac349cfe9f",
-        "result_url": "https://img.sw.gz.cn/comfyui-output/multiple_face_desensitization/comfyui_output_1735800199_11c27b38-1cf7-4144-be91-d7cc0ff0bd71.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250102%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250102T064324Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=7d710f508b49c3ca5c4305b2da6f6f7d367fc448805b51a1a7c17ca1c498c3b4",
-        "task_name": "multiple_face_desensitization"
-    },
-    "fc59192a-e819-4296-80f7-78bbbcef199e": {
-        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_1/20250102/144142_5264f58975054fd39981dde2b5ac36ee.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250102%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250102T064146Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=5bfd54f68ef8a58ab275c37979db9cc7dab55a8e1260426ebb8d62ac349cfe9f",
-        "result_url": "https://img.sw.gz.cn/comfyui-output/multiple_face_desensitization/comfyui_output_1735800244_fc59192a-e819-4296-80f7-78bbbcef199e.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250102%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250102T064410Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=d53c4473dd27a3f0197c1c65d83d8706a867085a22667c3452aec646548cd222",
-        "task_name": "multiple_face_desensitization"
-    },
-    "8383bd3d-ebcc-4d72-8683-498a5e4487b1": {
-        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_1/20250102/144142_5264f58975054fd39981dde2b5ac36ee.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250102%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250102T064146Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=5bfd54f68ef8a58ab275c37979db9cc7dab55a8e1260426ebb8d62ac349cfe9f",
-        "result_url": "https://img.sw.gz.cn/comfyui-output/multiple_face_desensitization/comfyui_output_1735800290_8383bd3d-ebcc-4d72-8683-498a5e4487b1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250102%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250102T064456Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=ef1fc1d527d885deb7e6cd50106950f47c25e37cac2b9046c871682879d2cf4d",
-        "task_name": "multiple_face_desensitization"
-    },
-    "288102f0-bbda-42bf-9798-ba6a2b72c867": {
-        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_1/20250102/144142_5264f58975054fd39981dde2b5ac36ee.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250102%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250102T064146Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=5bfd54f68ef8a58ab275c37979db9cc7dab55a8e1260426ebb8d62ac349cfe9f",
-        "result_url": "https://img.sw.gz.cn/comfyui-output/multiple_face_desensitization/comfyui_output_1735800336_288102f0-bbda-42bf-9798-ba6a2b72c867.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250102%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250102T064542Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=e5e76454ffa6ddfcee6210d3c107c9230c5af759b427fd9b400c58341660ba20",
-        "task_name": "multiple_face_desensitization"
-    },
-    "4384a96c-984e-4c96-9931-177986751ede": {
-        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_1/20250102/163014_11a50b717c8448c29e8800a71bd352f9.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250102%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250102T083021Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=a156eea2921c0c650f251455869ae124e0c5f93d5ed179e7a4da7c8b5769cd02",
-        "result_url": "https://img.sw.gz.cn/comfyui-output/multiple_face_desensitization/comfyui_output_1735806706_4384a96c-984e-4c96-9931-177986751ede.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250102%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250102T083149Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=5868be3c8cfc8ae585b22914a9bf21367affe2b4bc46a9920685a333eb05ea2f",
-        "task_name": "multiple_face_desensitization"
-    },
-    "a552220a-7873-4693-a480-9e0030ac1c56": {
-        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_1/20250102/163523_c8c61c0fba104ceabb3a6a27ce5afb5a.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250102%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250102T083524Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=1ca4cd419b3ae059c9c7709ef3e0686d6f4252c6f6300533fa90780f1b245abf",
-        "result_url": "https://img.sw.gz.cn/comfyui-output/multiple_face_desensitization/comfyui_output_1735806987_a552220a-7873-4693-a480-9e0030ac1c56.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250102%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250102T083629Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=9bf8d2865e3e671cb204f38f0c21fbad8382dc1d91798f26221a8e88c4694a04",
-        "task_name": "multiple_face_desensitization"
-    },
-    "b14bbc53-5e9b-4f19-b18c-dfd5eb32dade": {
-        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_1/20250102/163707_d3233508e7bb47a68bb7ba267569a947.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250102%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250102T083708Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=332e09e45aff1c35025f73cb83e57fb7b7a230bb4032537d8fafcf749b63f2d1",
-        "result_url": "https://img.sw.gz.cn/comfyui-output/multiple_face_desensitization/comfyui_output_1735807070_b14bbc53-5e9b-4f19-b18c-dfd5eb32dade.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250102%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250102T083752Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=74245239fed60f6359dd52247485b4a06666d19d67562ace21ab289e7a5860e5",
-        "task_name": "multiple_face_desensitization"
-    },
-    "86bece5a-1f85-40a6-918f-e12355b2f400": {
-        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_1/20250102/163839_bc36c906526441c1b3491833d5d693b6.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250102%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250102T083839Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=ac66832f63ae3951b36bbdef01de640040a725bf4057ec740e5a0ecec6a73850",
-        "result_url": "https://img.sw.gz.cn/comfyui-output/multiple_face_desensitization/comfyui_output_1735807150_86bece5a-1f85-40a6-918f-e12355b2f400.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250102%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250102T083911Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=95471c39d55dc5fe2c2dc9a30f6e84996df103bb98036f1782df4e04e53977d8",
-        "task_name": "multiple_face_desensitization"
-    },
-    "e3a04719-a191-41e8-a5f5-4d9e9f0ec2e8": {
-        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_1/20250102/164414_ad7af39a6dd14f3aaba756e6a62ebeee.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250102%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250102T084420Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=afd223842b0bb48e6267877811370bdd7ed671280f50446b289cdd6a9b31e316",
-        "result_url": "https://img.sw.gz.cn/comfyui-output/multiple_face_desensitization/comfyui_output_1735807508_e3a04719-a191-41e8-a5f5-4d9e9f0ec2e8.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250102%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250102T084514Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=ac55aadee8e724641d95e033d2423ff879d2877fda7424c908a1bcce62ae90f4",
-        "task_name": "multiple_face_desensitization"
-    },
-    "9b2e2506-6d68-41c2-ae96-efd87f7d84bd": {
-        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_1/20250102/164414_ad7af39a6dd14f3aaba756e6a62ebeee.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250102%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250102T084420Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=afd223842b0bb48e6267877811370bdd7ed671280f50446b289cdd6a9b31e316",
-        "result_url": "https://img.sw.gz.cn/comfyui-output/multiple_face_desensitization/comfyui_output_1735807555_9b2e2506-6d68-41c2-ae96-efd87f7d84bd.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250102%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250102T084601Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=7cb93f6eefb6bc58ef40952233988cfb66e22c7c2d6f12d7d4839168483ab99c",
-        "task_name": "multiple_face_desensitization"
-    },
-    "956a6898-0bbd-4703-a2c0-05897dc48dbb": {
-        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_1/20250102/164414_ad7af39a6dd14f3aaba756e6a62ebeee.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250102%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250102T084420Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=afd223842b0bb48e6267877811370bdd7ed671280f50446b289cdd6a9b31e316",
-        "result_url": "https://img.sw.gz.cn/comfyui-output/multiple_face_desensitization/comfyui_output_1735807597_956a6898-0bbd-4703-a2c0-05897dc48dbb.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250102%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250102T084643Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=6258931f65b2d6dd9d5834b7422f353ca2ae7bc0d2649f6e9c58dc067358df69",
-        "task_name": "multiple_face_desensitization"
-    },
-    "5f54c0b8-c805-4534-991d-91a07aba9079": {
-        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_1/20250102/165244_4214ed6f69f7456c9c1a016a01b590a2.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250102%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250102T085247Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=682f59e3a1ed137c5fdd75029af0f60548d2ce6e7096db26f0e2fa1f93421544",
-        "result_url": "https://img.sw.gz.cn/comfyui-output/multiple_face_desensitization/comfyui_output_1735808006_5f54c0b8-c805-4534-991d-91a07aba9079.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250102%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250102T085328Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=e63548fc11e746a0549897ba57ebce550b14a928d6e23be759eda6f52ee1a10f",
-        "task_name": "multiple_face_desensitization"
-    },
-    "cbdf6d9e-6c06-469b-9ad9-9f19dd49fb15": {
-        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_1/20250102/165244_4214ed6f69f7456c9c1a016a01b590a2.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250102%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250102T085247Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=682f59e3a1ed137c5fdd75029af0f60548d2ce6e7096db26f0e2fa1f93421544",
-        "result_url": "https://img.sw.gz.cn/comfyui-output/multiple_face_desensitization/comfyui_output_1735808044_cbdf6d9e-6c06-469b-9ad9-9f19dd49fb15.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250102%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250102T085407Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=beebf167e0106b360bc4d5d5bed02f02b1447bf210dc50687a9f98bde9d95bd9",
-        "task_name": "multiple_face_desensitization"
-    },
-    "25d66788-f935-46da-b049-4f0d1db2c2ec": {
-        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_1/20250102/172946_bddac69d4b2b43c58ae33f58f736abfd.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250102%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250102T092949Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=7b880014a92a45bcbbdea8a0be1bedff6d86a58e3b035a9d88a236866beba220",
-        "result_url": "https://img.sw.gz.cn/comfyui-output/multiple_face_desensitization/comfyui_output_1735810228_25d66788-f935-46da-b049-4f0d1db2c2ec.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250102%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250102T093031Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=dda3ab2f9ab0e209537d6f9fa971356cccf1c0f8d608a61a1d0b754fde9429e6",
-        "task_name": "multiple_face_desensitization"
-    },
-    "bc6a0ccd-f3b9-4497-b0d0-ce3ff055550c": {
-        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_1/20250102/172946_bddac69d4b2b43c58ae33f58f736abfd.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250102%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250102T092949Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=7b880014a92a45bcbbdea8a0be1bedff6d86a58e3b035a9d88a236866beba220",
-        "result_url": "https://img.sw.gz.cn/comfyui-output/multiple_face_desensitization/comfyui_output_1735810266_bc6a0ccd-f3b9-4497-b0d0-ce3ff055550c.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250102%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250102T093109Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=fba8e47c0ebde61e44853f83ffbbdbca131ee8cf24f92edc39f5b7f0fb572bb2",
-        "task_name": "multiple_face_desensitization"
-    },
-    "9c52a45c-95ae-4d75-a551-ce9ced07955b": {
-        "image_url": "https://ts1.cn.mm.bing.net/th/id/R-C.eed97557f689df2382b6a9fc85ed172e?rik=d%2fBN9fsXJ2nz2w&riu=http%3a%2f%2fup.bizhizu.com%2fpic%2fd1%2fb7%2fc1%2fd1b7c1c9d4362b4ed5a433e69a19b383.jpg&ehk=OafBZEPbO07cQidzqmNBh0FzR5lM78gdhBOg7%2bjNdis%3d&risl=&pid=ImgRaw&r=0",
-        "result_url": "https://img.sw.gz.cn/comfyui-output/multiple_face_desensitization_auto/comfyui_output_1736112376_9c52a45c-95ae-4d75-a551-ce9ced07955b.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250105%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250105T212616Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=f986b78de15c785b805e82ffe3b1433319895ad49c7b4f3e3465608dbf6dd487",
-        "task_name": "multiple_face_desensitization_auto"
-    },
-    "b3cd8756-eec9-4ae5-b32d-0b3aaa3bcffd": {
-        "image_url": "https://www.jiaphoto.net/Public/upload/2019-06-18/5d085600a806e.jpg",
-        "result_url": "https://img.sw.gz.cn/comfyui-output/multiple_face_desensitization_auto/comfyui_output_1736112521_b3cd8756-eec9-4ae5-b32d-0b3aaa3bcffd.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250105%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250105T212842Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=4a81c09684217631627c77ba59dafcfb75834ee25f46f5907b218b5c8398db97",
-        "task_name": "multiple_face_desensitization_auto"
-    },
-    "6c950d56-d13d-4331-baa5-bb09fd732ccd": {
-        "image_url": "https://www.jiaphoto.net/Public/upload/2019-06-18/5d085600a806e.jpg",
-        "result_url": "https://img.sw.gz.cn/comfyui-output/multiple_face_desensitization_auto/comfyui_output_1736112582_6c950d56-d13d-4331-baa5-bb09fd732ccd.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250105%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250105T212943Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=78deadc0271021b498612df111a32c39d11f8666f7246f9ddfe0fc627d586319",
-        "task_name": "multiple_face_desensitization_auto"
-    },
-    "9dd8c3d3-e9fa-448a-accf-7406152d13a8": {
-        "image_url": "https://www.jiaphoto.net/Public/upload/2019-06-18/5d085600a806e.jpg",
-        "result_url": "https://img.sw.gz.cn/comfyui-output/multiple_face_desensitization_auto/comfyui_output_1736112643_9dd8c3d3-e9fa-448a-accf-7406152d13a8.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250105%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250105T213044Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=71ec5cc65eee05b975d7ca2acda97ff6a0336ea33a20d78be7757b5a418828cf",
-        "task_name": "multiple_face_desensitization_auto"
-    },
-    "de6e0896-3143-4271-a97d-16034ab67643": {
-        "image_url": "https://www.jiaphoto.net/Public/upload/2019-06-18/5d085600a806e.jpg",
-        "result_url": "https://img.sw.gz.cn/comfyui-output/multiple_face_desensitization_auto/comfyui_output_1736112704_de6e0896-3143-4271-a97d-16034ab67643.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250105%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250105T213145Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=ff861be08b156f689e3b99d425d1e7682bcb98f10b99d0c14c81be63b4334b70",
-        "task_name": "multiple_face_desensitization_auto"
-    },
-    "3a956f82-2aff-4a62-9f81-4d10d420d911": {
-        "image_url": "https://www.jiaphoto.net/Public/upload/2019-06-18/5d085600a806e.jpg",
-        "result_url": "https://img.sw.gz.cn/comfyui-output/multiple_face_desensitization_auto/comfyui_output_1736112765_3a956f82-2aff-4a62-9f81-4d10d420d911.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250105%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250105T213246Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=fe41bd56f0bdaa73670d0eeaa106b8ce2acb6428e111f79eecc350363040d652",
-        "task_name": "multiple_face_desensitization_auto"
-    },
-    "faaaae26-5f16-49dc-976a-d5431b0e9290": {
-        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_1/20250106/053145_61396426ce034f96a12c119f0fefae7f.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250105%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250105T213149Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=5e7f238e4e0325b3ae556d85e61ab096805b52149b7c6d2d8127fb20b8941ae3",
-        "result_url": "https://img.sw.gz.cn/comfyui-output/multiple_face_desensitization/comfyui_output_1736112779_faaaae26-5f16-49dc-976a-d5431b0e9290.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250105%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250105T213303Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=fb0ad67fb3bec880426833d3ffb4532af12a899a870cba77648a8a2fa3238f26",
-        "task_name": "multiple_face_desensitization"
-    },
-    "d2d17b0c-7c98-476b-bc17-141e8429b92e": {
-        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_1/20250106/053330_a8380425a1f746eca663558dff13b0d7.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250105%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250105T213332Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=54e4033249a0ada8ad79577eda4a51c6d89d4ed27e9456b3b3fa3251fb1d1b6d",
-        "result_url": "https://img.sw.gz.cn/comfyui-output/multiple_face_desensitization_auto/comfyui_output_1736112917_d2d17b0c-7c98-476b-bc17-141e8429b92e.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250105%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250105T213517Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=c1066b640bc10012856b6ec40f987564a54b41f7891c5d047b4b841645300d32",
-        "task_name": "multiple_face_desensitization_auto"
-    },
-    "143a66e5-3d01-4e56-927c-48807b0137d3": {
-        "image_url": "https://th.bing.com/th/id/R.310422f466ff7550c2d00f049b0554a3?rik=sxppoYZxE%2bR%2btQ&riu=http%3a%2f%2fwww.jujiaobaby.com%2fPublic%2fUploads%2f2021-04-10%2f607158a1e7d04.jpg&ehk=vhFGt9i28zAp1ADIS3hW5lQMvQxjPHhRlXjcumdqS0o%3d&risl=&pid=ImgRaw&r=0",
-        "result_url": "https://img.sw.gz.cn/comfyui-output/multiple_face_desensitization_auto/comfyui_output_1736113094_143a66e5-3d01-4e56-927c-48807b0137d3.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250105%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250105T213816Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=9e35518a82da393e60d72f7f1f88bf63fae037aed33ca3549a0108baaa5479c6",
-        "task_name": "multiple_face_desensitization_auto"
-    },
-    "cf464ecd-263c-48d3-9e8e-24cd65e81003": {
-        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_1/20250106/054105_b400ec1355a94b878c0331f9de5b2e3d.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250105%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250105T214108Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=ed9e4b144a7f6145e28c9416c489f86153e1dcc59598248daff11101df0230c7",
-        "result_url": "https://img.sw.gz.cn/comfyui-output/multiple_face_desensitization_auto/comfyui_output_1736113362_cf464ecd-263c-48d3-9e8e-24cd65e81003.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250105%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250105T214243Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=f4aa967db269af67eacf7ad6a5da59d8c93428c74b58f9b872941170ba5da544",
-        "task_name": "multiple_face_desensitization_auto"
-    },
-    "098a1187-4afe-4d98-9684-75527502ac25": {
-        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_1/20250106/054710_13cf2e5096f2485298345783579e983a.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250105%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250105T214713Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=e9c070203b59abedc27aaec3c724fc5e0b266cc4d6d212ed74139939011283d4",
-        "result_url": "https://img.sw.gz.cn/comfyui-output/multiple_face_desensitization_auto/comfyui_output_1736113702_098a1187-4afe-4d98-9684-75527502ac25.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250105%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250105T214823Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=7c68461d99d160cd2f7b926480e5a0dcd6ce2d2860f28092705626a0dbcc34c0",
-        "task_name": "multiple_face_desensitization_auto"
-    },
-    "6e5afd16-99cf-403f-a401-adccac2ad889": {
-        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_1/20250106/062232_ddafd8757b0b4842a52ecae9f47d9450.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250105%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250105T222235Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=66f11eed1b69b358ecbb5de23f29a28104c78f7de2f7c9b04f0dbb5f97fcca7e",
-        "result_url": "https://img.sw.gz.cn/comfyui-output/multiple_face_desensitization_auto/comfyui_output_1736115844_6e5afd16-99cf-403f-a401-adccac2ad889.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250105%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250105T222405Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=ebbe4fa30f2d4ab27bec0f531ce1092508abd077dd6e1fb2d716e238aaeb4924",
-        "task_name": "multiple_face_desensitization_auto"
-    },
-    "24ac7c3a-a890-4191-9140-b26b42032904": {
-        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_1/20250106/062435_3a72a3bf732e434a90b8b6bb379541ff.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250105%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250105T222451Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=457e59d15a1c01985b94214dc6cdb2325c05167411611e46f374c81e83608d81",
-        "result_url": "https://img.sw.gz.cn/comfyui-output/multiple_face_desensitization_auto/comfyui_output_1736116035_24ac7c3a-a890-4191-9140-b26b42032904.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250105%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250105T222719Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=d411b868611931a5050f082c1a1bcf82154e1b5b156b1d4aedf1cf01479741ff",
-        "task_name": "multiple_face_desensitization_auto"
-    },
-    "1dfecd76-9fc6-4aa7-a45f-24f7ebf7874e": {
-        "image_url": "https://th.bing.com/th/id/R.310422f466ff7550c2d00f049b0554a3?rik=sxppoYZxE%2bR%2btQ&riu=http%3a%2f%2fwww.jujiaobaby.com%2fPublic%2fUploads%2f2021-04-10%2f607158a1e7d04.jpg&ehk=vhFGt9i28zAp1ADIS3hW5lQMvQxjPHhRlXjcumdqS0o%3d&risl=&pid=ImgRaw&r=0",
-        "result_url": "https://img.sw.gz.cn/comfyui-output/multiple_face_desensitization_auto/comfyui_output_1736116920_1dfecd76-9fc6-4aa7-a45f-24f7ebf7874e.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250105%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250105T224201Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=35d6b6da65bffd167c26726769063da022dc82ae5bccb230b65ea7258923241d",
-        "task_name": "multiple_face_desensitization_auto"
-    },
-    "98e73a85-fcdf-4422-92fd-c05131f5daed": {
-        "image_url": "https://th.bing.com/th/id/R.310422f466ff7550c2d00f049b0554a3?rik=sxppoYZxE%2bR%2btQ&riu=http%3a%2f%2fwww.jujiaobaby.com%2fPublic%2fUploads%2f2021-04-10%2f607158a1e7d04.jpg&ehk=vhFGt9i28zAp1ADIS3hW5lQMvQxjPHhRlXjcumdqS0o%3d&risl=&pid=ImgRaw&r=0",
-        "result_url": "https://img.sw.gz.cn/comfyui-output/multiple_face_desensitization_auto/comfyui_output_1736117158_98e73a85-fcdf-4422-92fd-c05131f5daed.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250105%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250105T224559Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=3791381c954adde6986960faddd6e863a110634aecae7f3412131ba4776b13d6",
-        "task_name": "multiple_face_desensitization_auto"
-    },
-    "40596999-15b3-429b-ba7b-d4fac5a2d98f": {
-        "image_url": "https://th.bing.com/th/id/R.310422f466ff7550c2d00f049b0554a3?rik=sxppoYZxE%2bR%2btQ&riu=http%3a%2f%2fwww.jujiaobaby.com%2fPublic%2fUploads%2f2021-04-10%2f607158a1e7d04.jpg&ehk=vhFGt9i28zAp1ADIS3hW5lQMvQxjPHhRlXjcumdqS0o%3d&risl=&pid=ImgRaw&r=0",
-        "result_url": "https://img.sw.gz.cn/comfyui-output/multiple_face_desensitization_auto/comfyui_output_1736117240_40596999-15b3-429b-ba7b-d4fac5a2d98f.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250105%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250105T224721Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=420ac7beee7ef16b017f9cc36d721702b6844c871e1b3820866ee5a760674365",
-        "task_name": "multiple_face_desensitization_auto"
-    },
-    "7e056ab5-f5e2-4cdc-974a-c8b0673b42cc": {
-        "image_url": "https://k.sinaimg.cn/www/dy/slidenews/24_img/2016_19/74485_1363976_499220.jpg/w640slw.jpg",
-        "result_url": "https://img.sw.gz.cn/comfyui-output/multiple_face_desensitization_auto/comfyui_output_1736117341_7e056ab5-f5e2-4cdc-974a-c8b0673b42cc.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250105%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250105T224901Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=464a5a9db9705ef26356ea71d960198ce7e77b84c933a38f6603bd603fcb7a0e",
-        "task_name": "multiple_face_desensitization_auto"
-    },
-    "089a2e7a-e268-436d-b330-ebeffa3a285b": {
-        "image_url": "https://k.sinaimg.cn/www/dy/slidenews/24_img/2016_19/74485_1363976_499220.jpg/w640slw.jpg",
-        "result_url": "https://img.sw.gz.cn/comfyui-output/multiple_face_desensitization_auto/comfyui_output_1736117397_089a2e7a-e268-436d-b330-ebeffa3a285b.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250105%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250105T224957Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=f676dbc7a6fbedeaa7a8c5d37351717b491b9bb22e94e562e29b83862a683e22",
-        "task_name": "multiple_face_desensitization_auto"
-    },
-    "1dd42fb8-ffd1-4937-bcee-e3847d5ecc36": {
-        "image_url": "https://th.bing.com/th/id/R.310422f466ff7550c2d00f049b0554a3?rik=sxppoYZxE%2bR%2btQ&riu=http%3a%2f%2fwww.jujiaobaby.com%2fPublic%2fUploads%2f2021-04-10%2f607158a1e7d04.jpg&ehk=vhFGt9i28zAp1ADIS3hW5lQMvQxjPHhRlXjcumdqS0o%3d&risl=&pid=ImgRaw&r=0",
-        "result_url": "https://img.sw.gz.cn/comfyui-output/multiple_face_desensitization_auto/comfyui_output_1736129411_1dd42fb8-ffd1-4937-bcee-e3847d5ecc36.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250106%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250106T021012Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=5cb1a7f07001b71e1bb87c0020f19f30b9615556f11d248cf910520de4ce7a08",
-        "task_name": "multiple_face_desensitization_auto"
-    },
-    "89941740-7f2f-4bc9-af94-2a67fdf81c4d": {
-        "image_url": "https://th.bing.com/th/id/R.310422f466ff7550c2d00f049b0554a3?rik=sxppoYZxE%2bR%2btQ&riu=http%3a%2f%2fwww.jujiaobaby.com%2fPublic%2fUploads%2f2021-04-10%2f607158a1e7d04.jpg&ehk=vhFGt9i28zAp1ADIS3hW5lQMvQxjPHhRlXjcumdqS0o%3d&risl=&pid=ImgRaw&r=0",
-        "result_url": "https://img.sw.gz.cn/comfyui-output/multiple_face_desensitization_auto/comfyui_output_1736132331_89941740-7f2f-4bc9-af94-2a67fdf81c4d.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250106%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250106T025852Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=2b8bf0976dacbff54c0acf0871b0276d1d0ffbbf8039f39e020aa26ff6b36aad",
-        "task_name": "multiple_face_desensitization_auto"
-    },
-    "36dcafd9-5b31-4632-87f0-e7480108c1f1": {
-        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_1/20250106/104915_685485d51c0b42aa8c7f3b21a01a429f.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250106%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250106T024915Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=86247f27b14dcf3bd90577f8656569d4b4eeb40a83812a9a5e7715f3533b342c",
-        "result_url": "https://img.sw.gz.cn/comfyui-output/multiple_face_desensitization_auto/comfyui_output_1736132465_36dcafd9-5b31-4632-87f0-e7480108c1f1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250106%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250106T030105Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=1bbf543f3acb6b50ec620522a5e4cac596f38bf8572475e7b420c9e60907cfc2",
-        "task_name": "multiple_face_desensitization_auto"
-    },
-    "2f5239f0-0d5c-4e92-8726-5c997db299a8": {
-        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_1/20250106/110106_afd1b08dc6294c18abf0cf8311913ad3.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250106%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250106T030106Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=777f8c8e7945ddcc75c25bf034e61b24bfb024a6fd3fa60cf4ad34e11c115a84",
-        "result_url": "https://img.sw.gz.cn/comfyui-output/multiple_face_desensitization_auto/comfyui_output_1736132554_2f5239f0-0d5c-4e92-8726-5c997db299a8.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250106%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250106T030235Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=74a97406dca701210a460e607499a8261ac71001b447136cfcc25b4069ff9a98",
-        "task_name": "multiple_face_desensitization_auto"
-    },
-    "c9bb532c-d93a-495a-9275-3d7c147583d7": {
-        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_1/20250106/162526_a5b6c7052c734de986909d792f42106f.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250106%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250106T082529Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=33ca089d86320163c66c1a6e675965bafb8d27bf19d8c6309a79c49a3228ca46",
-        "result_url": "https://img.sw.gz.cn/comfyui-output/multiple_face_desensitization_auto/comfyui_output_1736152001_c9bb532c-d93a-495a-9275-3d7c147583d7.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250106%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250106T082642Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=16035a8ed896fa3d5788d98fc23d7f18166bf47a3fba95dfeb980c04354c878b",
-        "task_name": "multiple_face_desensitization_auto"
-    },
-    "4ec11f57-510e-4782-b54d-4a2ba62696f6": {
-        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_1/20250106/162526_a5b6c7052c734de986909d792f42106f.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250106%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250106T082529Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=33ca089d86320163c66c1a6e675965bafb8d27bf19d8c6309a79c49a3228ca46",
-        "result_url": "https://img.sw.gz.cn/comfyui-output/multiple_face_desensitization_auto/comfyui_output_1736152062_4ec11f57-510e-4782-b54d-4a2ba62696f6.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250106%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250106T082743Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=34c5b5e631af3bfa14f230a9faaa26d1ff9ca1643d2e5e4308bb8dc91003a9ce",
-        "task_name": "multiple_face_desensitization_auto"
-    },
-    "1fb61af4-5029-4fc5-9a3c-a2298f59460f": {
-        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_1/20250106/162526_a5b6c7052c734de986909d792f42106f.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250106%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250106T082529Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=33ca089d86320163c66c1a6e675965bafb8d27bf19d8c6309a79c49a3228ca46",
-        "result_url": "https://img.sw.gz.cn/comfyui-output/multiple_face_desensitization_auto/comfyui_output_1736152123_1fb61af4-5029-4fc5-9a3c-a2298f59460f.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250106%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250106T082844Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=082a71ea7565cee5e3bb3b75de21ebb56f11bad328a34416b61293ff54f01322",
-        "task_name": "multiple_face_desensitization_auto"
-    },
-    "04d160de-0ed8-46c8-aa4e-a76d2247a75c": {
-        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_1/20250106/163020_146fbd6bdffd4f42b78a12ab5809da08.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250106%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250106T083023Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=4fee33aac07e3c6f01d277a50e344782195e557500f328400f742c9cf13b2bcc",
-        "result_url": "https://img.sw.gz.cn/comfyui-output/multiple_face_desensitization_auto/comfyui_output_1736152294_04d160de-0ed8-46c8-aa4e-a76d2247a75c.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250106%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250106T083138Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=30978aac3cf3f50626d1f217e1f62389d878e13b486e5ffa90552a5e8a1804b8",
-        "task_name": "multiple_face_desensitization_auto"
-    },
-    "496be711-ebe2-4e58-9e83-426bd3e71e62": {
-        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_1/20250106/163350_a37e2b779b3946a2aba1216c4f4ea442.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250106%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250106T083356Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=82f0413b5989ac3f4b362d44c1639f1ed990ec81fbe36d547280cdabece46dab",
-        "result_url": "https://img.sw.gz.cn/comfyui-output/multiple_face_desensitization_auto/comfyui_output_1736152510_496be711-ebe2-4e58-9e83-426bd3e71e62.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250106%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250106T083516Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=aba2288f2015e3a2efc3ac2505a19976cb6df34b783575fa680d5b77a2945972",
-        "task_name": "multiple_face_desensitization_auto"
-    },
-    "50c61a1e-5761-43e9-9382-34a52c182f22": {
-        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_1/20250106/163350_a37e2b779b3946a2aba1216c4f4ea442.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250106%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250106T083356Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=82f0413b5989ac3f4b362d44c1639f1ed990ec81fbe36d547280cdabece46dab",
-        "result_url": "https://img.sw.gz.cn/comfyui-output/multiple_face_desensitization_auto/comfyui_output_1736152577_50c61a1e-5761-43e9-9382-34a52c182f22.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250106%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250106T083623Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=5407d03f455584ad3920b0b516935c4a9ea425745cd215d0553e3ff2b5dc75e2",
-        "task_name": "multiple_face_desensitization_auto"
-    },
-    "3ad3ed0f-05f5-476f-a6a9-86a5933fe837": {
-        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_1/20250106/163350_a37e2b779b3946a2aba1216c4f4ea442.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250106%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250106T083356Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=82f0413b5989ac3f4b362d44c1639f1ed990ec81fbe36d547280cdabece46dab",
-        "result_url": "https://img.sw.gz.cn/comfyui-output/multiple_face_desensitization_auto/comfyui_output_1736152643_3ad3ed0f-05f5-476f-a6a9-86a5933fe837.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250106%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250106T083729Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=1b021e51b146106618a0953f08a68ddaef402b9160a2393c955ca5bb425a3501",
-        "task_name": "multiple_face_desensitization_auto"
-    },
-    "3feab0e9-09b3-443e-ab7a-0e00aff4f9c3": {
-        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_1/20250106/163811_8234187d30b1480892f04ab6b7df23e0.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250106%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250106T083812Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=dced1eee3aadc040e9c11313be095222f6929aefd22d9ca9c92140ebc83eb1c7",
-        "result_url": "https://img.sw.gz.cn/comfyui-output/multiple_face_desensitization_auto/comfyui_output_1736152793_3feab0e9-09b3-443e-ab7a-0e00aff4f9c3.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250106%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250106T083954Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=2aae3feb28bb8d699c6ad775af098e8f699db84a592036242027ad724450436f",
-        "task_name": "multiple_face_desensitization_auto"
-    },
-    "cb749f33-5552-424a-8d8d-d84eb2bd4079": {
-        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_1/20250106/164220_f9f7a9877a9f4d168b3903a5b7039823.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250106%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250106T084237Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=57776cf7155c05352ed4af2edb6be0e911a2c243dbc99f35761a248b6fa70219",
-        "result_url": "https://img.sw.gz.cn/comfyui-output/multiple_face_desensitization_auto/comfyui_output_1736153069_cb749f33-5552-424a-8d8d-d84eb2bd4079.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250106%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250106T084433Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=e89835dee7bf0d19368944e64007a4013b3d9b5e868488e24b1e028f89f2660c",
-        "task_name": "multiple_face_desensitization_auto"
-    },
-    "43543a2c-f565-4a6c-b406-f2aa0ef29132": {
-        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_1/20250106/164220_f9f7a9877a9f4d168b3903a5b7039823.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250106%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250106T084237Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=57776cf7155c05352ed4af2edb6be0e911a2c243dbc99f35761a248b6fa70219",
-        "result_url": "https://img.sw.gz.cn/comfyui-output/multiple_face_desensitization_auto/comfyui_output_1736153134_43543a2c-f565-4a6c-b406-f2aa0ef29132.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250106%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250106T084538Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=fe921273bef5ffc3633fa2613082713fdf0c83bea57a7222ed76522aefc8da97",
-        "task_name": "multiple_face_desensitization_auto"
-    },
-    "38350db5-88e4-4986-b036-75ee0c086495": {
-        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_1/20250106/165252_cf50ed146bf34ef4a734112822ce6475.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250106%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250106T085253Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=6efa75a0a37ef47c563160ed57a590f5cae0c8d8ae0d62fffe5afde8e9b86b3e",
-        "result_url": "https://img.sw.gz.cn/comfyui-output/multiple_face_desensitization_auto/comfyui_output_1736153673_38350db5-88e4-4986-b036-75ee0c086495.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250106%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250106T085434Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=249e3b42bd2dfdb4a1938035a5bc6c7875426f81082f003ef639b48fec3b337b",
-        "task_name": "multiple_face_desensitization_auto"
-    },
-    "e74843a1-3329-4192-9151-50f2d48ae8c9": {
-        "image_url": "https://k.sinaimg.cn/www/dy/slidenews/24_img/2016_19/74485_1363976_499220.jpg/w640slw.jpg",
-        "result_url": "https://img.sw.gz.cn/comfyui-output/multiple_face_desensitization_auto/comfyui_output_1736153931_e74843a1-3329-4192-9151-50f2d48ae8c9.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250106%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250106T085853Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=c0eef8f81e9aa0bff15b043f1f0b55fcd551d5adc5ff9fb9fdd91de3e4bf30e7",
-        "task_name": "multiple_face_desensitization_auto"
-    },
-    "378eb0c8-1baf-4952-96d2-7862a7c1ac54": {
-        "image_url": "https://k.sinaimg.cn/www/dy/slidenews/24_img/2016_19/74485_1363976_499220.jpg/w640slw.jpg",
-        "result_url": "https://img.sw.gz.cn/comfyui-output/multiple_face_desensitization_auto/comfyui_output_1736153988_378eb0c8-1baf-4952-96d2-7862a7c1ac54.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250106%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250106T085952Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=aacd5c29c19e2824d277542d2f1f1d7cfa013810455c53f558a47f8f063150d8",
-        "task_name": "multiple_face_desensitization_auto"
-    },
-    "e5d18987-4c47-4713-86ce-4554a12e4d5f": {
-        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_1/20250106/165743_1cffb6824b464de382feb6d551497683.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250106%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250106T085813Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=8301c9cdab5907a8a9b0b7a0f0203d30e21ff66755d6b523b6823f578b292c0c",
-        "result_url": "https://img.sw.gz.cn/comfyui-output/multiple_face_desensitization_auto/comfyui_output_1736154132_e5d18987-4c47-4713-86ce-4554a12e4d5f.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250106%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250106T090217Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=56beeed0847c206f808f8e4649d1815ea5350f3fa7c22f91d2d4d152f548bd96",
-        "task_name": "multiple_face_desensitization_auto"
-    },
-    "35f46e7c-bcb3-457e-8b64-533a055a06d5": {
-        "image_url": "https://k.sinaimg.cn/www/dy/slidenews/24_img/2016_19/74485_1363976_499220.jpg/w640slw.jpg",
-        "result_url": "https://img.sw.gz.cn/comfyui-output/multiple_face_desensitization_auto/comfyui_output_1736154185_35f46e7c-bcb3-457e-8b64-533a055a06d5.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250106%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250106T090305Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=adbf144f823c218f39983518d6eab239789d68d88c991d844e12c608fe18bd98",
-        "task_name": "multiple_face_desensitization_auto"
-    },
-    "88263211-764b-45f2-b485-89b8d4eca2c2": {
-        "image_url": "https://k.sinaimg.cn/www/dy/slidenews/24_img/2016_19/74485_1363976_499220.jpg/w640slw.jpg",
-        "result_url": "https://img.sw.gz.cn/comfyui-output/multiple_face_desensitization_auto/comfyui_output_1736154240_88263211-764b-45f2-b485-89b8d4eca2c2.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250106%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250106T090403Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=1d693e5f08e2d750ca29bd7585dfa511b1a7aef4bb805d68f253cdc008891427",
-        "task_name": "multiple_face_desensitization_auto"
-    },
-    "06761dde-97df-4709-86cc-59c6f4f6afb0": {
-        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_1/20250106/170346_13dad01502f3462195e20955e0936cf3.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250106%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250106T090349Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=0a9c5e05f084c3b2a7640a1f5d4067bb7bc45ecdd2cd8c1cc371cb290461c38a",
-        "result_url": "https://img.sw.gz.cn/comfyui-output/multiple_face_desensitization_auto/comfyui_output_1736154299_06761dde-97df-4709-86cc-59c6f4f6afb0.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250106%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250106T090500Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=41fa0bf8daee6cc05b8b1bb1b0eafed2db4ee65d6b437b6b6b70b5b1974edbcf",
-        "task_name": "multiple_face_desensitization_auto"
-    },
-    "c78dc62d-d164-4ad2-93ba-591fe2d57bf6": {
-        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_1/20250106/171024_6859ba39b2d5435ba116a64dd3f67a17.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250106%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250106T091052Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=9c9710d104510f5c144db75b493cb7e2b6751e116ae5ed9d416c7f4569a7aee1",
-        "result_url": "https://img.sw.gz.cn/comfyui-output/multiple_face_desensitization_auto/comfyui_output_1736154794_c78dc62d-d164-4ad2-93ba-591fe2d57bf6.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250106%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250106T091320Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=6f9c6dfc8fce2f5f893b6f363c32d4d8d5e4796615700a7fbf8310cd68a6798f",
-        "task_name": "multiple_face_desensitization_auto"
-    },
-    "90385f13-e762-4689-a776-670dd1bed5e0": {
-        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_1/20250106/171024_6859ba39b2d5435ba116a64dd3f67a17.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250106%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250106T091052Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=9c9710d104510f5c144db75b493cb7e2b6751e116ae5ed9d416c7f4569a7aee1",
-        "result_url": "https://img.sw.gz.cn/comfyui-output/multiple_face_desensitization_auto/comfyui_output_1736154861_90385f13-e762-4689-a776-670dd1bed5e0.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250106%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250106T091426Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=47ec3d2e311c1ca8db69d410739f3f5b60d86df920629c0fb60cee209e238ff0",
-        "task_name": "multiple_face_desensitization_auto"
-    },
-    "cdc74248-72b7-4f37-bb3f-dfdd254cf53f": {
-        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_1/20250106/182816_6e1088082d194e38a3ec5376d9bb2bc1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250106%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250106T102824Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=a5251608ac1e586db60aee09d65f31d41e9954a143376e0f93a477c5b07668fd",
-        "result_url": "https://img.sw.gz.cn/comfyui-output/multiple_face_desensitization_auto/comfyui_output_1736159419_cdc74248-72b7-4f37-bb3f-dfdd254cf53f.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250106%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250106T103021Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=e9c178a5a9f2e2e0a762c676341c66f14e216d90c8fed4af17ab7a6838adc5ec",
-        "task_name": "multiple_face_desensitization_auto"
-    },
-    "ef0935d8-dbe8-4485-86d2-60f28fe47d7b": {
-        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_1/20250106/184101_e66945a5bc8c49439218675a82e3c36c.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250106%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250106T104104Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=5143c7e6c7f87e621419001e6edc3685f96711305b9bf4a23360cae123acc889",
-        "result_url": "https://img.sw.gz.cn/comfyui-output/multiple_face_desensitization_auto/comfyui_output_1736160189_ef0935d8-dbe8-4485-86d2-60f28fe47d7b.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250106%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250106T104309Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=3592a03de900b4321477c64d39c0318e133a5542a7f4d6a709e2a560a298a267",
-        "task_name": "multiple_face_desensitization_auto"
-    },
-    "1ec0b9d9-400e-4bf8-8a1b-8638eb4ad659": {
-        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_1/20250106/184637_c21ddfdc73874e5eaf5f9d93afaf52f5.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250106%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250106T104639Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=e4d830a02e2d5162ff5cde54152f09ef6dfc77d777f46062fe455fa028e71a4f",
-        "result_url": "https://img.sw.gz.cn/comfyui-output/multiple_face_desensitization_auto/comfyui_output_1736160529_1ec0b9d9-400e-4bf8-8a1b-8638eb4ad659.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250106%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250106T104850Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=06067a0b17f2d28e3cfd4be42601f8cdd721a75ba9a776a86e2b1a37ed927ea2",
-        "task_name": "multiple_face_desensitization_auto"
-    },
-    "c338514a-2c31-4d3d-a384-e15bef64d405": {
-        "image_url": "https://ts1.cn.mm.bing.net/th/id/R-C.eed97557f689df2382b6a9fc85ed172e?rik=d%2fBN9fsXJ2nz2w&riu=http%3a%2f%2fup.bizhizu.com%2fpic%2fd1%2fb7%2fc1%2fd1b7c1c9d4362b4ed5a433e69a19b383.jpg&ehk=OafBZEPbO07cQidzqmNBh0FzR5lM78gdhBOg7%2bjNdis%3d&risl=&pid=ImgRaw&r=0",
-        "face_url": "https://k.sinaimg.cn/www/dy/slidenews/24_img/2016_19/74485_1363976_499220.jpg/w640slw.jpg",
-        "result_url": "https://img.sw.gz.cn/comfyui-output/face_swap_thumbnail/comfyui_output_1736161011_c338514a-2c31-4d3d-a384-e15bef64d405.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250106%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250106T105653Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=185d88fcf2100ce03fb2e8615cc1e30d6ceaa22e924575fbe36359e05b79b1b9",
-        "task_name": "face_swap_thumbnail"
-    },
-    "5dd7211a-7126-46cb-bfce-f89c433e679f": {
-        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_1/20250106/185939_49536144c8d64b7b80a3bb7a1e2edf93.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250106%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250106T105955Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=df0ca01f3517b47f6fc6b0d80274470f9cebd9d655fca473fe22a46f4d2acf4c",
-        "face_url": "https://img.sw.gz.cn/photography-comfyui/user_1/20250106/185955_eb5d5560ced5407fb065887581c01fe5.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250106%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250106T105956Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=6ddbc72330e0fa78e5b56504d013621214311f2e43a70b109b71c2b5832d5230",
-        "result_url": "https://img.sw.gz.cn/comfyui-output/face_swap_thumbnail/comfyui_output_1736161237_5dd7211a-7126-46cb-bfce-f89c433e679f.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250106%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250106T110041Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=c9e4b2d402c22d29bdd0951966f749d2a2435cc89445bc4374a428dc7ca455fc",
-        "task_name": "face_swap_thumbnail"
-    },
-    "28ee2b24-e783-405d-ac85-ef59c2c74337": {
-        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_1/20250106/190047_4718b3d9deda4d8db635a0f456bce958.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250106%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250106T110055Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=8665009452343c6213334ec4e1439222e39d6b03f5a8eb182329ddc76cf2d322",
-        "face_url": "https://img.sw.gz.cn/photography-comfyui/user_1/20250106/190056_8bfaef5316d648bfbba9c306fea2e1c8.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250106%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250106T110058Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=ae48d5863b50089fee6bcd9e7121ff9a86b5f12be5c22fdbf84557ddd63e34dd",
-        "result_url": "https://img.sw.gz.cn/comfyui-output/face_swap_thumbnail/comfyui_output_1736161293_28ee2b24-e783-405d-ac85-ef59c2c74337.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250106%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250106T110135Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=7e86f9b9cd05794fa21605ef4b1a3c5fffd1eb05321956da8040ee9e1d6d4454",
-        "task_name": "face_swap_thumbnail"
-    },
-    "724a4a9a-b7d8-4b28-82d6-0a2809c7961a": {
-        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_1/20250106/190341_8a8e7a003cbd4793b3fdd88cff7b5618.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250106%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250106T110348Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=d9a22de1f28f010ce3b85eada2296c699fdbebaf4b1fc99755cebdb7e439e1b4",
-        "face_url": "https://img.sw.gz.cn/photography-comfyui/user_1/20250106/190348_791dd5274ccf480994d19d920a11884a.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250106%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250106T110349Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=1b47c556963ec5d459f445243bf4b5dbae9d02f541a7fbc7dba9c0d49d5c030a",
-        "result_url": "https://img.sw.gz.cn/comfyui-output/face_swap_thumbnail/comfyui_output_1736161460_724a4a9a-b7d8-4b28-82d6-0a2809c7961a.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250106%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250106T110421Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=281fb47dd90dca76caf7f835381aa7d246da36fce552c77ef0927fba71887be1",
-        "task_name": "face_swap_thumbnail"
-    },
-    "c014a9a9-52f8-479c-945b-dccd49463b30": {
-        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_1/20250106/190612_df839d434cd444f08df736c768d6ddcb.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250106%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250106T110612Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=a558da57287bdca7e57ebc9c78b6492fb19774882ffa0f7b037f45b035fcb988",
-        "face_url": "https://img.sw.gz.cn/photography-comfyui/user_1/20250106/190613_409c12194ec8478492ad4ac1d4e99ec6.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250106%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250106T110613Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=abbf61b25e623215b585a43d81fc1a336e0a3b6e7bdd790f04418f433cda2422",
-        "result_url": "https://img.sw.gz.cn/comfyui-output/face_swap_thumbnail/comfyui_output_1736161599_c014a9a9-52f8-479c-945b-dccd49463b30.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250106%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250106T110640Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=9cce05b33e0fd275b63d6e7c5dd956906fda699d6e377b018e6f0895a3ed2856",
-        "task_name": "face_swap_thumbnail"
-    },
-    "ec9e5d10-f84e-4d86-9c9c-f355fffa5969": {
-        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_1/20250106/190739_a94f87024de5480aacde4673387743dd.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250106%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250106T110740Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=4edfda9c60761d00c626b9c5eca5efbb333308fe6aad453cb3c78e6003562014",
-        "face_url": "https://img.sw.gz.cn/photography-comfyui/user_1/20250106/190741_431156a6bd5143c3931294eb44ef5686.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250106%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250106T110742Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=a38f5c07abb6bdeb3a119b37fccf938b5f5157e113389e43e6f52306918c0d1f",
-        "result_url": "https://img.sw.gz.cn/comfyui-output/face_swap_thumbnail/comfyui_output_1736161687_ec9e5d10-f84e-4d86-9c9c-f355fffa5969.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250106%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250106T110811Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=0b4a54bcc0d79f7998c0ede0260fdaf6d0d5a4914b7cdab29541b75971fd7d38",
-        "task_name": "face_swap_thumbnail"
-    },
-    "5bd55ea0-6d46-4767-ace7-dcb70ecf362c": {
-        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_1/20250106/195845_af5561c784674920b7cafd180ec34aea.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250106%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250106T115901Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=e82ecf871f2a9265df1aba7b06ea07a5221d1c726aa462fc2f6e2b448c5fc92d",
-        "face_url": "https://img.sw.gz.cn/photography-comfyui/user_1/20250106/195902_a389d1f85a7140728b90d9425c2453f3.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250106%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250106T115903Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=4ef0c42be2c0f533b9a30bb2787cb67f49e8492ca6563f4ab9bfc5671399e49f",
-        "result_url": "https://img.sw.gz.cn/comfyui-output/face_swap_thumbnail/comfyui_output_1736164783_5bd55ea0-6d46-4767-ace7-dcb70ecf362c.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250106%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250106T115948Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=89218172fdf60316c3bd8e571bde6c0d1ab230718ea887b2a947c711b3cea9df",
-        "task_name": "face_swap_thumbnail"
+    "ecbbba34-ca38-45ab-a855-d07218fd151d": {
+        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_5/20250217/tmp_7d2e899f9ba1c51bba7a9656ff79a79728840cd894338ce6.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T095219Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=1842a3956f15e66f368282a687fa8454a7b3958061da0f411ce987b9989283fc",
+        "result_url": "https://img.sw.gz.cn/comfyui-output//comfyui_output_1739786003_ecbbba34-ca38-45ab-a855-d07218fd151d.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T095325Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=ef31b21c0df5573e0bef99cb3a68ab9727d0dddac6336b4c6c6adb8621f36cb4",
+        "task_name": ""
+    },
+    "26ee567a-50ff-4cfb-a839-53895470277c": {
+        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_5/20250217/tmp_99267f5a02642c5496d14460f7da68802e83c00f47c19a6a.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T095548Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=5cbcf92564c84299ed6918fb39555b1c18b2360cd6d2e52264ceaa67e0d929dd",
+        "result_url": "https://img.sw.gz.cn/comfyui-output//comfyui_output_1739786212_26ee567a-50ff-4cfb-a839-53895470277c.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T095653Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=26c18b39d1976924297be782088cd3aab756eefbe4e85aaa48aa5c11c587c2e1",
+        "task_name": ""
+    },
+    "6813c0ff-be0a-4be7-b75d-500f0268ac8d": {
+        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_5/20250217/tmp_628bf4b4dc7efd10673a4e6f0a984f1b0b502a7345f7910d.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T095721Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=798eadd13229a7bb97a5ff38f59e45a7c463b9a107315de57d93e4502518308a",
+        "result_url": "https://img.sw.gz.cn/comfyui-output//comfyui_output_1739786309_6813c0ff-be0a-4be7-b75d-500f0268ac8d.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T095830Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=f3a60f4ee77296bab6318afae55188799d48333559bb91c4d6171df99b0b8a4c",
+        "task_name": ""
+    },
+    "df35c786-fffe-4b48-b49b-6c9eae8158a3": {
+        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_5/20250217/8.111986.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T081338Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=949db176aae7ca1c772a4e8a34fe75d13c042d6710116bd3ad3b0230444d70a7",
+        "result_url": "https://img.sw.gz.cn/comfyui-output//comfyui_output_1739786389_df35c786-fffe-4b48-b49b-6c9eae8158a3.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T095952Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=efbfd0b717d58398e53360ce6d1b1cda03243a5dda6cbc4fe4c2ce3987d88491",
+        "task_name": ""
+    },
+    "1e7be076-cf96-488b-b34d-15a46ee38287": {
+        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_5/20250217/tmp_97bc503ff02114fb0c1fdd7b94857d9888828305d4d35237.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T032401Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=e57f00760d72462117ba57d1968cece8871e8f5ed508c48c19a16ca8f24f9474",
+        "result_url": "https://img.sw.gz.cn/comfyui-output//comfyui_output_1739786549_1e7be076-cf96-488b-b34d-15a46ee38287.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T100232Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=abb17354e4c346e96178b22496600342f2b5ffb4348048ffd03785b1e73fe298",
+        "task_name": ""
+    },
+    "32933f80-0b05-48aa-b36e-45d7f9ca78ce": {
+        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_5/20250217/tmp_dd3b564ccc4505e9244f115e0bbef8b381d06e6ebc433cc9.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T084629Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=35ad3c0090d6741434b4ceb9fdb17b33706924c035d391b79e53b1169f1b4f22",
+        "result_url": "https://img.sw.gz.cn/comfyui-output//comfyui_output_1739786618_32933f80-0b05-48aa-b36e-45d7f9ca78ce.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T100339Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=3ecd8b40fdfd19d050f4932dc97b5098583731e9c45f224ad364ff99755dd397",
+        "task_name": ""
+    },
+    "f29e350a-ad35-4297-bcd3-44ce3671a211": {
+        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_5/20250217/tmp_a686446eb6dcfe913dda5a3db741d479.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T061642Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=c80bc06c59a6db784271f211deb16a4f4f74be7359efb4726926c8e6edb4eec2",
+        "result_url": "https://img.sw.gz.cn/comfyui-output//comfyui_output_1739786685_f29e350a-ad35-4297-bcd3-44ce3671a211.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T100447Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=98bd02e758321c2910bf55452b2844d3df539c1b6f7502dd61d85caeb0f53a23",
+        "task_name": ""
+    },
+    "24a35210-71b8-4dfd-9553-dffa1c6f5986": {
+        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_5/20250217/tmp_c3f50ba43f1a85ed08a05b276e7143ca0cf3203c7912b085.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T095940Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=be47cba139b251f5b0e32bafa62e703aaa07bda9f6e74ccaa11300a081f46bfe",
+        "result_url": "https://img.sw.gz.cn/comfyui-output//comfyui_output_1739786918_24a35210-71b8-4dfd-9553-dffa1c6f5986.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T100839Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=f625331dc72a31fe0506cc2e681b21645ff0996db1846e116fd9df34a77a3b4e",
+        "task_name": ""
+    },
+    "c1542b85-94be-436a-aeeb-b1aa98b1506a": {
+        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_5/20250217/tmp_27ea8627324113ab8ac26211bf204ebd.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T061142Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=13d2a82d5a0812f34187fe66d8e024adf52a5884e8cd117c61db3fe7d45e47a3",
+        "result_url": "https://img.sw.gz.cn/comfyui-output//comfyui_output_1739786980_c1542b85-94be-436a-aeeb-b1aa98b1506a.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T100942Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=07ac955675c8657e2fdcb5324531a5ffa2d478d3de96c839f21b53d7db949324",
+        "task_name": ""
+    },
+    "30c8fd9e-2e68-467b-abf8-0cb68ddf8712": {
+        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_5/20250217/tmp_c93c8c35d69bf1c0212a91afcd8f7b47.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T065518Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=97d5017d5dde05fb603bd565eca9978d41f6d3a78ce0252ecfa88b092ea247c0",
+        "result_url": "https://img.sw.gz.cn/comfyui-output//comfyui_output_1739787123_30c8fd9e-2e68-467b-abf8-0cb68ddf8712.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T101204Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=baaa09808f28ef5eb4ea070ffff0389fc78ac8a02772c16393709038cdb4f3fe",
+        "task_name": ""
+    },
+    "cdadf9bb-5080-4205-94e7-a73ea1f43348": {
+        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_5/20250217/8.111986.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T081338Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=949db176aae7ca1c772a4e8a34fe75d13c042d6710116bd3ad3b0230444d70a7",
+        "result_url": "https://img.sw.gz.cn/comfyui-output//comfyui_output_1739787206_cdadf9bb-5080-4205-94e7-a73ea1f43348.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T101329Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=377da073101c9a22bccf9c040bba6eb655e199364804c3c764fb6a392ee568a4",
+        "task_name": ""
+    },
+    "9063b22e-42b2-4fcb-babe-b607cef4d2be": {
+        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_5/20250217/tmp_cc1a8fb772b23c1c62373b7887794f264c94a0450e08816b.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T100206Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=88953b9f4bc47216553b55e4c6e0731588b513119198f553fb1e0eaaeb93dbf0",
+        "result_url": "https://img.sw.gz.cn/comfyui-output//comfyui_output_1739787275_9063b22e-42b2-4fcb-babe-b607cef4d2be.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T101436Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=598a8553970fba6a4a0a984c9e6a1f37bf003d0b70079fcc88bc0914c4949e8e",
+        "task_name": ""
+    },
+    "b30e8a39-8442-4efe-8765-9b137eadfedc": {
+        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_5/20250217/tmp_41dc4e8f7ff2aaef5e6f856ac452534b.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T085139Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=8ad6b9e802b13c83f3df3fbc4025c394137bec37e9e5878a440b6c28ba8fdeed",
+        "face_url": "https://img.sw.gz.cn/photography-comfyui/user_5/20250217/tmp_47081e3b686e5e4cfa4a863c25f8664e.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T085056Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=325781ca9bca8340e59d004e0e5006bba7e7cafa4df5cbe71ded34c53fd4ba08",
+        "result_url": "https://img.sw.gz.cn/comfyui-output/face_swap_auto/comfyui_output_1739787310_b30e8a39-8442-4efe-8765-9b137eadfedc.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T101513Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=dd0db864abcf3bdcde90ba4f7e154defaff387fc8bcffe396cc1076ccf8eb931",
+        "task_name": "face_swap_auto"
+    },
+    "e2bf98ed-ad55-4655-bd64-c6063e6f2cd7": {
+        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_5/20250217/tmp_3eb07c693c3e16521d2331907001bd18.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T071749Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=28067250cfa9e14f58ad7529375a7265bb8ebc320c5dd32174f82f35be3f7e11",
+        "face_url": "https://img.sw.gz.cn/photography-comfyui/user_5/20250217/tmp_656e8ad91f0c5b24dfed03cefff135e7.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T071637Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=11c479aa66d04bae4a0beabd4db2ba63445f911e7f47c40d01c74132cae5b816",
+        "result_url": "https://img.sw.gz.cn/comfyui-output/face_swap_auto/comfyui_output_1739787334_e2bf98ed-ad55-4655-bd64-c6063e6f2cd7.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T101535Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=2e58faafe9e664b7a313d93c6463f0f5d33b62324d7ccd3a33b038942579d0e3",
+        "task_name": "face_swap_auto"
+    },
+    "4c84317c-520d-47c6-950b-7fbd024a7acf": {
+        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_5/20250217/tmp_fa100dc001717f56a8017903af9b48983f3c9e03a77ed02e.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T084702Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=a9e2a647ae267e59908215b08253e7251ce3d74dc95a99a0a3ac0c745213bea5",
+        "result_url": "https://img.sw.gz.cn/comfyui-output//comfyui_output_1739787437_4c84317c-520d-47c6-950b-7fbd024a7acf.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T101718Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=f5c79cadf73331a7c6d4d9c186b97512ec3ee54f5b317dcf5bacace0e4e335b0",
+        "task_name": ""
+    },
+    "cbf4ae0c-3555-4199-99a6-25de8099a456": {
+        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_5/20250217/tmp_b16cfc21439161be60cd3a4d1ceea1f3d368b7eee1a1d570.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T032136Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=051be0d181efc64c37c1b6a7b4a6d1a5d5791499f99c42af393311faf46b7451",
+        "result_url": "https://img.sw.gz.cn/comfyui-output//comfyui_output_1739787505_cbf4ae0c-3555-4199-99a6-25de8099a456.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T101827Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=e930f501b89615a7bd6c6511e0c36334208769a7a1198db88ee8ae77d05896be",
+        "task_name": ""
+    },
+    "304f2276-43af-4870-90f4-c15f8942c14d": {
+        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_5/20250217/tmp_3eb07c693c3e16521d2331907001bd18.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T071749Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=28067250cfa9e14f58ad7529375a7265bb8ebc320c5dd32174f82f35be3f7e11",
+        "face_url": "https://img.sw.gz.cn/photography-comfyui/user_5/20250217/tmp_656e8ad91f0c5b24dfed03cefff135e7.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T071637Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=11c479aa66d04bae4a0beabd4db2ba63445f911e7f47c40d01c74132cae5b816",
+        "result_url": "https://img.sw.gz.cn/comfyui-output/face_swap_auto/comfyui_output_1739787537_304f2276-43af-4870-90f4-c15f8942c14d.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T101859Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=c8181b62187620d520860cbb89375ce51c1ce8c747fc668396cbcfc16ab80069",
+        "task_name": "face_swap_auto"
+    },
+    "d1e450f9-078a-452c-b6ef-3bbf4e866b89": {
+        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_5/20250217/tmp_3eb07c693c3e16521d2331907001bd18.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T071749Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=28067250cfa9e14f58ad7529375a7265bb8ebc320c5dd32174f82f35be3f7e11",
+        "face_url": "https://img.sw.gz.cn/photography-comfyui/user_5/20250217/tmp_656e8ad91f0c5b24dfed03cefff135e7.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T071637Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=11c479aa66d04bae4a0beabd4db2ba63445f911e7f47c40d01c74132cae5b816",
+        "result_url": "https://img.sw.gz.cn/comfyui-output/face_swap_auto/comfyui_output_1739787827_d1e450f9-078a-452c-b6ef-3bbf4e866b89.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T102348Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=3dbc5d00cedf84ee87f731c286d22dd20b82d69ef9eb86367f76aac10dadeecc",
+        "task_name": "face_swap_auto"
+    },
+    "6628e8ba-bb6b-40ed-bd31-452e7cf34ba4": {
+        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_5/20250217/YoY555HoiN2sa0b58d4c9a406db398b96cd015eb0187.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T092516Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=104617e7ed2d5f4fc88bccf81f17dd48360c1f4220ba8c51154bfa8aa99c6340",
+        "result_url": "https://img.sw.gz.cn/comfyui-output//comfyui_output_1739787932_6628e8ba-bb6b-40ed-bd31-452e7cf34ba4.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T102535Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=fd0841c66b6001b098499b830a9fdfe2d3d66c1f3a0472cca0524d8398363c2d",
+        "task_name": ""
+    },
+    "f1578b3f-8733-401b-980f-bf660d843bd2": {
+        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_5/20250217/tmp_0ce266e574446d20d83fea6d04c1fce667bd532761fb402d.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T085619Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=836048d66cd1f0e4254a41a2d28357b98118aa95ad58456acca8a45e3a9a30e1",
+        "face_url": "https://img.sw.gz.cn/photography-comfyui/user_5/20250217/tmp_2711864beda32615e043c23a7ebd95b29d07b67305416161.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T085541Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=09c3a66dd0137edbf307c7fe66f1c57419cc9e7a199cff28cd6f31938d402fc9",
+        "result_url": "https://img.sw.gz.cn/comfyui-output/face_swap_auto/comfyui_output_1739787941_f1578b3f-8733-401b-980f-bf660d843bd2.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T102542Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=cd1b03c464d5bf7e6c07f2a95441152b79c72aba4c98447d64d731fcdefb4e84",
+        "task_name": "face_swap_auto"
+    },
+    "67e88a38-0b4a-467e-9ba7-0bba44be4d01": {
+        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_5/20250217/tmp_0ce266e574446d20d83fea6d04c1fce667bd532761fb402d.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T085619Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=836048d66cd1f0e4254a41a2d28357b98118aa95ad58456acca8a45e3a9a30e1",
+        "face_url": "https://img.sw.gz.cn/photography-comfyui/user_5/20250217/tmp_2711864beda32615e043c23a7ebd95b29d07b67305416161.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T085541Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=09c3a66dd0137edbf307c7fe66f1c57419cc9e7a199cff28cd6f31938d402fc9",
+        "result_url": "https://img.sw.gz.cn/comfyui-output/face_swap_auto/comfyui_output_1739788007_67e88a38-0b4a-467e-9ba7-0bba44be4d01.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T102648Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=fffa3c6009a6f2bd69199851e3a6720ec8cdfb0651592220cac019c8185a1d00",
+        "task_name": "face_swap_auto"
+    },
+    "0bd077e0-a684-44dc-9aa0-3df9bd4f40f3": {
+        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_5/20250217/tmp_0ce266e574446d20d83fea6d04c1fce667bd532761fb402d.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T085619Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=836048d66cd1f0e4254a41a2d28357b98118aa95ad58456acca8a45e3a9a30e1",
+        "face_url": "https://img.sw.gz.cn/photography-comfyui/user_5/20250217/tmp_2711864beda32615e043c23a7ebd95b29d07b67305416161.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T085541Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=09c3a66dd0137edbf307c7fe66f1c57419cc9e7a199cff28cd6f31938d402fc9",
+        "result_url": "https://img.sw.gz.cn/comfyui-output/face_swap_auto/comfyui_output_1739788112_0bd077e0-a684-44dc-9aa0-3df9bd4f40f3.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T102832Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=af9c5ff23d0bf8ba84252901dea19f43f8a43fbce9623d7bdf1a4168b6359ebb",
+        "task_name": "face_swap_auto"
+    },
+    "f4579b19-62d0-4c74-a088-0e29f28824a5": {
+        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_5/20250217/tmp_8da42b1717ba910314e539c4af6004071ec0b6e8e917be7c.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T103013Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=51612a4029cd590a0f2ec2e5b21968d3cf7515ac769d65fce695e8670c0f966d",
+        "face_url": "https://img.sw.gz.cn/photography-comfyui/user_5/20250217/tmp_ca2838a7f3d24a98fec2137a49af78ea1becb53f3e3a9d35.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T102941Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=bdb4c0a065c054511e45a2048a4012b265180471632a185fb792a2e7871bad1f",
+        "result_url": "https://img.sw.gz.cn/comfyui-output/face_swap_auto/comfyui_output_1739788242_f4579b19-62d0-4c74-a088-0e29f28824a5.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T103043Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=6524b3d55cbf13d5dc5611cb0349d4a55ea5967e38e4ff181668077ef573d93b",
+        "task_name": "face_swap_auto"
+    },
+    "7fbcd3d2-0409-4b88-956c-a902b3fe9399": {
+        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_5/20250217/CeLzC3IEIhCh54dd525ab6e17930643ac484debdd70b.JPG?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T074815Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=cd53bd3a774bcd544d9a2986c60783ce6fbbaacb718941c60d875ced860c9e53",
+        "face_url": "https://img.sw.gz.cn/photography-comfyui/user_5/20250217/LqQ7ll0QlHx568c9876fb04705c6fe459f8138923f3c.JPG?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T074734Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=63abc517d51a5464d7f942c8d139ebce5083acedd6d40e833991c245d824838c",
+        "result_url": "https://img.sw.gz.cn/comfyui-output/face_swap_auto/comfyui_output_1739788334_7fbcd3d2-0409-4b88-956c-a902b3fe9399.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T103217Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=7d9bb1acd412de2dc70d1d46449193a38ebdc7dd22442f077b37f7abb3a36fa1",
+        "task_name": "face_swap_auto"
+    },
+    "c3ec4a6e-302e-40fc-adf7-6d2788fc43a2": {
+        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_5/20250217/tmp_0ce266e574446d20d83fea6d04c1fce667bd532761fb402d.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T085619Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=836048d66cd1f0e4254a41a2d28357b98118aa95ad58456acca8a45e3a9a30e1",
+        "face_url": "https://img.sw.gz.cn/photography-comfyui/user_5/20250217/tmp_2711864beda32615e043c23a7ebd95b29d07b67305416161.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T085541Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=09c3a66dd0137edbf307c7fe66f1c57419cc9e7a199cff28cd6f31938d402fc9",
+        "result_url": "https://img.sw.gz.cn/comfyui-output/face_swap_auto/comfyui_output_1739788398_c3ec4a6e-302e-40fc-adf7-6d2788fc43a2.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T103319Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=910302ea941b7f68222e0d1e2f1c1020e2c2abf9dfdab4dc454489673964fbde",
+        "task_name": "face_swap_auto"
+    },
+    "9e25b206-6899-420d-987f-8ae8b07d77a7": {
+        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_5/20250217/tmp_88cbb7690665f0db57ef3fb7cd0fc40e65bf4f29f405fe37.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T103426Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=cb01eb56a241d85d4579187d4562b506fe8a464a5b9115b2d19116ee8225129f",
+        "face_url": "https://img.sw.gz.cn/photography-comfyui/user_5/20250217/tmp_02947e7a9d4a753911d4b894582435ac67ebc31e540270b8.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T103401Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=6181ba260bf0bab4d11c0befbbf6cc6e9fabe791c5257d4d57172057c808ca59",
+        "result_url": "https://img.sw.gz.cn/comfyui-output/face_swap_auto/comfyui_output_1739788490_9e25b206-6899-420d-987f-8ae8b07d77a7.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T103452Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=6300621a0df9d15e767cd34f670c15226667516c5492368397f19c7df6bcd24e",
+        "task_name": "face_swap_auto"
+    },
+    "d97b15d8-794f-4238-b0b0-81b0f5e61614": {
+        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_5/20250217/tmp_88cbb7690665f0db57ef3fb7cd0fc40e65bf4f29f405fe37.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T103426Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=cb01eb56a241d85d4579187d4562b506fe8a464a5b9115b2d19116ee8225129f",
+        "face_url": "https://img.sw.gz.cn/photography-comfyui/user_5/20250217/tmp_02947e7a9d4a753911d4b894582435ac67ebc31e540270b8.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T103401Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=6181ba260bf0bab4d11c0befbbf6cc6e9fabe791c5257d4d57172057c808ca59",
+        "result_url": "https://img.sw.gz.cn/comfyui-output/face_swap_auto/comfyui_output_1739788520_d97b15d8-794f-4238-b0b0-81b0f5e61614.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T103522Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=98ac6e2cb8f108f3d36cffa5c3e92dfb264e43d088b0b3b34dfccc5ca76863a3",
+        "task_name": "face_swap_auto"
+    },
+    "e54118ba-df44-40b2-958c-25ace972e487": {
+        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_5/20250217/tmp_88cbb7690665f0db57ef3fb7cd0fc40e65bf4f29f405fe37.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T103426Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=cb01eb56a241d85d4579187d4562b506fe8a464a5b9115b2d19116ee8225129f",
+        "face_url": "https://img.sw.gz.cn/photography-comfyui/user_5/20250217/tmp_02947e7a9d4a753911d4b894582435ac67ebc31e540270b8.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T103401Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=6181ba260bf0bab4d11c0befbbf6cc6e9fabe791c5257d4d57172057c808ca59",
+        "result_url": "https://img.sw.gz.cn/comfyui-output/face_swap_auto/comfyui_output_1739788625_e54118ba-df44-40b2-958c-25ace972e487.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T103706Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=b34dac4b6d7f62df32ff189a1818789b1afa83187b8e07ca360e75e23bb0f672",
+        "task_name": "face_swap_auto"
+    },
+    "653c30ad-0950-4a9a-abc6-fd4fb340992b": {
+        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_5/20250217/tmp_9d3858e7ee6eb006facaf107241c7dc9429ea6d0281318c6.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T103826Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=29e8bc5e1ebf607b31403ca6432aeeb7b506286ab3393741cdf22e9fb7b64c7d",
+        "result_url": "https://img.sw.gz.cn/comfyui-output//comfyui_output_1739788885_653c30ad-0950-4a9a-abc6-fd4fb340992b.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T104127Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=8488b74bf5e14ae2909326dbd471c2d398de7d35efe1d35bde21f8ef0d2029d9",
+        "task_name": ""
+    },
+    "e0a63dee-c0ae-4153-8979-2783535e8010": {
+        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_5/20250217/tmp_4a54d845f25a6e8a5ac95548a60b84ea1318b57ea3d6f325.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T103842Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=72acad5c647d598e02aca3d661ee9aeab8b39fab1810911d00b66de947c99148",
+        "result_url": "https://img.sw.gz.cn/comfyui-output//comfyui_output_1739788948_e0a63dee-c0ae-4153-8979-2783535e8010.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T104229Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=76abb2ac239e923a047367acb3e18b528118da1d71299091fb33decf70b00149",
+        "task_name": ""
+    },
+    "9b4cb910-a3a9-4d5a-9e4a-4d417234aad0": {
+        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_5/20250217/tmp_1ef89a36b9b30051c808b9cd3a6253cfb5b4a41a90b262d4.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T103914Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=44d7f2612a226b6b088577c518aed53dc2bc87e41bfbfa830c1b87a2a5d381e3",
+        "result_url": "https://img.sw.gz.cn/comfyui-output//comfyui_output_1739789009_9b4cb910-a3a9-4d5a-9e4a-4d417234aad0.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T104330Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=85eb4d688e78427ac36f9ba0cd02441bdac8749cbcd2afaa9ee9aafab00c8fd4",
+        "task_name": ""
+    },
+    "8ecc5e52-d54e-4aa7-a280-26d941f95393": {
+        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_5/20250217/tmp_fa856f034dbbc50aa84cadcaae8cbb88.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T104245Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=4e6a5856e358a4c2caeff35147dd21d75c17b5a92dfedfcc058d2ecc6046405e",
+        "result_url": "https://img.sw.gz.cn/comfyui-output//comfyui_output_1739789082_8ecc5e52-d54e-4aa7-a280-26d941f95393.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T104445Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=bad517b049981f1f99dd7ba98193fcfd3edbc5884ab2eca14235514f1be4a210",
+        "task_name": ""
+    },
+    "c85e59df-7573-4ea4-bc10-08ed3c5987cb": {
+        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_5/20250217/tmp_fa856f034dbbc50aa84cadcaae8cbb88.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T104245Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=4e6a5856e358a4c2caeff35147dd21d75c17b5a92dfedfcc058d2ecc6046405e",
+        "result_url": "https://img.sw.gz.cn/comfyui-output//comfyui_output_1739789152_c85e59df-7573-4ea4-bc10-08ed3c5987cb.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T104554Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=e10617827d37fdd340377c2f236afccbe76545664c31f49b6a5e07f5f5f261ca",
+        "task_name": ""
+    },
+    "d470d4ba-2e0f-4b1d-9ba4-caeb771d2a96": {
+        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_5/20250217/tmp_a34c85d715a5664ec534cbfe89a4a542.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T104502Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=a2a1cc620d4539977b94ae441c093c9b8babe61f8f57ef4ed8bb1248b0a1ae22",
+        "result_url": "https://img.sw.gz.cn/comfyui-output//comfyui_output_1739789312_d470d4ba-2e0f-4b1d-9ba4-caeb771d2a96.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T104837Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=7d7e73e8f688063c51b86589b08e980e01beae5ce3215675fdfdcf5df3fd48c6",
+        "task_name": ""
+    },
+    "09c310fa-b34c-4bed-9c77-998868eca73e": {
+        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_5/20250217/tmp_186f369f1b2c0b4a279b475918356c28.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T104538Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=aeca57dfaa0c9a8588334eaf19c18577d3c6e5b192fb81edc9b3744886bf58c1",
+        "result_url": "https://img.sw.gz.cn/comfyui-output//comfyui_output_1739789385_09c310fa-b34c-4bed-9c77-998868eca73e.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T104949Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=40c03db636414bf2a515317a3ab5b520e5ab0c0f10e92b45bbe2c5143aa5082f",
+        "task_name": ""
+    },
+    "49e01b34-33eb-41e8-baff-c05e039a5695": {
+        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_5/20250217/tmp_7108ccb673423db9d9330c0e404dd16f.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T104928Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=8d48d76fa0e952a5fe8eff9ff32ae5b73f25a4c45bdc5886aaf3454d6f6a6fbe",
+        "result_url": "https://img.sw.gz.cn/comfyui-output//comfyui_output_1739789571_49e01b34-33eb-41e8-baff-c05e039a5695.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T105252Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=b71a5c7a6767c6b6d3bd851d6e82d7b53320beb676406be55d17f6f6b8025578",
+        "task_name": ""
+    },
+    "6ee1e59d-fab5-41db-8bf1-095d470267ad": {
+        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_5/20250217/tmp_940bb6f2e2f0963b57e86e704a94052e.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T104951Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=3713dd4d5da382e4089873755e55e35713ce5629fee1462e6c7821288d66f15b",
+        "result_url": "https://img.sw.gz.cn/comfyui-output//comfyui_output_1739789644_6ee1e59d-fab5-41db-8bf1-095d470267ad.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T105407Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=f6f3df88d07d50159014481700d3f11bf12a3ff619bde2b2b9aa0f9747605e29",
+        "task_name": ""
+    },
+    "2f11bf82-612a-4413-ac78-71d7069bf81e": {
+        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_5/20250217/tmp_186f369f1b2c0b4a279b475918356c28.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T104538Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=aeca57dfaa0c9a8588334eaf19c18577d3c6e5b192fb81edc9b3744886bf58c1",
+        "result_url": "https://img.sw.gz.cn/comfyui-output//comfyui_output_1739789715_2f11bf82-612a-4413-ac78-71d7069bf81e.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T105519Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=8a3d8d4728419106f6351f589674b89cc8ec4f182bf9ab33fefc149ab3b1ae7d",
+        "task_name": ""
+    },
+    "e7dff6c0-6616-4a23-b29b-5f9f3ca3bb61": {
+        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_5/20250217/tmp_d7000405bdb59675807c8afbc2fe3e72.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T105522Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=1b9fef9b2ea05e7e1bc6dd6623affae8307e09b58505d9a383db7e2d88ad0cd6",
+        "face_url": "https://img.sw.gz.cn/photography-comfyui/user_5/20250217/tmp_ed7b8fbca3666d55a46b187ad1d55dd6.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T105508Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=ee8d578e6937895d95c09f13455832358691700aeda0be36480a0dadcc1b594f",
+        "result_url": "https://img.sw.gz.cn/comfyui-output/face_swap_auto/comfyui_output_1739789747_e7dff6c0-6616-4a23-b29b-5f9f3ca3bb61.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T105550Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=53f1db8a086f21f5df27fe639fd48d4e657045f2d53a025a4cb96fea1dcb7f8f",
+        "task_name": "face_swap_auto"
+    },
+    "6f645431-3d25-4340-b6d4-0bef4120ccc9": {
+        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_5/20250217/tmp_186f369f1b2c0b4a279b475918356c28.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T104538Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=aeca57dfaa0c9a8588334eaf19c18577d3c6e5b192fb81edc9b3744886bf58c1",
+        "result_url": "https://img.sw.gz.cn/comfyui-output//comfyui_output_1739789781_6f645431-3d25-4340-b6d4-0bef4120ccc9.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T105626Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=c5ec8d765a25c294028cae95a325818c9df3234281efa6f23e390c82c751e1ca",
+        "task_name": ""
+    },
+    "c4254f93-825f-4493-858b-a08bb2889a70": {
+        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_5/20250217/tmp_186f369f1b2c0b4a279b475918356c28.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T104538Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=aeca57dfaa0c9a8588334eaf19c18577d3c6e5b192fb81edc9b3744886bf58c1",
+        "result_url": "https://img.sw.gz.cn/comfyui-output//comfyui_output_1739789848_c4254f93-825f-4493-858b-a08bb2889a70.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T105733Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=4475896715dfa2460cd09f6fa4f55afdc554213090112ae3a482aa7a7b5be2e1",
+        "task_name": ""
+    },
+    "c7709dea-bf87-4a6c-b4f4-fd8471a83960": {
+        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_5/20250217/tmp_b47c737b6d37aa4479c26362d268273b66abfde53555b8e3.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T105625Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=ee66359fd5d59ba25df71db8138e15c039113567e4b36a8c91f46d1d238fac95",
+        "result_url": "https://img.sw.gz.cn/comfyui-output//comfyui_output_1739789914_c7709dea-bf87-4a6c-b4f4-fd8471a83960.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T105834Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=c0bc30e054ab0d65533680b879fa20f4828083bcad90003e4d8ecdef2f0d3316",
+        "task_name": ""
+    },
+    "0554321f-e30c-4131-b3bc-3307e6745740": {
+        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_5/20250217/tmp_d7000405bdb59675807c8afbc2fe3e72.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T105522Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=1b9fef9b2ea05e7e1bc6dd6623affae8307e09b58505d9a383db7e2d88ad0cd6",
+        "face_url": "https://img.sw.gz.cn/photography-comfyui/user_5/20250217/tmp_ed7b8fbca3666d55a46b187ad1d55dd6.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T105508Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=ee8d578e6937895d95c09f13455832358691700aeda0be36480a0dadcc1b594f",
+        "result_url": "https://img.sw.gz.cn/comfyui-output/face_swap_auto/comfyui_output_1739789966_0554321f-e30c-4131-b3bc-3307e6745740.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T105929Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=327e6d58ee270d72648d6d967717836be05a432a96844154427fc9d78edb806e",
+        "task_name": "face_swap_auto"
+    },
+    "177199b1-8e63-46d5-8fe6-27940eee12ca": {
+        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_5/20250217/tmp_d7000405bdb59675807c8afbc2fe3e72.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T105522Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=1b9fef9b2ea05e7e1bc6dd6623affae8307e09b58505d9a383db7e2d88ad0cd6",
+        "face_url": "https://img.sw.gz.cn/photography-comfyui/user_5/20250217/tmp_ed7b8fbca3666d55a46b187ad1d55dd6.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T105508Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=ee8d578e6937895d95c09f13455832358691700aeda0be36480a0dadcc1b594f",
+        "result_url": "https://img.sw.gz.cn/comfyui-output/face_swap_auto/comfyui_output_1739789984_177199b1-8e63-46d5-8fe6-27940eee12ca.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T105947Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=1c13ed7215bcf9545897e6fb0cbc33d78adea146f23c8e3090bf54b5918506be",
+        "task_name": "face_swap_auto"
+    },
+    "625b235d-291e-4297-9203-d79117b09dc1": {
+        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_5/20250217/tmp_d7000405bdb59675807c8afbc2fe3e72.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T105522Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=1b9fef9b2ea05e7e1bc6dd6623affae8307e09b58505d9a383db7e2d88ad0cd6",
+        "face_url": "https://img.sw.gz.cn/photography-comfyui/user_5/20250217/tmp_ed7b8fbca3666d55a46b187ad1d55dd6.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T105508Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=ee8d578e6937895d95c09f13455832358691700aeda0be36480a0dadcc1b594f",
+        "result_url": "https://img.sw.gz.cn/comfyui-output/face_swap_auto/comfyui_output_1739790042_625b235d-291e-4297-9203-d79117b09dc1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T110045Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=eaa26ddb557b0f57665e505fc99178119c36362f1ca1c9559b608347b69be244",
+        "task_name": "face_swap_auto"
+    },
+    "d74e7282-1c3e-4677-9158-3a22a67765a5": {
+        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_5/20250217/tmp_1ef89a36b9b30051c808b9cd3a6253cfb5b4a41a90b262d4.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T103914Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=44d7f2612a226b6b088577c518aed53dc2bc87e41bfbfa830c1b87a2a5d381e3",
+        "result_url": "https://img.sw.gz.cn/comfyui-output//comfyui_output_1739790263_d74e7282-1c3e-4677-9158-3a22a67765a5.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T110424Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=1ffdd8655bcb9e9e56a7133476e19336230732eec34c62df1f910480196b7c48",
+        "task_name": ""
+    },
+    "9c68184b-ded5-4966-9264-2e7d0274008a": {
+        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_5/20250217/tmp_1ef89a36b9b30051c808b9cd3a6253cfb5b4a41a90b262d4.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T103914Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=44d7f2612a226b6b088577c518aed53dc2bc87e41bfbfa830c1b87a2a5d381e3",
+        "result_url": "https://img.sw.gz.cn/comfyui-output//comfyui_output_1739790331_9c68184b-ded5-4966-9264-2e7d0274008a.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T110531Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=8500864759d1d8ce1f13133dc6e8480a4fbdceb8df2507373b41d039b22c8657",
+        "task_name": ""
+    },
+    "73c9a94c-6c2a-4925-b62d-6a58c7df8c13": {
+        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_5/20250217/tmp_711983604fe574db2e95833309baac22980fda889087c3f9.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T110929Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=a684b77b3fc3eedf88057b78aa8f61a69ca5a21aac8422857fd19478ed538ae1",
+        "face_url": "https://img.sw.gz.cn/photography-comfyui/user_5/20250217/tmp_4a0cff57b08fc4afd80ef8cfadc3b59752682830719d5c9e.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T110839Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=be9bb7079bd973ad4d9dedc52ccb1c967b433b7788afe405dd333218bdde3482",
+        "result_url": "https://img.sw.gz.cn/comfyui-output/face_swap_auto/comfyui_output_1739790592_73c9a94c-6c2a-4925-b62d-6a58c7df8c13.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T110953Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=76fa2468f8ae4f1a653c35774f004174630c15b78745cc152d2ca9fc81c8f869",
+        "task_name": "face_swap_auto"
+    },
+    "5aba996e-e37b-4422-80ba-0e121fc0aeb7": {
+        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_5/20250217/tmp_b47c737b6d37aa4479c26362d268273b66abfde53555b8e3.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T105625Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=ee66359fd5d59ba25df71db8138e15c039113567e4b36a8c91f46d1d238fac95",
+        "result_url": "https://img.sw.gz.cn/comfyui-output//comfyui_output_1739790652_5aba996e-e37b-4422-80ba-0e121fc0aeb7.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T111053Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=0fff736f750f60787965c3ff1482c4d1337f7e15a9f7503a5a0b74425f236af1",
+        "task_name": ""
+    },
+    "2a22f747-d4c9-4fc8-99ab-39895f50a466": {
+        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_5/20250217/dHERzxIFckFX1490e2d91fcb56067eab1a49d455cd54.JPEG?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T111831Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=09c4ba70f3e17a1d99f71433d30ddcbdf850be777da6f830b4c481caf13c1655",
+        "result_url": "https://img.sw.gz.cn/comfyui-output//comfyui_output_1739791187_2a22f747-d4c9-4fc8-99ab-39895f50a466.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T111949Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=c1a0248c71fcb6bc8c9673557fb1af6e5fee60092af0b661e81a4b16b2764a45",
+        "task_name": ""
+    },
+    "83663ef7-c7ba-4b74-85e4-1d125ecedfbb": {
+        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_5/20250217/cQnXyIp1nzsCd5fcacbd8ee3363683370ecdfae25e27.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T112603Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=fbccd32e20cedeadf2bfc1319e00d989c145a683ffc8c492d813d6de57a0aaa5",
+        "face_url": "https://img.sw.gz.cn/photography-comfyui/user_5/20250217/3ZMYbvYhLiwt1490e2d91fcb56067eab1a49d455cd54.JPEG?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T112521Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=c54a4ef29486f7082290e36998d2c9c238cb96c2b988045bc2d3162f602ff131",
+        "result_url": "https://img.sw.gz.cn/comfyui-output/face_swap_auto/comfyui_output_1739791607_83663ef7-c7ba-4b74-85e4-1d125ecedfbb.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T112652Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=4ed9a545c82d2630525fe0b57b6d9f6c20b61263ad63b7653811945d1ed930f8",
+        "task_name": "face_swap_auto"
+    },
+    "d1c072b7-6f6f-4070-a06c-f4099343afaa": {
+        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_5/20250217/tmp_3eb07c693c3e16521d2331907001bd18.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T071749Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=28067250cfa9e14f58ad7529375a7265bb8ebc320c5dd32174f82f35be3f7e11",
+        "face_url": "https://img.sw.gz.cn/photography-comfyui/user_5/20250217/tmp_656e8ad91f0c5b24dfed03cefff135e7.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T071637Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=11c479aa66d04bae4a0beabd4db2ba63445f911e7f47c40d01c74132cae5b816",
+        "result_url": "https://img.sw.gz.cn/comfyui-output/face_swap_auto/comfyui_output_1739791890_d1c072b7-6f6f-4070-a06c-f4099343afaa.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T113134Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=b79377dc3c3a7851d1510a481ebed5ef486bf6085781d297e6385b0538bc9120",
+        "task_name": "face_swap_auto"
+    },
+    "03aeb02f-7e79-4392-8d11-8336aaabcae2": {
+        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_5/20250217/tmp_4a54d845f25a6e8a5ac95548a60b84ea1318b57ea3d6f325.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T103842Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=72acad5c647d598e02aca3d661ee9aeab8b39fab1810911d00b66de947c99148",
+        "result_url": "https://img.sw.gz.cn/comfyui-output//comfyui_output_1739792480_03aeb02f-7e79-4392-8d11-8336aaabcae2.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T114121Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=b61fe5942d0ceb15f82744d13a645885afe59d9a2db4ca4160726459bed898a5",
+        "task_name": ""
+    },
+    "d4d37d5b-93b8-4280-b60f-76e690ccd72d": {
+        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_5/20250217/tmp_4a54d845f25a6e8a5ac95548a60b84ea1318b57ea3d6f325.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T103842Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=72acad5c647d598e02aca3d661ee9aeab8b39fab1810911d00b66de947c99148",
+        "result_url": "https://img.sw.gz.cn/comfyui-output//comfyui_output_1739792613_d4d37d5b-93b8-4280-b60f-76e690ccd72d.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T114335Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=5419c2bf073985062dc32ccbc9a10db96759c7be42b07e7da2da8dc5ef358b62",
+        "task_name": ""
+    },
+    "cb0b05d4-20cf-421c-b9c0-3cd17ed53e81": {
+        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_5/20250217/cS85RB8BJRTh85bf2f695baf9d57eb39a8a2f2fb585f.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T114318Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=710bc08a8817e382bfe21d1a36c28e8583c506bb4ddcf58ca364b412dd868bcd",
+        "face_url": "https://img.sw.gz.cn/photography-comfyui/user_5/20250217/Oeb61Sl4fbl91490e2d91fcb56067eab1a49d455cd54.JPEG?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T114243Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=fa1683475d211fa970a88fcc411c0b081b11a86fec0962cb5b3a633bf3a4849c",
+        "result_url": "https://img.sw.gz.cn/comfyui-output/face_swap_auto/comfyui_output_1739792644_cb0b05d4-20cf-421c-b9c0-3cd17ed53e81.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T114412Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=1f5cdff34f161ba0794157d601952a9814cade495da9ef2d95b042e830d65c8c",
+        "task_name": "face_swap_auto"
+    },
+    "eee961c8-5bf6-4477-babb-e28758b14723": {
+        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_5/20250217/tmp_9cece15b7d56e0a9b3314e98f5e1fc15aae2d27fe51df0fa.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T114258Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=2a36c7cba6ce143937ef53e8421be5546d751474b827d004e7709bdc459b1196",
+        "result_url": "https://img.sw.gz.cn/comfyui-output//comfyui_output_1739792677_eee961c8-5bf6-4477-babb-e28758b14723.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T114440Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=5a61afa55ecdc927ac27d40bb0dd7f1e5819a86ff85a46055a351f5b3fd3bde4",
+        "task_name": ""
+    },
+    "1e9016fd-eb73-451d-87a7-420221948a77": {
+        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_5/20250217/wKv5U5nJetro88daf392219f5b00097df74bcf97739a.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T114346Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=916c1353a1bc8c3db111b620ae905f86c09de582a74d9fe9af3197c74f8b9af4",
+        "face_url": "https://img.sw.gz.cn/photography-comfyui/user_5/20250217/dLkvK5P7vZ2Ye9bd468696466af1927689c84f822693.JPEG?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T114442Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=d49b00b569a9b5ee6f091f18fdf2c645aa205ffb4977cf8a108ec4144e647460",
+        "result_url": "https://img.sw.gz.cn/comfyui-output/face_swap_auto/comfyui_output_1739792712_1e9016fd-eb73-451d-87a7-420221948a77.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T114514Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=0c96a8ebcf3e10ac3ebbfa8e621b04f4aaaaeb68b1ef1319064a708012421058",
+        "task_name": "face_swap_auto"
+    },
+    "77b8eef3-4339-4096-96d9-e5c9612c6327": {
+        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_5/20250217/tmp_27ea8627324113ab8ac26211bf204ebd.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T061142Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=13d2a82d5a0812f34187fe66d8e024adf52a5884e8cd117c61db3fe7d45e47a3",
+        "result_url": "https://img.sw.gz.cn/comfyui-output//comfyui_output_1739792754_77b8eef3-4339-4096-96d9-e5c9612c6327.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T114556Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=b83dc4bfa61dbaa5e065b63455626db6fdfbfe78fa93c182d58d68429dcea02d",
+        "task_name": ""
+    },
+    "5d273170-71a2-4a2b-8578-46cca5161d57": {
+        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_5/20250218/tmp_e2e77754f968938a6dff0da46c3a60261d6c20e2282e5eb9.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250218%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250218T001638Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=86f887d23cf1c729a285fb7648c9483b70440717990640b9744b964929e09f45",
+        "result_url": "https://img.sw.gz.cn/comfyui-output//comfyui_output_1739837866_5d273170-71a2-4a2b-8578-46cca5161d57.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250218%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250218T001747Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=0cca9cf7bb38f3525808466f1b33062e4e6616226df311f9ece0315c6b624aca",
+        "task_name": ""
+    },
+    "a982eb24-a7f8-4451-86ee-0f8415cd271d": {
+        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_5/20250218/tmp_501d909fcde826df37bb01c4021dee31f3b4c701ec28e07f.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250218%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250218T002010Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=868e22f3a27bd837d40aa5906c124c3d82b5db870f69bed94ff4661f3abb9bfd",
+        "result_url": "https://img.sw.gz.cn/comfyui-output//comfyui_output_1739838073_a982eb24-a7f8-4451-86ee-0f8415cd271d.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250218%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250218T002114Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=8260ecce937b806e4823fba63615fb167db6b0f43eda8fead125a32f3814ab10",
+        "task_name": ""
+    },
+    "1493601a-9ad5-4bd3-8103-4849b4ac3641": {
+        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_5/20250218/tmp_ba2a6eefefea650e24505fd90f729c4b8e6599d6be5c3262.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250218%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250218T002428Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=2bcd79cacd75979f5c43b63c8097fe3dce97855b9f9435da04c456ee4eaf80e8",
+        "result_url": "https://img.sw.gz.cn/comfyui-output//comfyui_output_1739838336_1493601a-9ad5-4bd3-8103-4849b4ac3641.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250218%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250218T002537Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=62ceedfca1c3772b7ef63bd2ba2423b2958615b3e31212d7ab8bb718c74ff085",
+        "task_name": ""
+    },
+    "c45990dc-6017-4045-930d-cb453b50dc06": {
+        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_5/20250218/tmp_c5637010abf66f180054fffa31bce9366cf57209b9d4e987.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250218%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250218T005601Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=aa29ba702cf3ae33e1a50d60a52a5a6c2f71700ba680826d1c8094ea005524f1",
+        "result_url": "https://img.sw.gz.cn/comfyui-output//comfyui_output_1739840290_c45990dc-6017-4045-930d-cb453b50dc06.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250218%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250218T005810Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=e4d412f3964b2805bb32d89df51ba6d753def7ffeb241472786ea87ef1f8dddb",
+        "task_name": ""
+    },
+    "f51c3b72-5dc4-4128-a9cb-01ccc635981d": {
+        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_5/20250218/tmp_d6cb4d62f967909a15e9686a525d8fd8.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250218%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250218T005742Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=5a7a6563111f8c8db2af78ef9b26b9c9aeb2a384713d0b1063232b040a073169",
+        "result_url": "https://img.sw.gz.cn/comfyui-output//comfyui_output_1739840512_f51c3b72-5dc4-4128-a9cb-01ccc635981d.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250218%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250218T010154Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=b58b910b42aa449e2444e4348538faf5640fd24f679feff8ad3e0334920ec95f",
+        "task_name": ""
+    },
+    "1d7c3dac-db1e-4228-a140-4fca5318dde2": {
+        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_5/20250218/tmp_7ce52e9b103158f18a8655effe11c472.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250218%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250218T005804Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=943335f993d5ab55f3d42f295914c2024a3fb438bafa3d8f7781f6cf4e488816",
+        "result_url": "https://img.sw.gz.cn/comfyui-output//comfyui_output_1739840905_1d7c3dac-db1e-4228-a140-4fca5318dde2.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250218%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250218T010826Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=89469ffc0949cc5c222a96ba243b260dbcfa38e1756f7fd8996392d03004a5b2",
+        "task_name": ""
+    },
+    "c7008312-3994-472f-8e7f-de61270aea89": {
+        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_5/20250218/tmp_d91b3e7a2faeff4682cffafea585bafb.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250218%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250218T010208Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=4b1afeb952e006856e748b2a89d6a5f1f4a6398635ef713557a91cc933ac14cf",
+        "result_url": "https://img.sw.gz.cn/comfyui-output//comfyui_output_1739840997_c7008312-3994-472f-8e7f-de61270aea89.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250218%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250218T010959Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=cf97a62b0c34cc3c378a3ba49a067ca254e3a78b3cbd76aeabceadf57bca13cd",
+        "task_name": ""
+    },
+    "760ec88a-be8e-42be-ae74-075277fb33db": {
+        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_5/20250218/tmp_7b1e1969d045623e7d608a251df4c0d8.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250218%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250218T010232Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=5b602008689c573d5f513d98aa2d5c6450575d3954b9a0b8c9d27bc19b0b359d",
+        "result_url": "https://img.sw.gz.cn/comfyui-output//comfyui_output_1739841085_760ec88a-be8e-42be-ae74-075277fb33db.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250218%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250218T011127Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=1d86b5419820ee0f8d7971db2e794e2be9d74dd1b4e1b15b4bdb384887212bfb",
+        "task_name": ""
+    },
+    "d1ae156e-e262-43e6-80c0-3e972c670cab": {
+        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_5/20250218/tmp_d3372d0fd7f0c2a7f41798588e2d2bbe.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250218%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250218T010246Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=1224aedcb97ee65777627b23d70f2426ad51be3e22ea614b3dd0db012ffaa407",
+        "result_url": "https://img.sw.gz.cn/comfyui-output//comfyui_output_1739841179_d1ae156e-e262-43e6-80c0-3e972c670cab.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250218%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250218T011301Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=e311543ac26ec768eff423f01a93c2eca63f49b78beb8b48b3d2e2af653f6d81",
+        "task_name": ""
+    },
+    "5b46c0e7-f3b0-4c90-9e7a-098a82db6ce3": {
+        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_5/20250218/tmp_a1992f1ab18f58e191aa535e579a9514.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250218%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250218T010323Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=ab5b943eca03cbcd8f2cc11fb7ee36f2b89b716e310462adc88911bb11033a85",
+        "result_url": "https://img.sw.gz.cn/comfyui-output//comfyui_output_1739841278_5b46c0e7-f3b0-4c90-9e7a-098a82db6ce3.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250218%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250218T011440Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=7b8c666913b0650f16577e41a49b029c0f32535dd5bef6136c3d636a4ca5c2e2",
+        "task_name": ""
+    },
+    "d70932d5-6d1a-4006-a569-9f2d68171334": {
+        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_5/20250218/tmp_5cf3cd2a85200ac0ee8ed34b5c454be3.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250218%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250218T010658Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=73df5777308eb026446e9b08802acc2e682db32b4ad313452b5989e3a2ce3816",
+        "result_url": "https://img.sw.gz.cn/comfyui-output//comfyui_output_1739841366_d70932d5-6d1a-4006-a569-9f2d68171334.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250218%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250218T011608Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=c4fabfb1f7b325e198a0211eaaf5c1291c629d23517951ab020c13055a518238",
+        "task_name": ""
+    },
+    "8d3bc292-888f-4383-a5f2-741e00507a8a": {
+        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_5/20250218/tmp_e354e6d5e94e7b722219754f23e7dc43.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250218%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250218T010710Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=74a9799d989484d05e76ae2f386812b1b35d942a338687d51a6af9f516f92080",
+        "result_url": "https://img.sw.gz.cn/comfyui-output//comfyui_output_1739841535_8d3bc292-888f-4383-a5f2-741e00507a8a.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250218%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250218T011859Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=3d8387ecb39aef275c40bfb7753f8c0dae802b2d756ff8ad72b18f0fe6c3b479",
+        "task_name": ""
+    },
+    "632720c1-4836-4841-a362-a09ee499d66c": {
+        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_5/20250218/tmp_7f86f16832c203081c50de147e02e6b6.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250218%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250218T010821Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=46bc46dae7b8e0dc8400f0c932322ec99d3c71375f61000478e0333ccde6bdb4",
+        "result_url": "https://img.sw.gz.cn/comfyui-output//comfyui_output_1739841625_632720c1-4836-4841-a362-a09ee499d66c.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250218%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250218T012028Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=21674469773afd34c095c46998007f10dd2d1d85098f13cd92a6e272b46a7059",
+        "task_name": ""
+    },
+    "63efd2cd-531b-4a3d-a6ee-910eaebeddb0": {
+        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_5/20250218/tmp_cb6fab53c92f0c2e31b2c8010f9101e7.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250218%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250218T010842Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=da1493d285df93177a6aacf69267d0354d75ec4c39c3aab40b3ffa1e4095a2b2",
+        "result_url": "https://img.sw.gz.cn/comfyui-output//comfyui_output_1739841794_63efd2cd-531b-4a3d-a6ee-910eaebeddb0.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250218%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250218T012316Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=38ad028d81218633cfe1febe347b4057677e4a210f3f1aeb5df4271231183036",
+        "task_name": ""
+    },
+    "c7f06bae-c577-41f9-9460-5f5184662bf8": {
+        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_5/20250218/tmp_81622bcb8c709c8ee68cb16af1ae71bb.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250218%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250218T011230Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=f892ee0429832225bff8e105031f6013090e991d7df4905dd644aab8fc4677ec",
+        "result_url": "https://img.sw.gz.cn/comfyui-output//comfyui_output_1739841885_c7f06bae-c577-41f9-9460-5f5184662bf8.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250218%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250218T012446Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=883809941ec12ece19fbc96b2a991dd47cf98bac317f6e3c20420fff20684007",
+        "task_name": ""
+    },
+    "2b087080-fb0a-47ea-90c2-fac8fdb158ed": {
+        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_5/20250218/tmp_0cf7f54d520650a20bb861ea3aea7f3c.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250218%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250218T011255Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=7f0c34d5a630a3d6cfdb3191de436ee984419df6ebe459651b145f0b8ae8dbc2",
+        "result_url": "https://img.sw.gz.cn/comfyui-output//comfyui_output_1739841982_2b087080-fb0a-47ea-90c2-fac8fdb158ed.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250218%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250218T012624Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=676267bfccaf990653fa676d0903f3e31f6686799d7d4f9ed54c706437a41f2c",
+        "task_name": ""
+    },
+    "a22fd28d-67fa-4174-a38f-593aa3407860": {
+        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_5/20250218/tmp_ec608e0b99c39600656c7bf8653d4b88.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250218%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250218T011543Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=ddefd187426425129deadfa10763423dbe39794c06c275f2b03b7fc17bc0926e",
+        "result_url": "https://img.sw.gz.cn/comfyui-output//comfyui_output_1739842197_a22fd28d-67fa-4174-a38f-593aa3407860.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250218%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250218T013002Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=59d91e7a80053e6ed9065ea14ea2107a04ecf0d6cb518b671e34b7b32ae2e36f",
+        "task_name": ""
+    },
+    "dc7f3dd4-11dc-42b0-9656-5e3f1ceefeb8": {
+        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_5/20250218/tmp_6be9d46aca77c35ba03155a97e91a57f.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250218%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250218T011618Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=2d6e5070fc1e86e10c2f3f87d3ec7b016ec43479de46cad59a28a5efe8acb168",
+        "result_url": "https://img.sw.gz.cn/comfyui-output//comfyui_output_1739842294_dc7f3dd4-11dc-42b0-9656-5e3f1ceefeb8.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250218%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250218T013139Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=3d8e3b89f0b9ec79ab05c897663ddfc24c55fed88bdd31b5166fb6927f69d432",
+        "task_name": ""
+    },
+    "fe3c17cb-e4d3-457a-96d4-33834f89ba7e": {
+        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_5/20250218/tmp_ba3fa05fedb4d5217e41b419bdf78e05.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250218%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250218T011643Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=08700fcfced6556152a9dd7914d3da34b4b8194a9eb4a1b6d1511e1a5cc760d5",
+        "result_url": "https://img.sw.gz.cn/comfyui-output//comfyui_output_1739842548_fe3c17cb-e4d3-457a-96d4-33834f89ba7e.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250218%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250218T013552Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=36aa5d5afc8e439ac1845999fe493b57f637080e3470125c77185e5ed35ddb70",
+        "task_name": ""
+    },
+    "e41821af-7ecf-4e02-b2d3-19a577d1a4a0": {
+        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_5/20250218/anGO21U5SKYb85bf2f695baf9d57eb39a8a2f2fb585f.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250218%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250218T014316Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=c4c964f3676fbe9e28991be87ed300aa2c153a06f0a05c5c5cfab2db4b171708",
+        "face_url": "https://img.sw.gz.cn/photography-comfyui/user_5/20250218/WT9X99FpVJQa1490e2d91fcb56067eab1a49d455cd54.JPEG?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250218%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250218T014259Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=d4462040abdac3409bd115ecdfcad3cb9dc2e4c51cc745585b82923638c71c97",
+        "result_url": "https://img.sw.gz.cn/comfyui-output/face_swap_auto/comfyui_output_1739843034_e41821af-7ecf-4e02-b2d3-19a577d1a4a0.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250218%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250218T014358Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=da42df16bb35cb801b5801b96460af221808b6d47be118878ed20cc6dc34bd1a",
+        "task_name": "face_swap_auto"
+    },
+    "1552ee65-2a04-4a68-8a37-3c3677acbaa7": {
+        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_5/20250218/tmp_b4b1400e99a5932df18527e9f83f12c0760cf571f241fae6.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250218%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250218T014551Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=9e82c9841900ccb08ad531eed6749e765f0470aeac06138fe97344693a9649f0",
+        "result_url": "https://img.sw.gz.cn/comfyui-output//comfyui_output_1739843247_1552ee65-2a04-4a68-8a37-3c3677acbaa7.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250218%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250218T014728Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=dddd95f18cb3a218dca240b92793d4b1070fba53661e28eaed8fb6363ec8dbbb",
+        "task_name": ""
+    },
+    "cd27fab0-c664-4b00-aa33-89d18e6fa065": {
+        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_5/20250218/tmp_cfcc1fc295754328eb2afde3be9f8bf6228d32b1a5bbdb97.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250218%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250218T014609Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=cc4dd10537def172d4be63097be4319559a2d1a0c5f130f38590326b72117e02",
+        "result_url": "https://img.sw.gz.cn/comfyui-output//comfyui_output_1739843379_cd27fab0-c664-4b00-aa33-89d18e6fa065.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250218%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250218T014939Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=1d245ecafdc80827b992cdc65ed3d9e6df734878706ad857402adaaf7dd8f722",
+        "task_name": ""
+    },
+    "ea2a9558-5153-4f5b-9da2-7a2aa2443ed3": {
+        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_5/20250217/tmp_650113d08e2915f0218b0af4c5322e0e.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T092323Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=20a061d5763855688e1a1bf7be91e276797834eaf9a9109c17342e6541d333f3",
+        "result_url": "https://img.sw.gz.cn/comfyui-output//comfyui_output_1739843471_ea2a9558-5153-4f5b-9da2-7a2aa2443ed3.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250218%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250218T015114Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=8f0439c0314b14bdc52542b36faf7941c83a305772f47cecaaf55ec4f01469fb",
+        "task_name": ""
+    },
+    "117b7bfe-b86f-4ce6-940c-acc795f96825": {
+        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_5/20250217/tmp_27ea8627324113ab8ac26211bf204ebd.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250217T061142Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=13d2a82d5a0812f34187fe66d8e024adf52a5884e8cd117c61db3fe7d45e47a3",
+        "result_url": "https://img.sw.gz.cn/comfyui-output//comfyui_output_1739843641_117b7bfe-b86f-4ce6-940c-acc795f96825.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250218%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250218T015403Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=f379e720cc71680aa77eb7b57dd899b116262713431071775fb42a47ab1044a7",
+        "task_name": ""
+    },
+    "58366211-550a-467c-8e09-8fab4c9998b6": {
+        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_5/20250218/tmp_b4b1400e99a5932df18527e9f83f12c0760cf571f241fae6.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250218%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250218T014551Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=9e82c9841900ccb08ad531eed6749e765f0470aeac06138fe97344693a9649f0",
+        "result_url": "https://img.sw.gz.cn/comfyui-output//comfyui_output_1739843734_58366211-550a-467c-8e09-8fab4c9998b6.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250218%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250218T015534Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=cadace39503909246c8938023bd14481494535102646b9733bbe765a3787f228",
+        "task_name": ""
+    },
+    "fd7579c3-12e9-4b6d-978d-54205b31ca6f": {
+        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_5/20250218/tmp_5cf3cd2a85200ac0ee8ed34b5c454be3.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250218%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250218T010658Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=73df5777308eb026446e9b08802acc2e682db32b4ad313452b5989e3a2ce3816",
+        "result_url": "https://img.sw.gz.cn/comfyui-output//comfyui_output_1739843821_fd7579c3-12e9-4b6d-978d-54205b31ca6f.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250218%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250218T015702Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=96c55386ce21cb6bbe2c74d8998ca9f37d303f24dfe134c088f9f571023c29e8",
+        "task_name": ""
+    },
+    "b41ea1a5-fe34-4c5a-8e97-a88c1331549b": {
+        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_5/20250218/tmp_e354e6d5e94e7b722219754f23e7dc43.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250218%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250218T010710Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=74a9799d989484d05e76ae2f386812b1b35d942a338687d51a6af9f516f92080",
+        "result_url": "https://img.sw.gz.cn/comfyui-output//comfyui_output_1739843915_b41ea1a5-fe34-4c5a-8e97-a88c1331549b.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250218%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250218T015839Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=03d1355bbe2b7f0fb01f7035c7165b7d5fb49e657ca0046084773a6077b3ca4b",
+        "task_name": ""
+    },
+    "5cca551b-9ff4-41bf-ae64-c8f81ea1abe7": {
+        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_5/20250218/3mnZWVK17OHl43bae623525807d811deefdb80494863.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250218%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250218T015914Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=a791f265e846eeb0e168e63979deac25dc2283ad1cff07e9d8c49d009176dfc2",
+        "face_url": "https://img.sw.gz.cn/photography-comfyui/user_5/20250218/4TU9xwBF45CW40c96d91b863a6b3f44ccf8147b19363.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250218%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250218T015834Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=4a2affaa47e88a91dbe6c3d6a8c0c3f320cfa02d2f097c51d2be03ab3bcc0b19",
+        "result_url": "https://img.sw.gz.cn/comfyui-output/face_swap_auto/comfyui_output_1739843991_5cca551b-9ff4-41bf-ae64-c8f81ea1abe7.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250218%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250218T015955Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=4079df0a1cca928c7446cc0bca568045c30bd7653d3bcfc1ee9e91ce87a2d902",
+        "task_name": "face_swap_auto"
+    },
+    "4414956e-28c1-40e5-b3d8-29ea3d47a660": {
+        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_5/20250218/tmp_fd0d941e5cbb5215c834d144cc4b6682.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250218%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250218T020702Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=fc446257813fa2bc4833a6d0128dbe28adf42b389162423f1c116277954d2c4c",
+        "result_url": "https://img.sw.gz.cn/comfyui-output//comfyui_output_1739844617_4414956e-28c1-40e5-b3d8-29ea3d47a660.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250218%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250218T021019Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=815b287e74d3c7b4510af3967c3ac18ddf784b353ad8dbb159aa36c2dd421160",
+        "task_name": ""
+    },
+    "6dab7712-561a-48c1-8efc-bb6020d65576": {
+        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_5/20250218/tmp_94e827c9be1a4dbb27925076baea9c0d.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250218%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250218T020723Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=9a75dfbe20fe192e126222da67d7c8756bb3d49591799d8bbe7d7e124ac1c395",
+        "result_url": "https://img.sw.gz.cn/comfyui-output//comfyui_output_1739844690_6dab7712-561a-48c1-8efc-bb6020d65576.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250218%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250218T021132Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=ee1f73facb8ace9a2d56008cb7320ee430df90946aa251e9a81bf574ee788531",
+        "task_name": ""
+    },
+    "f54ffcc8-430f-46ce-8087-09f90a74bce1": {
+        "image_url": "https://img.sw.gz.cn/photography-comfyui/user_5/20250218/tmp_1141e427a3e626b4641f47a64abaa159.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=KoIWIjPxYDm3YfmzJ2r6%2F20250218%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250218T020741Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=9debf7b3b3153c987c8a169e6c8b40ebf83d6c40acea55252e6da1548fcfb4d2",
+        "result_url": "https://img.sw.gz.cn/comfyui-output//comfyui_output_1739844814_f54ffcc8-430f-46ce-8087-09f90a74bce1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DMMEDkFR7k4ls37cvjSM%2F20250218%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250218T021339Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=1f7c80e71fd3996d5681e2f7751fbb723cd762d30e0ddcac2d23e67a9e206f73",
+        "task_name": ""
     }
 }
